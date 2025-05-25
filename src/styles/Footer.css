@@ -1,0 +1,67 @@
+.footer-root {
+    background-color: #221e31;
+    color: white;
+    padding: 50px 30px 20px 30px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-about {
+    
+    max-width: 40%;
+  }
+  
+  .footer-title {
+    font: 700 40px 'Urbanist', sans-serif !important;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .footer-text {
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 18px;
+    color: #ffff;
+    margin-top: 30px;
+  }
+  
+  .footer-icon {
+    color: #ffff;
+  }
+  
+  .footer-heading {
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 35px;
+  }
+  
+  .footer-contact-section {
+    max-width: 60%;
+    text-align: left;
+    margin-right: 5%;
+  }
+  
+  .footer-contact {
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 32px;
+    }
+  
+    .footer-about,
+    .footer-contact-section {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+  

@@ -1,0 +1,86 @@
+.course-card {
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    font-family: 'Urbanist', sans-serif;
+    background-color: #fff;
+  }
+  .course-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    background-color: #f0f0f0; /* Optional: for padding area fill */
+  }
+  
+  .price-badge {
+    position: absolute;
+    top: 150px;
+    right: 16px;
+    background-color: #8e2de2;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    line-height: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .course-content {
+    padding: 16px;
+  }
+  
+  .course-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .author-avatar {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .author-name {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .star-icon {
+    color: #ffc107;
+    font-size: 18px !important;
+    margin-left: 4px;
+  }
+  
+  .rating {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .course-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #000;
+  }
+  
+  .course-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+  }
+  

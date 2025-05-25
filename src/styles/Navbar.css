@@ -1,0 +1,64 @@
+
+.navbar {
+    background-color: #ffff !important;
+    height: 100px; /* Adjust the height as needed */
+    box-shadow: none !important; /* Removes the shadow */
+    color:#625F71 !important;
+}
+
+.navbar-title{
+    font-family: 'Urbanist' !important;
+    font-size: 34px !important;
+    color:#1A1729 !important;
+    font-weight: 700 !important;
+    margin-left: 10px !important;
+}
+
+.navbar-button {
+    font-family: 'Urbanist' !important;
+    font-size: 22px !important;
+    color:#625F71 !important;
+    padding: 30px 6px 30px 6px !important;
+    margin: 0 15px 0 15px !important;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+}
+.navbar-button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #f2bc00;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-button:hover::after {
+    width: 100%;
+    left: 50%;
+}
+
+.navbar-button:hover {
+    color: #f2bc00 !important;
+    transform: translateY(-2px); /* Visual lift */
+    cursor:pointer;
+}
+
+.navbar-login{
+    font-family: 'Urbanist' !important;
+    font-size: 17px !important;
+    color:#1A1729 !important;
+    text-transform: none !important;
+}
+
+
+.navbar-login:hover{
+    color: #f2bc00 !important;
+    cursor:pointer;
+    text-transform: none !important;
+}

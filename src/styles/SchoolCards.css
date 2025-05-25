@@ -1,0 +1,129 @@
+.design-card {
+    background-color: #ffffff !important;
+    padding: 30px 30px 30px 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 358px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.design-card:hover {
+    background-color: var(--hover-color) !important;
+    color: white !important;
+}
+
+.design-icon {
+    background-color: var(--hover-color) !important;
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.design-title {
+    font-weight: 600 !important;
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 28px !important;
+    color: #1A1729 !important;
+    margin-bottom: 10px !important;
+}
+
+.design-desc {
+    color: #625F71 !important;
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 19px !important;
+    margin-bottom: 20px !important;
+    justify-content: center;
+}
+
+.design-card:hover .design-title,
+.design-card:hover .design-desc,
+.design-card:hover .design-icon {
+    color: white !important;
+}
+
+.design-card:hover .design-icon {
+    color: var(--hover-color) !important;
+    background-color: white !important;
+}
+
+.design-link {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* ======================== */
+/*        Responsive        */
+/* ======================== */
+
+@media (max-width: 992px) {
+    .design-card {
+        max-width: 300px !important;
+        padding: 25px !important;
+    }
+
+    .design-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .design-title {
+        font-size: 26px !important;
+    }
+
+    .design-desc {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .design-card {
+        max-width: 100% !important;
+        padding: 20px !important;
+    }
+
+    .design-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .design-title {
+        font-size: 24px !important;
+    }
+
+    .design-desc {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .design-card {
+        padding: 15px !important;
+    }
+
+    .design-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .design-title {
+        font-size: 20px !important;
+    }
+
+    .design-desc {
+        font-size: 14px !important;
+    }
+}
