@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Learners_Space25/static/css/main.a272fd0a.css",
-    "main.js": "/Learners_Space25/static/js/main.d19f308d.js",
+    "main.js": "/Learners_Space25/static/js/main.66d9176b.js",
     "static/js/453.be7943a2.chunk.js": "/Learners_Space25/static/js/453.be7943a2.chunk.js",
     "index.html": "/Learners_Space25/index.html",
     "main.a272fd0a.css.map": "/Learners_Space25/static/css/main.a272fd0a.css.map",
-    "main.d19f308d.js.map": "/Learners_Space25/static/js/main.d19f308d.js.map",
+    "main.66d9176b.js.map": "/Learners_Space25/static/js/main.66d9176b.js.map",
     "453.be7943a2.chunk.js.map": "/Learners_Space25/static/js/453.be7943a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a272fd0a.css",
-    "static/js/main.d19f308d.js"
+    "static/js/main.66d9176b.js"
   ]
 }
