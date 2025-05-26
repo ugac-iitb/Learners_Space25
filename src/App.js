@@ -1,4 +1,4 @@
-import { BrowserRouter,Route,Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter,Route,Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 // import AppRoutes from "./AppRoutes";
 // import { PersistGate } from 'redux-persist/integration/react';
