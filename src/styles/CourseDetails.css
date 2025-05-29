@@ -1,0 +1,376 @@
+.cd-course-page {
+    padding: 40px 20px;
+    font-family: 'Urbanist', sans-serif;
+    background-color: #fefefe;
+}
+
+.cd-banner-root {
+    position: relative;
+    background-color: #fcf8ef !important;
+    height:400px;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cd-banner-title {
+    font-weight:600 !important;
+    color: #1A1729  !important;
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 70px  !important;
+    margin-top: 20px !important;
+}
+
+.cd-decor-icon {
+    position: absolute;
+    opacity: 0.6;
+}
+
+.cd-circle {
+    bottom: 10%;
+    left: 5%;
+    color: gold;
+    font-size: 40px;
+}
+
+.cd-zigzag {
+    top: 10%;
+    left: 15%;
+    color: #00aa99;
+    font-size: 40px;
+}
+
+.cd-blur {
+    top: 5%;
+    right: 5%;
+    color: #fbc02d;
+    font-size: 40px;
+}
+
+.cd-triangle {
+    bottom: 10%;
+    right: 10%;
+    color: purple;
+    font-size: 40px;
+    transform: rotate(45deg);
+}
+
+.cd-dots {
+    top: 45%;
+    left: 2%;
+    color: #ffca28;
+    font-size: 35px;
+}
+
+.cd-course-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 120px 30px 120px 30px;
+}
+
+.cd-course-left {
+    flex: 2;
+    padding: 0px 10px 0px 10px;
+}
+
+.cd-course-image {
+    width: 100%;
+    max-width: 900px !important;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.cd-tab-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.cd-Ov-description {
+    padding-right: 10px !important;
+    max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+.cd-course-description {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+    white-space: normal;          /* Allow wrapping */
+    word-break: break-word;       /* Prevent overflow */
+    overflow-wrap: break-word;    /* Fallback for older browsers */
+    text-align: justify;          /* Even out line endings */
+}
+
+
+.cd-course-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 30px !important;
+}
+
+.cd-price-box{
+    background-color: white;
+    padding: 20px 30px 20px 30px !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    justify-content: center;
+    align-items: center;
+    width:60% !important;
+}
+
+
+.cd-add-to-cart {
+    margin-top: 10px !important;
+    background-color: #16a085 !important;
+    width: 100%;
+    padding: 10px 16px !important;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 8px; */
+    margin-bottom: 10px !important;
+    
+}
+
+.cd-course-details p {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color:#625f71 !important;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ------------------Design Cards----------------------------------------- */
+.cd-design-card {
+    background-color: #ffffff !important;
+    padding: 7.5px 15px 7.5px 15px !important;
+    border-radius: 50px;
+    text-align: center;
+    max-width: 100px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, opacity 0.4s ease, transform 0.4s ease;
+    opacity: 1;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.cd-design-card.fade-out {
+    background-color: var(--hover-color) !important;
+    color: white !important;
+}
+
+.cd-design-card:hover {
+    background-color: var(--hover-color) !important;
+    color: white !important;
+}
+
+.cd-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cd-design-title {
+    font-weight: 100 !important;
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 16px !important;
+    color: #2d4277 !important;
+    margin-bottom: 0px !important;
+}
+
+.cd-design-card:hover .cd-design-title,
+.cd-design-card:hover .cd-design-desc,
+.cd-design-card:hover .cd-design-icon {
+    color: white !important;
+}
+
+.cd-design-card:hover .cd-design-icon {
+    color: var(--hover-color) !important;
+    background-color: white !important;
+}
+
+.cd-design-link {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+
+/* -------------------- Responsive -------------------- */
+
+@media screen and (max-width: 992px) {
+    .cd-course-content {
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+
+    .cd-course-left,
+    .cd-course-right {
+        width: 100%;
+    }
+
+    .cd-course-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .cd-price-box,
+    .cd-latest-course-box {
+        flex: 1 1 100%;
+    }
+
+    .cd-banner-title {
+        font-size: 48px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cd-banner-root {
+        height: 400px;
+        padding: 40px 20px;
+    }
+
+    .cd-banner-title {
+        font-size: 36px !important;
+        margin-top: 10px !important;
+    }
+
+    .cd-course-content {
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .cd-course-left {
+        padding: 0;
+    }
+
+    .cd-price-box,
+    .cd-latest-course-box {
+        padding: 16px;
+    }
+
+    .cd-course-image {
+        margin-bottom: 20px;
+    }
+
+    .cd-tab-buttons {
+        gap: 6px;
+    }
+
+    .cd-design-card {
+        max-width: 100% !important;
+        padding: 20px !important;
+    }
+
+    .cd-design-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cd-design-title {
+        font-size: 18px !important;
+    }
+
+    .cd-design-desc {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cd-tab-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .cd-course-description {
+        font-size: 14px;
+    }
+
+    .cd-price-box h3 {
+        font-size: 20px;
+    }
+
+    .cd-add-to-cart {
+        font-size: 14px;
+    }
+
+    .cd-latest-course {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cd-latest-course img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cd-banner-title {
+        font-size: 28px !important;
+    }
+
+    .cd-course-content {
+        padding: 30px 15px;
+    }
+
+    .cd-price-box h3 {
+        font-size: 18px;
+    }
+
+    .cd-deal-tag {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    .cd-latest-title {
+        font-size: 13px;
+    }
+
+    .cd-course-description {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .cd-course-details p {
+        font-size: 13px;
+    }
+
+    .cd-tab-buttons {
+        padding: 0 20% 0 20%;
+        gap: 6px;
+    }
+
+    .cd-design-card {
+        padding: 15px !important;
+    }
+
+    .cd-design-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cd-design-title {
+        font-size: 16px !important;
+    }
+
+    .cd-design-desc {
+        font-size: 14px !important;
+    }
+}

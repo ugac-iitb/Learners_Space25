@@ -34,8 +34,8 @@
   }
   
   .footer-heading {
-    font-weight: bold;
-    margin-bottom: 12px;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
     font-family: 'Urbanist', sans-serif !important;
     font-size: 35px;
   }

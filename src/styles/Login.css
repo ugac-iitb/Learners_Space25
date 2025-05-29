@@ -1,0 +1,112 @@
+.lg-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .lg-form {
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .lg-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 28px;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+  
+  .lg-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 24px !important;
+    font-size: 16px ;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+  
+  .lg-textfield {
+    margin-bottom: 16px !important;
+  }
+  
+  .lg-login-btn {
+    background-color: #ffc107 !important;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-size: 16px;
+    padding: 12px;
+    font-family: 'Urbanist', sans-serif !important;
+
+    margin-bottom: 10px !important;
+  }
+  
+  .lg-login-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  
+  .lg-signup-link {
+    color: #555;
+    font-size: 14px !important;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+  
+  .lg-error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+  
+  /* ========== RESPONSIVE STYLES ========== */
+  @media (max-width: 768px) {
+    .lg-form {
+      padding: 24px;
+      max-width: 90%;
+    }
+  
+    .lg-title {
+      font-size: 24px;
+    }
+  
+    .lg-subtitle {
+      font-size: 14px;
+    }
+  
+    .lg-login-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .lg-social-btn {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .lg-signup-link {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lg-social-login {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .lg-social-btn {
+      margin: 0;
+    }
+  }
+  

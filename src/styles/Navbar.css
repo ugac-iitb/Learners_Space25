@@ -4,6 +4,8 @@
     height: 100px; /* Adjust the height as needed */
     box-shadow: none !important; /* Removes the shadow */
     color:#625F71 !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
 
 .navbar-title{
@@ -16,10 +18,10 @@
 
 .navbar-button {
     font-family: 'Urbanist' !important;
-    font-size: 22px !important;
+    font-size: 20px !important;
     color:#625F71 !important;
     padding: 30px 6px 30px 6px !important;
-    margin: 0 15px 0 15px !important;
+    margin: 5px 15px 5px 15px !important;
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -61,4 +63,117 @@
     color: #f2bc00 !important;
     cursor:pointer;
     text-transform: none !important;
+}
+
+.navbar-logo{
+    height: 160px !important;
+}
+
+.drawer-list {
+    width: 250px;
+    background-color: #f2bc00;
+    height: 100%;
+    padding-top: 20px;
+    color: #060606;
+}
+
+.drawer-item {
+    font-family: 'Urbanist' !important;
+    font-size: 20px;
+    color: #060606;
+    padding: 12px 20px;
+    margin: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.drawer-item:hover {
+    background-color: #302c3d;
+    color: #f2bc00;
+    transform: translateX(4px);
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+    .navbar-title {
+        font-size: 26px !important;
+        margin-left: 6px !important;
+    }
+
+    .navbar-button {
+        font-size: 18px !important;
+        margin: 5px 8px 5px 0px !important;
+        padding: 20px 4px !important;
+    }
+
+    .navbar-logo {
+        height: 120px !important;
+    }
+
+    .navbar-login {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .navbar-title {
+        font-size: 22px !important;
+        margin-left: 6px !important;
+    }
+
+    .navbar-button {
+        font-size: 16px !important;
+        margin: 5px 4px !important;
+        padding: 20px 4px !important;
+    }
+
+    .navbar-logo {
+        height: 120px !important;
+    }
+
+    .navbar-login {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-title {
+        font-size: 18px !important;
+        margin-left: 6px !important;
+    }
+
+    .navbar-button {
+        font-size: 15px !important;
+        margin: 5px 3px 5px 0px !important;
+        padding: 20px 3px !important;
+    }
+
+    .navbar-logo {
+        height: 60px !important;
+    }
+
+    .navbar-login {
+        font-size: 16px !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar-title {
+        font-size: 22px !important;
+        margin-left: 4px !important;
+    }
+
+    .navbar-logo {
+        height: 90px !important;
+    }
+
+    .navbar-toolbar {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
 }

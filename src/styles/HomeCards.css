@@ -1,0 +1,67 @@
+.home-cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+    background: linear-gradient(to bottom, #f8f6fe, white);
+  }
+  
+  .home-card {
+    width: 240px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    background-color: var(--hover-bgcolor) !important;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .home-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .home-card .icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: var(--hover-color);/* Can override for each card in JSX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-card.highlighted {
+    background-color: #5e00d8;
+    color: white;
+  }
+  
+  .home-card.highlighted .icon-wrapper {
+    background-color: #5e00d8;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #555555;
+    white-space: pre-line;
+  }
+  
+  .home-card.highlighted .card-description {
+    color: #f0f0f0;
+  }
+  
+  .card-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  

@@ -14,7 +14,6 @@ import { useParams } from 'react-router-dom';
 const CourseList = () => {
     const [school,setSchool] = useState({});
     const { id } = useParams();
-    
 
     useEffect(() => {
         const val = schoolData.find(schools => schools["School ID"] == id);
