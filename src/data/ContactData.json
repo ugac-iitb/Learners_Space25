@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Parv Khandelwal",
+        "position":"Institute Secretary, Academic Affairs\nHead, Career Cell",
+        "contact":"8302649745",
+        "img":"/data/images/contact/parv.png"
+    },
+    {
+        "name":"Mridhula Vishwanath",
+        "position":"Academic Coordinator, Career Cell",
+        "contact":"9108224749",
+        "img":"/data/images/contact/mridhula.png"
+    },
+    {
+        "name":"Saksham Agrawal",
+        "position":"Academic Coordinator, Career Cell",
+        "contact":"7857070220",
+        "img":"/data/images/contact/Saksham.png"
+    },
+    {
+        "name":"Syed Mohammad Ali",
+        "position":"Academic Coordinator, Career Cell",
+        "contact":"6394872284",
+        "img":"/data/images/contact/syed.png"
+    }
+]

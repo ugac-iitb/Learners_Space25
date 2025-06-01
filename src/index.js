@@ -1,17 +1,34 @@
+// index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+
+import store, { persistor } from './store';
+
+import { isTokenExpired } from "./assets/authUtils";
+import authSlice from "./store/authSlice";
+
+const logoutIfTokenExpired = () => {
+  const state = store.getState();
+  const { isAuthenticated, loginTime } = state.auth;
+
+  if (isAuthenticated && isTokenExpired(loginTime)) {
+    store.dispatch(authSlice.actions.logout());
+  }
+};
+
+logoutIfTokenExpired();
+
+setInterval(logoutIfTokenExpired, 60000*5); // Check every 5 minutes
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <App />
+    </PersistGate>
+  </Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

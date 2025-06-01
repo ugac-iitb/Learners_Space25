@@ -27,13 +27,22 @@ const Signup = () => {
     setError(null);
     try {
       const { confirm_password, ...formData } = values; // Remove confirm_password before sending
+
+      console.log(formData);
       const res = await axios.post(baseURL, formData);
       console.log(res.data);
       navigate('/SignIn');
       // Redirect or display success message here
     } catch (err) {
       console.error(err);
-      setError('Something went wrong. Please try again.');
+      if(err.response && err.response.status === 400) {
+        setError('User with this Roll No. already exists');
+      }
+
+      else{
+        setError('An error occurred while signing up. Please try again later.');
+      }
+      
     }
     actions.setSubmitting(false);
   };
@@ -41,6 +50,7 @@ const Signup = () => {
   const formik = useFormik({
     initialValues: {
       roll_no: '',
+      ldap_id: '',
       password: '',
       confirm_password: '',
       year_of_study: '',
@@ -49,6 +59,7 @@ const Signup = () => {
     },
     validationSchema: Yup.object({
       roll_no: Yup.string().required('Roll No. is required'),
+      ldap_id: Yup.string().email("Not a valid LDAP ip").required('LDAP ID is required'),
       password: Yup.string().required('Password is required'),
       confirm_password: Yup.string()
         .oneOf([Yup.ref('password'), null], 'Passwords must match')
@@ -82,6 +93,19 @@ const Signup = () => {
 
         <TextField
           fullWidth
+          label="LDAP ID"
+          name="ldap_id"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.ldap_id}
+          error={formik.touched.ldap_id && Boolean(formik.errors.ldap_id)}
+          helperText={formik.touched.ldap_id && formik.errors.ldap_id}
+          className="sg-textfield"
+        />
+
+
+        <TextField
+          fullWidth
           label="Password"
           type="password"
           name="password"
@@ -109,7 +133,7 @@ const Signup = () => {
         <TextField
           select
           fullWidth
-          label="Year of Study"
+          label="Year of Study (in 2025)"
           name="year_of_study"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}

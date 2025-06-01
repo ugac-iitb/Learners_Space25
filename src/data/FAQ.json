@@ -1,18 +1,34 @@
 [
     {
-      "title": "Market research on our global panel with support from our experts.",
-      "content":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem pariatur iure nemo esse repellendus est quo recusandae. Delectus, maxime.'"
+      "title": "How do I register for the courses?",
+      "content":"1. First login in by correctly filling your details via the ‘Sign In’ button at the top-right corner of the page. Kindly remember your password. Please note that you cannot register for the courses unless you are logged in.\n2. After logging in, go to the ‘Courses’ tab. Choose between the various schools and click on any course placard within each school. You will then be directed to that course page.\n3. For each course you have the ‘Register’ option. You can click on the same to register for that particular course.\n4. You can register for as many courses as you want, and then visit the ‘My Courses’ tab to view all the courses that you have selected. You may deregister for any course by visiting that particular course’s page and selecting ‘deregister’.\n5. Thus, you can edit the list of courses that you want to register for in this manner till the registration deadline.\n6. Once the deadline passes, you will get a mail on your LDAP ID (the one submitted in the ‘Sign In’ form) containing credentials to login to Moodle, where you would already be enrolled in all the courses for which you have registered. Keep checking your LDAP email ID at regular intervals, including the SPAM folder."
     },
     {
-      "title": "Planning can help alleviate workplace stress and increase productivity.",
-      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      "title": "How many courses can you register for? ",
+      "content": "You can register for as many courses as you like! Happy learning :).However, it is advised to check the time commitments required for each course and make choices accordingly in order to complete courses and extract the best out of Learners’ Space!"
     },
     {
-      "title": "Those who experiment the most, are able to innovate the best.",
-      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem pariatur iure nemo esse repellendus est quo recusandae. Delectus, maxime.'"
+      "title": "What is the method of teaching in Learners’ Space? How will the material be provided and is it self-learning based?",
+      "content": "This year, Learners’ Space will be conducted in a ‘hybrid’ mode, a mix of live sessions/webinars, supplementary material provided by course instructors, and some mini-projects. All of these resources will be made available to you on Moodle. For more details, please refer to the course page of each course, as details might differ per course."
     },
     {
-      "title": "Understand Your Problem, You must understand the issue.",
-      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem pariatur iure nemo esse repellendus est quo recusandae. Delectus, maxime.'"
+      "title": "I have registered for a course by mistake and/or I realised that I don’t want to register for that course, what do I do?",
+      "content": "You can review your registrations by selecting the ‘My Courses’ tab. You can deregister from any course if you want to before the deadline passes by going to that particular courses’ page and selecting ‘deregister’."
+    },
+    {
+      "title":"I am facing some issues regarding Learners’ Space. Whom should I contact?",
+      "content":"1. For course specific issues (resources, assignments, projects, sessions, etc.), it is advised to consult the respective course PoCs, whose contact details are provided in the ‘Instructor’ section of each course page.\n2. For issues concerning the registration process, website, etc. and in general pertaining to the entirety of Learners’ Space or otherwise, feel free to reach out to the Career Cell team whose contact details are mentioned at the bottom of each page of this website."
+    },
+    {
+      "title":"Can I take courses from multiple schools?",
+      "content":"Yes, you can! You can simply register for any course by going to its course page and selecting ‘register’ irrespective of the school to which it belongs."
+    },
+    {
+      "title":"How will further communication be carried out?",
+      "content":"1. Firstly please fill in the correct Email IDs and secondly please keep checking those at regular intervals, including the SPAM folder.\n2. The credentials for logging into Moodle for the courses you have registered will be sent to you on your LDAP email ID by the end of registration. Please check your spam folder.\n3. Keep checking Moodle at constant intervals to get all the updates regarding your course."
+    },
+    {
+      "title":"What is the deadline of registration?",
+      "content":"Registrations will be open till 11:59 PM, 5th June 2025."
     }
 ]

@@ -10,13 +10,13 @@ const InsCourse = ({courseData}) => {
     const contacts = Array.from(ContactInfo.matchAll(/([^,]+?)\s*\(([^)]+)\)/g)).map(match => ({
         name: match[1].trim(),
         phone: match[2].trim(),
-      }));
+    }));
       
     console.log(contacts);
     return ( 
         <Box className="cd-profile-container">
             <img
-                src={testImg}
+                src={`${process.env.PUBLIC_URL}/data/images/clubs/${courseData["Course ID"]}.png`} 
                 alt="Profile"
                 className="cd-profile-avatar"
             />

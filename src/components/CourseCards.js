@@ -1,49 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/CourseCards.css';
-import { Avatar } from '@mui/material';
-import StarIcon from '@mui/icons-material/Star';
-import PeopleIcon from '@mui/icons-material/People';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
-import cardImage from '../data/images/img1.png';
+import { Avatar, Divider } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import { Link } from 'react-router-dom';
 
-const CourseCard = () => {
+
+const CourseCard = ({ course }) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleDescription = () => {
+    setExpanded(prev => !prev);
+  };
+
   return (
     <div className="course-card">
       {/* Image */}
-      <img
-        className="course-image"
-        src={cardImage}
-        alt="Course"
-      />
+      <img loading="lazy" className="course-image" src={`${process.env.PUBLIC_URL}/data/images/card/${course["Course ID"]}.png`} alt="Course" />
 
       <div className="course-content">
         {/* Author & Rating */}
         <div className="course-header">
-          <Avatar
-            
-            className="author-avatar"
-          />
-          <span className="author-name">Robert Henry</span>
-          <StarIcon className="star-icon" />
-          <span className="rating">(4.5)</span>
+        <img loading="lazy" className="author-avatar" src={`${process.env.PUBLIC_URL}/data/images/clubs/${course["Course ID"]}.png`} alt="CLub" />
+          <span className="author-name">{course["Club"]}</span>
         </div>
 
         {/* Title */}
         <h3 className="course-title">
-          Learn WordPress & Elementor for Beginners
+          <Link to={`/Course?id=${course["Course ID"]}`} className="course-link">
+            {course["Course Name"]}
+          </Link>
         </h3>
+        <Divider className="course-divider" />
 
-        {/* Students & Lessons */}
-        <div className="course-footer">
-          <div className="footer-item">
-            <PeopleIcon fontSize="small" />
-            <span>200 Students</span>
-          </div>
-          <div className="footer-item">
-            <MenuBookIcon fontSize="small" />
-            <span>20 Lessons</span>
-          </div>
+        {/* Description */}
+        <div className={`course-description ${expanded ? 'expanded' : ''}`}>
+          {course["Desc_short"]}
         </div>
+
+        <button className="toggle-description-btn" onClick={toggleDescription}>
+          {expanded ? (
+            <>
+              Show Less <ExpandLessIcon fontSize="small" />
+            </>
+          ) : (
+            <>
+              Read More <ExpandMoreIcon fontSize="small" />
+            </>
+          )}
+        </button>
       </div>
     </div>
   );

@@ -74,6 +74,10 @@
     color: inherit !important;
 }
 
+.sc-icon-class{
+    font-size: large !important;
+}
+
 /* ======================== */
 /*        Responsive        */
 /* ======================== */
@@ -134,5 +138,9 @@
 
     .design-desc {
         font-size: 14px !important;
+    }
+
+    .sc-icon-class{
+        font-size: medium !important;
     }
 }

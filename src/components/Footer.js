@@ -13,6 +13,7 @@ import {
   Email,
   Phone,
   LocationOn,
+  LinkedIn,
 } from '@mui/icons-material';
 
 import '../styles/Footer.css';
@@ -28,10 +29,23 @@ const FooterComp = () => {
           This edition of Learners' Space brings to you carefully curated courses and the chance to upskill and learn various topics catering to the taste of students today!
           </Typography>
           <Stack direction="row" spacing={2} mt={2}>
-            <IconButton className="footer-icon"><Facebook sx={{color:'white'}} /></IconButton>
-            <IconButton className="footer-icon"><Twitter sx={{color:'white'}} /></IconButton>
-            <IconButton className="footer-icon"><Instagram sx={{color:'white'}} /></IconButton>
-            <IconButton className="footer-icon"><Google sx={{color:'white'}} /></IconButton>
+            
+            <a href="https://www.instagram.com/careercell_iitb/" target="_blank" rel="noopener noreferrer">
+              <IconButton className="footer-icon"><Instagram fontSize='medium' sx={{color:'white'}} /></IconButton>
+            </a>
+
+            <a href="https://www.facebook.com/careercell.iitb/" target="_blank" rel="noopener noreferrer">
+              <IconButton className="footer-icon"><Facebook fontSize='medium' sx={{color:'white'}} /></IconButton>
+            </a>
+            <a href="https://www.linkedin.com/company/careercell/" target="_blank" rel="noopener noreferrer">
+              <IconButton className="footer-icon"><LinkedIn fontSize='medium' sx={{color:'white'}} /></IconButton>
+            </a>
+            
+            <a href="mailto:careercell@iitb.ac.in" >
+              <IconButton className="footer-icon">
+                  <Google fontSize='medium' sx={{color:'white'}} />
+              </IconButton>
+            </a>
           </Stack>
         </Box>
 
@@ -49,28 +63,20 @@ const FooterComp = () => {
             Head, Career Cell</Typography>
           </Stack>
 
-          
-
 
           <Stack direction="row" alignItems="center" spacing={1} mb={1}>
             <Email fontSize="small" />
-            <Typography className="footer-contact">careercell@iitb.ac.in</Typography>
+            <Typography className="footer-contact">
+              <a href="mailto:careercell@iitb.ac.in" style={{ textDecoration: 'none', color: 'inherit' }}>
+                careercell@iitb.ac.in
+              </a>
+            </Typography>
+
           </Stack>
           <Stack direction="row" alignItems="center" spacing={1} mb={1}>
             <Phone fontSize="small" />
             <Typography className="footer-contact">8302649745</Typography>
           </Stack>
-          {/* <Stack direction="row" alignItems="center" spacing={1} mb={1}>
-            <Phone fontSize="small" />
-            <Typography className="footer-contact">(704) 555-0127</Typography>
-          </Stack>
-          <Stack direction="row" alignItems="flex-start" spacing={1}>
-            <LocationOn fontSize="small" />
-            <Typography className="footer-contact">
-              4517 Washington Ave.<br />
-              Manchter, Kentucky 495
-            </Typography>
-          </Stack> */}
         </Box>
       </Box>
     </Box>

@@ -115,7 +115,7 @@ const Login = () => {
         </Button>
 
         <Typography variant="body2" align="center" className="lg-signup-link">
-          Don’t have an account? <Link to="/Signup">Create free account</Link>
+          Don’t have an account? <Link to="/Signup">Create account</Link>
         </Typography>
       </form>
     </Box>

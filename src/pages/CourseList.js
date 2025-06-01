@@ -1,72 +1,96 @@
-import React, { use, useEffect, useState } from 'react';
-import { Box, Typography,Grid } from '@mui/material';
-import CourseCards from '../components/CourseCards';
-import CircleIcon from '@mui/icons-material/Circle';
-import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
-import GrainIcon from '@mui/icons-material/Grain';
-import LineAxisIcon from '@mui/icons-material/LineAxis';
-import BlurCircularIcon from '@mui/icons-material/BlurCircular';
-import '../styles/CourseList.css';
-import SchoolCards from '../components/SchoolCards';
-import schoolData from '../data/SchoolInfo.json' 
+import React, { useEffect, useState } from 'react';
+import { Box, Grid, Typography, Pagination } from '@mui/material';
 import { useParams } from 'react-router-dom';
 
+import CircleIcon from '@mui/icons-material/Circle';
+import LineAxisIcon from '@mui/icons-material/LineAxis';
+import BlurCircularIcon from '@mui/icons-material/BlurCircular';
+import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
+import GrainIcon from '@mui/icons-material/Grain';
+
+import CourseCards from '../components/CourseCards';
+import courseData from '../data/Courses.json';
+import schoolData from '../data/SchoolInfo.json';
+
+import '../styles/CourseList.css';
+
+const COURSES_PER_PAGE = 6;
+
 const CourseList = () => {
-    const [school,setSchool] = useState({});
-    const { id } = useParams();
+  const [school, setSchool] = useState({});
+  const [page, setPage] = useState(1);
+  const { id } = useParams();
 
-    useEffect(() => {
-        const val = schoolData.find(schools => schools["School ID"] == id);
-        setSchool(val);
-    }
-    , []);
+  const filteredCourses = courseData.filter(course => course["School ID"] == id);
+  console.log(filteredCourses)
+  const pageCount = Math.ceil(filteredCourses.length / COURSES_PER_PAGE);
 
+  const handleChangePage = (_, value) => {
+    setPage(value);
+  };
 
-    return ( 
-        <div>
-            <Box className="banner-root">
-            {/* Decorative icons */}
-                <CircleIcon className="decor-icon circle" />
-                <LineAxisIcon className="decor-icon zigzag" />
-                <BlurCircularIcon className="decor-icon blur" />
-                <ChangeHistoryIcon className="decor-icon triangle" />
-                <GrainIcon className="decor-icon dots" />
+//   const paginatedCourses = filteredCourses.slice(
+//     (page - 1) * COURSES_PER_PAGE,
+//     page * COURSES_PER_PAGE
+//   );
 
-                {/* Title and breadcrumb */}
-                <Typography variant="h2" className="banner-title">
-                    Course
-                </Typography>
+  useEffect(() => {
+    const val = schoolData.find(school => school["School ID"] == id);
+    setSchool(val);
+  }, [id]);
+
+  return (
+    <div>
+      <Box className="cl-banner-root">
+        <CircleIcon className="cl-decor-icon cl-circle" />
+        <LineAxisIcon className="cl-decor-icon cl-zigzag" />
+        <BlurCircularIcon className="cl-decor-icon cl-blur" />
+        <ChangeHistoryIcon className="cl-decor-icon cl-triangle" />
+        <GrainIcon className="cl-decor-icon cl-dots" />
+
+        <Typography variant="h2" className="cl-banner-title">
+          Course
+        </Typography>
+      </Box>
+
+      {school && (
+        <Box className="cl-course-list">
+            <Typography className="cl-course-list-subtitle">Our Courses</Typography>
+            <Typography variant="h2" className="cl-course-list-title">
+                Explore Courses in {school["School Name"]} School
+            </Typography>
+
+            <Box className="cl-course-list-cards">
+                <div  className="course-card-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '24px',justifyContent:'center' }}>
+                    {filteredCourses.map((course, index) => (
+                        <div 
+                            key={index} 
+                            className='course-card-item'
+                        >
+                        <CourseCards
+                            course={course}
+                        />
+                        </div>
+                    ))}
+                </div>
             </Box>
-            {school && (<Box className="course-list">
-                <Typography variant="div" className='course-list-subtitle'> Our Courses</Typography>
-                <Typography variant="h2" className="course-list-title">Explore Courses in {school["School Name"]} School</Typography>
 
-                <Box className="course-list-cards">
-                    <CourseCards/>
-                    {/* <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '24px' }}>
-                        {schoolDetails && schoolDetails.map((school, index) => (
-                            <div 
-                                key={index} 
-                                style={{
-                                    flex: '1 1 calc(33.333% - 24px)', // 3 columns with gap consideration
-                                    maxWidth: 'calc(33.333% - 24px)',
-                                    boxSizing: 'border-box',
-                                    minWidth: '280px', // fallback for small screens
-                                }}
-                            >
-                            <SchoolCards 
-                                title={school.name}
-                                description={school.details}
-                                icon={school.icon}
-                                id = {index}
-                            />
-                            </div>
-                        ))}
-                    </div> */}
-                </Box>
-            </Box>)}
-        </div>
-    );
-}
- 
+          {/* <Box className="cl-course-list-cards">
+            <Grid container spacing={1}>
+              {paginatedCourses.map((course, index) => (
+                <Grid item xs={12} sm={6} md={3}  key={index}>
+                  <CourseCards course={course} />
+                </Grid>
+              ))}
+            </Grid>
+          </Box> */}
+
+            
+        
+        </Box>
+      )}
+    </div>
+  );
+};
+
 export default CourseList;

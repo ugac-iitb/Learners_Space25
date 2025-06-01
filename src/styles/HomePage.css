@@ -7,15 +7,6 @@
     text-align: center;
 }
 
-@media (min-width: 480px) {
-    .hero-section {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 48px 64px;
-        text-align: left;
-    }
-}
-
 .hero-text {
     font-family: 'Urbanist', sans-serif;    
     width: 100%;
@@ -23,16 +14,10 @@
 }
 
 .hero-heading {
-    font-size: 48px !important;
+    font-size: 30px !important;
     font-weight: 700;
     color: #1a1a1a;
     line-height: 1.3;
-}
-
-@media (min-width: 480px) {
-    .hero-heading {
-        font-size: 67px !important;
-    }
 }
 
 .hero-subtext {
@@ -43,24 +28,12 @@
     padding-left: 16px;
 }
 
-@media (min-width: 480px) {
-    .hero-subtext {
-        font-size: 20px !important;
-    }
-}
-
 .hero-buttons {
     margin-top: 32px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
-}
-
-@media (min-width: 480px) {
-    .hero-buttons {
-        flex-direction: row;
-    }
 }
 
 .btn-primary {
@@ -94,14 +67,6 @@
     height: auto;
     
 }
-
-@media (min-width: 480px) {
-    .hero-image {
-        margin-top: 0;
-        max-width: 700px;
-    }
-}
-
 /*---------------- ABout section ------------*/
 
 .about-section {
@@ -113,14 +78,6 @@
     text-align: center;
 }
 
-@media (min-width: 480px) {
-    .about-section {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 48px 64px;
-        text-align: left;
-    }
-}
 
 .about-text {
     font-family: 'Urbanist', sans-serif;    
@@ -129,17 +86,12 @@
 }
 
 .about-heading {
-    font-size: 48px !important;
+    font-size: 32px !important;
     font-weight: 700;
     color: #1a1a1a;
     line-height: 1.3;
 }
 
-@media (min-width: 480px) {
-    .about-heading {
-        font-size: 40px !important;
-    }
-}
 
 .about-subheading {
     font-family: 'Urbanist', sans-serif !important;
@@ -157,12 +109,6 @@
     padding-left: 16px;
 }
 
-@media (min-width: 480px) {
-    .about-subtext {
-        font-size: 16px !important;
-    }
-}
-
 .about-buttons {
     margin-top: 32px;
     display: flex;
@@ -171,13 +117,6 @@
     align-items: center;
 }
 
-@media (min-width: 480px) {
-    .about-buttons {
-        flex-direction: row;
-    }
-}
-
-  
 
 .about-image {
     position: relative;
@@ -205,13 +144,6 @@
   
   
 
-@media (min-width: 480px) {
-    .about-image {
-        margin-top: 0;
-        max-width: 700px;
-    }
-}
-
 
 .home-cards-section {
     display: flex;
@@ -226,4 +158,56 @@
 
 .card-holder{
     width:"25%";
+}
+
+/*---------------------- Responsive Styles -----------*/
+@media (min-width: 480px) {
+    .about-image {
+        margin-top: 0;
+        max-width: 700px;
+    }
+
+    .about-buttons {
+        flex-direction: row;
+    }
+
+    .about-subtext {
+        font-size: 18px !important;
+    }
+
+
+    .about-heading {
+        font-size: 40px !important;
+    }
+
+    .about-section {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 48px 64px;
+        text-align: left;
+    }
+
+    .hero-image {
+        margin-top: 0;
+        max-width: 900px;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+    }
+
+    .hero-subtext {
+        font-size: 20px !important;
+    }
+
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 48px 64px;
+        text-align: left;
+    }
+
+    .hero-heading {
+        font-size: 67px !important;
+    }
 }

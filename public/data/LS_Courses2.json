@@ -1,0 +1,98 @@
+[
+    {
+        "Which of the following schools would you think this course is most aligned to (the name of the school may be changed (and in fact I would like suggestions)). The idea is to provide each course emphasis, by clearly conveying it's interest domain to audience and hopefully get more registrations.": "The CS and DS Summer School",
+        "School ID": "6",
+        "Course ID": "68",
+        "Course Name": "Big Data Handling with Excel & SQL",
+        "Club": "Analytics Club ",
+        "Desc_short": "Dive into the world of data analysis using the most accessible tools out there. Whether you're a beginner or just looking to brush up your skills, this course takes you through Excel and SQL with bite-sized videos, practical assignments, designed to fit into your daily routine.",
+        "Desc": "This course is designed to give students hands-on exposure to Excel and SQL, focusing on practical data analysis and real-world business use-cases. Through a curated set of short, beginner-friendly videos, you'll learn everything from spreadsheet fundamentals to pivot tables and conditional logic functions.\n\nWe emphasize clarity, simplicity, and accessibility. No prior experience is needed. Each video covers a specific feature, allowing you to steadily build your skills.\n\nThe course also includes assignments to reinforce your learning and help you develop fluency in tools that are widely used across industries today. You\u2019ll also gain insight into how these tools compare with other modern alternatives and understand where they stand amidst today\u2019s AI and automation wave.",
+        "Week_time": "5 - 7  hours",
+        "Evaluation": "Evaluative metric & Certification criteria [Excel] : \n5 assignments will be given, out of which any 3 are compulsory\nThe final project for Excel is compulsory\n\nEvaluative metric & Certification criteria [SQL]\n2 assignments will be given, any one of of them is compulsory\nFinal project is compulsory\n",
+        "Certification": "3/5 assignments of Excel, 1/2 assignments of SQL and Final project",
+        "Pre-req": "Just your enthusiasm!",
+        "Contact info": "Anviksha (7974346380), Anshuman (9880182957)",
+        "Week 1": "Excel:\n- Introduction to spreadsheets\n- Basics of spreadsheets\n- Columns, row and cell formatting\n- Basics of formulas\n- Introduction to functions\n- Absolute and Relative referencing\n- Introduction to data quality & importing file data\n- Data cleaning techniques",
+        "Week 2": "Excel:\n- Sorting & Filtering\n- Some important functions\n- VLOOKUP & HLOOKUP functions\n- Pivot Tables\nSQL:\n- Installation and setup\n- Introduction\n- Queries in SQL\n- Functions in SQL\n- Operators in SQL",
+        "Week 3": "Excel:\n- All about Charts\n- Dashboarding\nSQL:\n- All about clauses\n- SQL Joins\n- Subquery in SQL",
+        "Week 4": "\n1 project each for Excel and SQL",
+        "Week Null": "",
+        "null": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "Which of the following schools would you think this course is most aligned to (the name of the school may be changed (and in fact I would like suggestions)). The idea is to provide each course emphasis, by clearly conveying it's interest domain to audience and hopefully get more registrations.": "The CS and DS Summer School",
+        "School ID": "6",
+        "Course ID": "69",
+        "Course Name": "Data Science Fundamentals with Python",
+        "Club": "Analytics Club",
+        "Desc_short": "Kickstart your data science journey with our beginner-friendly \"Data Science Fundamentals with Python\" course! Start from core Python skills, explore data handling and data visualization with exciting libraries transitioning to ML through supervised and unsupervised learning algorithms with in-depth yet carefully curated easy-to-follow resources finishing off with a perfect real world project to reinforce key concepts while building your portfolio. This isn\u2019t just a course; it\u2019s your gateway to mastering the transformation of Basic raw data into Brilliant actionable intelligence!",
+        "Desc": "Step into one of the hottest career paths of the 21st century with this comprehensive four week course by the Analytics Club in Python for Data Science and Machine Learning as a part of Learner\u2019s Space. Whether you're a curious student or a tech explorer leveling up your skill set, this course is your launchpad. We\u2019ve packed it with in-depth yet carefully curated resources. From writing your first line of Python to building models that can actually think, you\u2019ll learn to clean, analyze, and predict like a pro.\n\nThe course ends with a perfect bridge between theory and practical expertise. The Capstone Project is the culmination of your learning journey, where you apply supervised and unsupervised techniques to a real-world dataset-just like a professional data scientist. This hands-on experience reinforces key concepts, builds your portfolio, and boosts confidence in solving complex problems.\n\nNo prior experience is needed - just curiosity and commitment. Start from scratch, finish with real skills.",
+        "Week_time": "7 - 8 hours",
+        "Evaluation": "There will be 3 worksheets and 1 final capstone project",
+        "Certification": "1st Phase worksheet, Atleast one among the 2nd and 3rd Phase worksheets and Capstone project are necessary for certification",
+        "Pre-req": "Just your enthusiasm!",
+        "Contact info": "Tanya Menghani (6264592527), Pranav Mylarassu (9789952490)",
+        "Week 1": "Python Modules\n\n\nPython Basics: Learn the building blocks of Python: variables, control flow, functions, and more.\nJupyter Notebooks: Explore the interactive coding environment used by data scientists.\nNumpy: Learn about dealing with arrays and vectorized computations in python.\nPandas: Dive into data manipulation with powerful tools for cleaning, filtering, and transforming datasets.\nMatplotlib: Create basic plots and visualizations to understand data trends and patterns.\nSeaborn: Build beautiful, statistical visualizations of data.\nWorksheet 1 \u2013 Apply your skills through hands-on coding exercises.\n",
+        "Week 2": "Supervised Learning - Regression\n\nDomains of Analytics: Understand how data science, data analytics, and machine learning differ - and where they overlap.\nScikit-Learn Essentials: Get hands-on with the most popular ML library for Python.\nLinear Regression: Explore the fundamentals of modeling straight-line relationships in data.\nMultiple Linear Regression: Go beyond one feature and learn how to model with multiple predictors.\nTime Series Analysis: Understand time-dependent data and recognize temporal patterns.\nTime Series Forecasting: Explore statistical models such as ARMA to predict future trends.\nAnomaly detection: Discover how to spot unusual or unexpected behavior in time series data.\nWorksheet 2: Apply your learned skills through coding exercises and problems.",
+        "Week 3": "Supervised Learning - Classification\nRegression vs Classification: Learn the key differences between predicting numbers and predicting categories.\nLogistic Regression: Model binary probabilities using this basic classification algorithm.\nDecision Trees & Random Forests: Learn about tree-based models that mimic human decision making.\nOptional Classification algorithms: Understand additional classification algorithms such as Support Vector Machines and K-Nearest Neighbors.\nNeural Networks \u2013 Delve into deep learning with one of the most powerful ML tools.\nProbability distributions and Central Limit Theorem: Learn about statistics and data behavior through Gaussian, Bernoulli, and Exponential distributions.\nWorksheet 3: Get hands-on experience with code implementation of ML algorithms.\n",
+        "Week 4": " Unsupervised Learning\n\nIntro to Unsupervised Learning: Discover how machines find hidden patterns without labeled data or guidance.\nK-Means Clustering: Group similar data points into clusters based on distance.\nHierarchical Clustering: Build tree-like cluster structures to explore nested relationships in data.\nGaussian Mixture Models: Use probability-based clustering to model data that doesn\u2019t fit into neat boundaries.\nDimensionality Reduction: Simplify complex datasets using techniques such as Principal Component Analysis, Singular Value Decomposition and Linear Discriminant Analysis.\nMatrix Factorization: Learn about the core technique behind recommendation systems.\nCapstone Project: Test your skills with a hands-on project encompassing the entire course content.\n",
+        "Week Null": "",
+        "null": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "Which of the following schools would you think this course is most aligned to (the name of the school may be changed (and in fact I would like suggestions)). The idea is to provide each course emphasis, by clearly conveying it's interest domain to audience and hopefully get more registrations.": "The Sustainability Summer School",
+        "School ID": "5",
+        "Course ID": "57",
+        "Course Name": "Sustainable Buildings",
+        "Club": "Team SHUNYA ",
+        "Desc_short": "This lecture series by Team SHUNYA introduces students to the fundamentals of sustainable building design. Through interactive sessions, real-world case studies, and expert insights, participants will explore energy-efficient strategies, eco-friendly materials, and climate-responsive architecture. Whether you're an aspiring architect, engineer, or sustainability enthusiast, this series will equip you with the knowledge and inspiration to design for a greener future.\n",
+        "Desc": "This lecture series offers a comprehensive introduction to the principles and practices of sustainable building design, tailored for students from diverse academic backgrounds. \n\nParticipants will gain insights into:\n\n-Sustainable architecture and climate-responsive design\n-Energy-efficient systems (passive and active strategies)\n-Green building materials and construction techniques\n-Net-zero energy and carbon-neutral buildings\n-Simulation tools and performance evaluation\n-Policy, certification, and global sustainability standards (e.g., GRIHA, LEED)\n\nThe series will also highlight key innovations and learnings from Team SHUNYA\u2019s real-world project Vivaan, standing on the campus opposite hostel 6 including their Solar Decathlon-winning projects.\n\nBy the end of the course, students will be equipped with foundational knowledge to approach building design from an environmental, economic, and human-centric perspective\u2014empowering them to contribute meaningfully to a sustainable built environment.\n\n",
+        "Week_time": "2 hours ",
+        "Evaluation": "Assignment and quiz ",
+        "Certification": "Attendence and quiz ",
+        "Pre-req": "Just your enthusiasm!",
+        "Contact info": "Mudrika (9257498799) ",
+        "Week 1": "Foundations of Sustainable Design\n\nObjectives:\nLearn the basics of sustainable building design.\nUnderstand how buildings impact the environment.\nDiscover the importance of energy efficiency and passive design.\n\nActivities:\nIntroductory lecture\nCase studies of green buildings\nInteractive quiz or discussion",
+        "Week 2": "Materials, Technologies & Real-World Examples\n\nObjectives:\nExplore eco-friendly materials and technologies.\nSee real-world examples of sustainable buildings.\nDiscover smart design strategies for energy savings.\n\nActivities:\nCase studies of green buildings\nGroup activity: Design a basic sustainable layout",
+        "Week 3": "Life Cycle Assessment (LCA)\n\nObjectives:\n Understand the concept of Life Cycle Assessment in buildings.\n Learn to evaluate environmental impact from material to demolition.\n Explore tools and techniques used in LCA.\n\nActivities:\nLecture on LCA basics\nSoftware or manual LCA walkthrough\nGroup activity: Conduct a simplified LCA on a sample building component",
+        "Week 4": "-",
+        "Week Null": "",
+        "null": [
+            "",
+            "",
+            "--"
+        ]
+    },
+    {
+        "Which of the following schools would you think this course is most aligned to (the name of the school may be changed (and in fact I would like suggestions)). The idea is to provide each course emphasis, by clearly conveying it's interest domain to audience and hopefully get more registrations.": "The Management Summer School (Courses in Consult, Finance, Entrepreneurship, Economics*)",
+        "School ID": "2",
+        "Course ID": "25",
+        "Course Name": "Fundamentals of Finance",
+        "Club": "Finance Club",
+        "Desc_short": "Unlock the secrets of smart money management and investment strategies. Build confidence in navigating personal finance, market dynamics and stock valuation. Gain practical tools to make informed financial decisions and take control of your financial future.",
+        "Desc": "Fundamentals of Finance will introduce you to the essential concepts of financial literacy in a clear and practical manner. You will begin with personal money management topics such as budgeting, saving, and investing, before progressing to the effects of macroeconomic factors like GDP, inflation, and interest rates on markets.\nDelve into various asset classes like equities, debt, real estate, and commodities while learning how to create a diversified investment portfolio tailored to your financial goals and risk tolerance. You'll also enhance your ability to perform fundamental analysis, equipping you with the tools to read financial statements and spot investment prospects.\nThrough interactive speaker sessions and hands-on assignments, you will acquire real-world insights and practical strategies to confidently manage your finances and investments. Join us to take control of your financial future!",
+        "Week_time": "3 hours of work per week, plus 1 additional hour for speaker sessions",
+        "Evaluation": "There will be 4 assignments, one assignment per week, based on the content covered.\nEach assignment contributes equally to the overall assessment.",
+        "Certification": "Successful completion of 3/4 assignments without any plagiarism or use of AI tools like ChatGPT, Gemini etc. and attendance in 3/4 speaker sessions",
+        "Pre-req": "Just your enthusiasm!",
+        "Contact info": "Deepti (9310453152), Karthik (8977243111), Kunal (7020922818), Rajdeep (9958009329), Shashwat (9548765669), Shreya (9810465318)",
+        "Week 1": "Personal Finance:\nLearn the essentials of managing money, including budgeting, saving, investing, and building an emergency fund. Understand stock market basics, the importance of diversification, and how to avoid common mistakes. Develop a mindset for long-term financial growth with simple, actionable steps.",
+        "Week 2": "Macroeconomics and Market Functioning:\nUnderstand key economic indicators like GDP, inflation, interest rates, and unemployment, and how they impact markets and investments. Learn the basics of fiscal policy and government spending, and explore market cycles and economic trends affecting stocks, bonds, and personal finance.",
+        "Week 3": "Asset Classes:\nGet an overview of key asset types\u2014equity, debt, real estate, and commodities. Learn about their risk, liquidity, and role in income generation and portfolio diversification. Understand how investors allocate assets based on risk tolerance and financial goals.",
+        "Week 4": "Fundamental Analysis:\nLearn to read financial statements and key ratios. Understand how to interpret earnings reports and connect financial data to stock valuation, helping you identify undervalued or overvalued stocks.",
+        "Week Null": "",
+        "null": [
+            "",
+            "",
+            ""
+        ]
+    }
+]

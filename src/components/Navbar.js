@@ -6,6 +6,7 @@ import { useTheme, useMediaQuery } from '@mui/material';
 import '../styles/Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 import CareerCellLgo from '../data/images/Career_Cell_logo.png'
+import UGACLogo from '../data/images/ugac.png';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import authSlice from '../store/authSlice';
@@ -95,6 +96,7 @@ const Navbar = () => {
         <AppBar position="static" className="navbar">
             <Toolbar className='navbar-toolbar' >
                 {/* <IconButton edge="start" color="inherit" aria-label="logo"> */}
+                    <img src={UGACLogo} alt="Career Cell Logo" className='ugac-logo' />
                     <img src={CareerCellLgo} alt="Career Cell Logo" className='navbar-logo' />
                 {/* </IconButton> */}
                 <Typography variant="h6" component="div" className="navbar-title">

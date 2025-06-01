@@ -40,4 +40,10 @@
     line-height: 1.3 !important;
     white-space: pre-wrap; 
   }
+
+  @media screen and (max-width: 480px){
+    .cd-content-cell{
+      font-size: 16px !important;
+    }
+  }
   

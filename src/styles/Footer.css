@@ -18,13 +18,13 @@
   
   .footer-title {
     font: 700 40px 'Urbanist', sans-serif !important;
-    font-weight: bold;
-    margin-bottom: 12px;
+    font-weight: bold !important;
+    margin-bottom: 12px !important;
   }
   
   .footer-text {
     font-family: 'Urbanist', sans-serif !important;
-    font-size: 18px;
+    font-size: 20px !important;
     color: #ffff;
     margin-top: 30px;
   }
@@ -37,7 +37,7 @@
     font-weight: 700 !important;
     margin-bottom: 15px !important;
     font-family: 'Urbanist', sans-serif !important;
-    font-size: 35px;
+    font-size: 30px !important;
   }
   
   .footer-contact-section {
@@ -48,7 +48,7 @@
   
   .footer-contact {
     font-family: 'Urbanist', sans-serif !important;
-    font-size: 20px;
+    font-size: 20px !important;
     color: #fff;
   }
   
@@ -62,6 +62,32 @@
     .footer-contact-section {
       max-width: 100%;
       text-align: left;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-root {
+      background-color: #221e31;
+      color: white;
+      padding: 30px 20px 10px 20px;
+    }
+    
+    .footer-title {
+      font-size: 26px !important;
+      margin-bottom: 20px !important;
+    }  
+
+    .footer-text {
+      font-size: 16px !important;
+      margin-top: 30px;
+    }
+
+    .footer-heading{
+      font-size: 26px !important;
+    }
+
+    .footer-contact{
+      font-size: 16px !important;
     }
   }
   

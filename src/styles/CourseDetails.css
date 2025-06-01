@@ -80,7 +80,8 @@
 
 .cd-course-image {
     width: 100%;
-    max-width: 900px !important;
+    height: auto;
+    max-width: 600px !important;
     object-fit: cover;
     margin-bottom: 30px;
 }
@@ -99,7 +100,7 @@
 
 .cd-course-description {
     color: #555;
-    font-size: 18px;
+    font-size: 20px !important;
     line-height: 1.6;
     margin: 15px 0;
     white-space: normal;          /* Allow wrapping */
@@ -124,17 +125,17 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     justify-content: center;
     align-items: center;
-    width:60% !important;
+    width:80% !important;
 }
 
 
 .cd-add-to-cart {
     margin-top: 10px !important;
-    background-color: #16a085 !important;
+    background-color: #16a085;
     width: 100%;
     padding: 10px 16px !important;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 16px !important; 
+    font-weight: bold !important;
     text-transform: none;
     display: flex;
     justify-content: center;
@@ -149,7 +150,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    color:#625f71 !important;
+    color:#484654 !important;
 }
 
 /* ----------------------------------------------------------------- */
@@ -184,10 +185,11 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    
 }
 
 .cd-design-title {
-    font-weight: 100 !important;
+    font-weight: 600 !important;
     font-family: 'Urbanist', sans-serif !important;
     font-size: 16px !important;
     color: #2d4277 !important;
@@ -330,10 +332,6 @@
         padding: 30px 15px;
     }
 
-    .cd-price-box h3 {
-        font-size: 18px;
-    }
-
     .cd-deal-tag {
         font-size: 12px;
         padding: 3px 6px;
@@ -344,7 +342,7 @@
     }
 
     .cd-course-description {
-        font-size: 13px;
+        font-size: 16px !important;
         line-height: 1.5;
     }
 
@@ -372,5 +370,11 @@
 
     .cd-design-desc {
         font-size: 14px !important;
+    }
+
+    .cd-add-to-cart{
+        width: 80% !important;
+        margin-left: 10%!important;
+        margin-right: 10% !important;
     }
 }

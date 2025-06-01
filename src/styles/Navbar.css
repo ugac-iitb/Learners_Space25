@@ -49,6 +49,7 @@
     color: #f2bc00 !important;
     transform: translateY(-2px); /* Visual lift */
     cursor:pointer;
+    text-decoration: none !important;
 }
 
 .navbar-login{
@@ -67,6 +68,10 @@
 
 .navbar-logo{
     height: 160px !important;
+}
+
+.ugac-logo{
+    height: 100px !important;
 }
 
 .drawer-list {

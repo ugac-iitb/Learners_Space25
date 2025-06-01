@@ -17,7 +17,7 @@ const FAQ = () => {
     useEffect(()=>{
         if(FAQ_data) 
             setAccordionData(FAQ_data);
-    },[])
+    },[]);
 
     return (
         <div>

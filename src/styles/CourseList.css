@@ -1,96 +1,205 @@
-.banner-root {
-    position: relative;
-    background-color: #fcf8ef !important;
-    /* padding: 64px 16px; */
-    height:400px;
-    display:flex ;
+/* ---------------------- BANNER SECTION ---------------------- */
+
+.cl-banner-root {
+  position: relative;
+  background-color: #fcf8ef !important;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.cl-banner-title {
+  font-weight: 600 !important;
+  color: #1A1729 !important;
+  font-family: 'Urbanist', sans-serif !important;
+  font-size: clamp(28px, 6vw, 70px);
+  margin-top: 20px !important;
+  line-height: 1.2;
+}
+
+/* Decorative Icons */
+
+.cl-decor-icon {
+  position: absolute;
+  opacity: 0.6;
+}
+
+.cl-circle {
+  bottom: 10%;
+  left: 5%;
+  color: gold;
+  font-size: 40px;
+}
+
+.cl-zigzag {
+  top: 10%;
+  left: 15%;
+  color: #00aa99;
+  font-size: 40px;
+}
+
+.cl-blur {
+  top: 5%;
+  right: 5%;
+  color: #fbc02d;
+  font-size: 40px;
+}
+
+.cl-triangle {
+  bottom: 10%;
+  right: 10%;
+  color: purple;
+  font-size: 40px;
+  transform: rotate(45deg);
+}
+
+.cl-dots {
+  top: 45%;
+  left: 2%;
+  color: #ffca28;
+  font-size: 35px;
+}
+
+/* ---------------------- COURSE LIST SECTION ---------------------- */
+
+.cl-course-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  background-color: #fff !important;
+}
+
+.cl-course-list-subtitle {
+  font-family: 'Urbanist', sans-serif !important;
+  font-weight: 700 !important;
+  color: #F2BC00 !important;
+  font-size: clamp(14px, 2vw, 20px) !important;
+  margin-top: 10px !important;
+  text-align: center;
+}
+
+.cl-course-list-title {
+  font-family: 'Urbanist', sans-serif !important;
+  font-weight: 700 !important;
+  color: #1A1729 !important;
+  font-size: clamp(24px, 5vw, 55px) !important;
+  margin-top: 10px !important;
+  text-align: center;
+}
+
+.cl-course-list-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 60px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.course-card-item{
+  flex: 1 1 calc(50% - 24px);
+  max-width: calc(50% - 24px);
+  box-sizing: border-box;
+  min-width: 280px;
+}
+
+.cl-pagination {
+  margin-top: 40px;
+}
+
+/* ---------------------- RESPONSIVENESS ---------------------- */
+
+@media (max-width: 992px) {
+  .cl-banner-title {
+    font-size: 50px;
+  }
+
+  .cl-course-list-title {
+    font-size: 40px;
+  }
+
+  .cl-course-list-subtitle {
+    font-size: 18px;
+  }
+
+  .course-card-item{
+    max-width: calc(50% - 24px);
+  }
+}
+
+@media (max-width: 768px) {
+  .cl-banner-root {
+    height: 300px;
+    padding: 20px;
+  }
+
+  .cl-banner-title {
+    font-size: 36px;
+  }
+
+  .cl-course-list {
+    padding: 60px 20px;
+  }
+
+  .cl-course-list-title {
+    font-size: 32px;
+  }
+
+  .cl-course-list-subtitle {
+    font-size: 16px;
+  }
+
+  .cl-course-list-cards {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+    padding: 0 10px;
+  }
+
+  .course-card-item{
+    max-width: 100% !important;
+  }
+
+  .cl-pagination {
+    margin-top: 30px;
+  }
+
+  .cl-decor-icon {
+    display: none;
+  }
+
+  .course-card-item{
+    flex: 1 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+  }
 }
 
-.banner-title {
-    font-weight:600 !important;
-    color: #1A1729  !important;
-    font-family: 'Urbanist', sans-serif !important;
-    font-size: 70px  !important;
-    margin-top: 20px !important;
-}
+@media (max-width: 480px) {
+  
+  .course-card-container{
+    width: 100% !important;
+  }
 
-.decor-icon {
-    position: absolute;
-    opacity: 0.6;
-}
+  .course-card-item{
 
-.circle {
-    bottom: 10%;
-    left: 5%;
-    color: gold;
-    font-size: 40px;
-}
+    max-width: 100% !important;
+  }
+  .cl-banner-title {
+    font-size: 28px;
+  }
 
-.zigzag {
-    top: 10%;
-    left: 15%;
-    color: #00aa99;
-    font-size: 40px;
-}
+  .cl-course-list-title {
+    font-size: 26px;
+  }
 
-.blur {
-    top: 5%;
-    right: 5%;
-    color: #fbc02d;
-    font-size: 40px;
-}
-
-.triangle {
-    bottom: 10%;
-    right: 10%;
-    color: purple;
-    font-size: 40px;
-    transform: rotate(45deg);
-}
-
-.dots {
-    top: 45%;
-    left: 2%;
-    color: #ffca28;
-    font-size: 35px;
-}
-
-.course-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 120px;
-    background-color: #ffff !important;
-}
-
-.course-list-subtitle{
-    font-family: 'Urbanist', sans-serif !important;
-    font-weight: 700 !important;
-    color: #F2BC00 !important;
-    font-size: 20px !important;
-    margin-top: 10px !important;
-    text-align: center;
-}
-
-.course-list-title{
-    font-family: 'Urbanist', sans-serif !important;
-    font-weight: 700 !important;
-    color: #1A1729 !important;
-    font-size: 55px !important;
-    margin-top: 10px !important;
-    text-align: center;
-}
-
-.course-list-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 60px;
+  .cl-course-list-subtitle {
+    font-size: 14px;
+  }
 }

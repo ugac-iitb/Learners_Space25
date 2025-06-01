@@ -1,0 +1,151 @@
+.co-root {
+  padding: 60px 20px;
+  text-align: center;
+  
+}
+
+.co-heading {
+  color: #fbc02d;
+  font-weight: 600;
+  font-family: 'Urbanist', sans-serif !important;
+}
+
+.co-subheading {
+  color: #1a1729 !important;
+  font-family: 'Urbanist', sans-serif !important;
+  margin-top: 20px !important;
+  margin-bottom: 40px !important;
+}
+
+.co-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.co-profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  text-align: left;
+}
+
+.co-avatar {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: 5px solid transparent;
+}
+
+.co-profile-info {
+  flex: 1;
+}
+
+.co-name {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #1a1729;
+  font-family: 'Urbanist', sans-serif !important;
+  margin-bottom: 10px !important;
+}
+
+.co-role {
+  color: #fbc02d !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px;
+}
+
+.co-role-desc{
+  color: #f2bc00 !important;
+  font-family: 'Urbanist', sans-serif !important;
+  font-size: 18px !important;
+  margin-bottom: 5px !important;
+  margin-top: 0px !important;
+}
+
+.co-description {
+  color: #555;
+  margin-bottom: 15px;
+  font-family: 'Urbanist', sans-serif !important;
+
+}
+
+.co-contact{
+  margin-right: 10px !important;
+}
+
+
+@media (max-width: 768px) {
+  .co-cards-wrapper {
+    gap: 30px;
+  }
+
+  .co-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .co-avatar {
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .co-profile-info {
+    padding: 0 10px;
+  }
+
+  .co-name {
+    font-size: 24px !important;
+  }
+
+  .co-role-desc {
+    font-size: 16px !important;
+  }
+
+  .co-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .co-heading {
+    font-size:45px !important
+  }
+  
+  .co-subheading {
+    font-size: 18px !important;
+  }
+  
+  .co-avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .co-name {
+    font-size: 28px !important;
+  }
+
+  .co-role-desc {
+    font-size: 16px !important;
+  }
+
+  .co-description {
+    font-size: 16px !important;
+  }
+
+
+  .co-contact{
+    margin-right: 0px !important;
+  }
+
+
+}

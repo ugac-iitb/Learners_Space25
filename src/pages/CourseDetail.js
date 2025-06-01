@@ -16,6 +16,7 @@ import schoolData from '../data/SchoolInfo.json';
 import authSlice from '../store/authSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
+import { Add, Padding } from '@mui/icons-material';
 
 export default function CoursePage() {
     const baseURL = "http://127.0.0.1:8000/user/";
@@ -38,14 +39,27 @@ export default function CoursePage() {
     const [snackbarMessage, setSnackbarMessage] = useState('');
     const [snackbarSeverity, setSnackbarSeverity] = useState('success');
 
-    const school = schoolData.find(school => school["School ID"] === courseData["School ID"]);
+    const [isAdded,setIsAdded] = useState(AddedCourses.includes(id));
 
-    const isAdded = AddedCourses.includes(id);
+    const [school, setSchool] = useState(null);
 
     useEffect(() => {
         const val = CourseData.find(course => course["Course ID"] === id);
         setCourseData(val);
     }, [id]);
+
+    useEffect(() => {
+        if(courseData){
+            const schoolVal = schoolData.find(school => school["School ID"] == courseData["School ID"]);
+
+            if(schoolVal)
+                setSchool(schoolVal["School Name"]);
+
+            console.log(schoolVal);
+        }
+            
+       
+    }, [courseData]);
 
     const handleCardClick = (id) => {
         if (id === 'Overview') {
@@ -79,18 +93,27 @@ export default function CoursePage() {
                     },
                 });
 
-                console.log("Course added successfully:", res.data);
-                setSnackbarMessage("Course added successfully!");
-                setSnackbarSeverity("success");
-
-
                 dispatch(authSlice.actions.setCourses(courseId));
-                setSnackbarMessage("Course added to My Courses. Visit My Courses page to register.");
+                setSnackbarMessage("Course Registered Successfully!");
                 setSnackbarSeverity("success");
+
+                setIsAdded(true);
+
             } catch (error) {
                 console.error("Error adding course:", error);
-                setSnackbarMessage("Failed to add course. Please try again.");
-                setSnackbarSeverity("error");
+                
+                if(error.response && error.response.status == 401){
+                    console.log(error.response.status)
+                    setSnackbarMessage("Unauthorized. Please log in again.");
+                    setSnackbarSeverity("error");
+                    dispatch(authSlice.actions.logout());
+                    
+                }
+                else{
+                    setSnackbarMessage("Failed to add course. Please try again.");
+                    setSnackbarSeverity("error");
+                }
+                
             }
             setOpenSnackbar(true);
         }
@@ -100,6 +123,54 @@ export default function CoursePage() {
             setOpenSnackbar(true);
         }
     }
+
+    const handleRemoveClick = async () => {
+        if (courseData && courseData["Course ID"]) {
+        const courseId = courseData["Course ID"];
+        const token = selector.token;
+
+        console.log(token)
+
+        const data = {
+            courses: [courseId],
+        }
+
+        try {
+            const res = await axios.delete(baseURL+'courses/', {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+                data
+            });
+
+            setSnackbarMessage("Course De Registered Successfully!");
+            setSnackbarSeverity("success");
+
+            setIsAdded(false);
+
+        } catch (error) {
+            console.error("Error adding course:", error);
+            
+            if(error.response && error.response.status == 401){
+                console.log(error.response.status)
+                setSnackbarMessage("Unauthorized. Please log in again.");
+                setSnackbarSeverity("error");
+                dispatch(authSlice.actions.logout());
+                
+            }
+            else{
+                setSnackbarMessage("Failed to remove course. Please try again.");
+                setSnackbarSeverity("error");
+            }
+            
+        }
+        setOpenSnackbar(true);
+    }
+    else{
+        setSnackbarMessage("No course data available to register.");
+        setSnackbarSeverity("error");
+        setOpenSnackbar(true);
+    }}
     return (
         <div className="cd-course-page">
             <Box className="cd-banner-root">
@@ -118,7 +189,7 @@ export default function CoursePage() {
                 <div className="cd-course-content">
                     <div className="cd-course-left">
                         <img
-                            src={testImg}
+                            src={`${process.env.PUBLIC_URL}/data/images/card_desc/${courseData["Course ID"]}.png`}
                             alt="Course"
                             className="cd-course-image"
                         />
@@ -179,16 +250,20 @@ export default function CoursePage() {
 
                     <div className="cd-course-right">
                         <div className="cd-price-box">
-                            <Button disabled={isAdded} onClick={handleRegisterClick} variant="contained" className="cd-add-to-cart">
+                            {!isAdded && (<Button disabled={isAdded} onClick={handleRegisterClick} variant="contained" className="cd-add-to-cart">
                                 Register
-                            </Button>
+                            </Button>)}
+
+                            {isAdded && (<Button disabled={!isAdded} onClick={handleRemoveClick} variant="contained" className="cd-add-to-cart" sx={{backgroundColor:'red'}}>
+                                De Register
+                            </Button>)}
 
                             <div className="cd-course-details">
-                                {school && (
-                                    <p className='cd-price-content'><span className='cd-price-head'>School:</span> {school["School Name"]}</p>
-                                )}
+                                
+                                <p className='cd-price-content'><span className='cd-price-head'>School:</span> {school}</p>
+                                
                                 <Divider className='cd-divider' />
-                                <p className='cd-price-content'><span className='cd-price-head'>Club:</span> {courseData["Club"]}</p>
+                                <p className='cd-price-content'><span className='cd-price-head'>Student Body:</span> <span style={{paddingLeft:"20%"}}>{courseData["Club"]} </span> </p>
                                 <Divider className='cd-divider' />
                                 <p className='cd-price-content'><span className='cd-price-head'>Time:</span> {courseData["Week_time"]} per week</p>
                             </div>

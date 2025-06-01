@@ -18,6 +18,21 @@ const CustomAccordion = ({ index, expandedIndex, setExpandedIndex, title, conten
     setExpandedIndex(isExpanded ? null : index);
   };
 
+  const decodeUnicode = (str) => {
+    try {
+        return JSON.parse(`"${str}"`);
+    } catch (e) {
+        return str;
+    }
+  };
+
+  const renderParagraphs = (raw) => {
+      const decoded = decodeUnicode(raw || "");
+      return decoded.split("\n").map((line, i) => (
+          <p key={i} className="cd-course-description">{line}</p>
+      ));
+  };
+
   return (
     <Accordion expanded={isExpanded} onChange={handleChange} className='custom-accordion'>
       <AccordionSummary
@@ -31,7 +46,7 @@ const CustomAccordion = ({ index, expandedIndex, setExpandedIndex, title, conten
         <Typography className="accordion-title">{title}</Typography>
       </AccordionSummary>
       <AccordionDetails className="accordion-details">
-        <Typography>{content}</Typography>
+        <Typography>{renderParagraphs(content)}</Typography>
       </AccordionDetails>
     </Accordion>
   );
