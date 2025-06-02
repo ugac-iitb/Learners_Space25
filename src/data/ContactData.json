@@ -22,5 +22,21 @@
         "position":"Academic Coordinator, Career Cell",
         "contact":"6394872284",
         "img":"/data/images/contact/syed.png"
+    },
+    {
+        "name":"Tanish Kharbanda",
+        "position":"Academic Coordinator, Career Cell",
+        "contact":"7385538716",
+        "img":"/data/images/contact/Tanish.png"
+    },
+    {
+        "name":"Shrey Aggarwal",
+        "position":"Web Heads, UGAC",
+        "img": "/data/images/contact/shrey.jpeg"
+    },
+    {
+        "name":"Abhijat Bharadwaj",
+        "position":"Web Heads, UGAC",
+        "img": "/data/images/contact/abhijat.jpeg"
     }
 ]

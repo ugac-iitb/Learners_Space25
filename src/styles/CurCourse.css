@@ -21,29 +21,47 @@
   }
   
   .cd-header-cell {
-    font-weight: bold;
+    font-weight: bold !important;
     background-color: #fcf8ef;
     color: #333;
     font-family: 'Urbanist', sans-serif !important;
-    font-size:20px;
+    font-size:20px !important;
   }
   
   .cd-week-cell {
-    font-weight: 500;
+    font-weight: 800  !important;
     font-family: 'Urbanist', sans-serif !important;
     color: #2c3e50 !important;
+    font-size: 20px !important;
   }
   
   .cd-content-cell {
     font-family: 'Urbanist', sans-serif !important;
     color: black !important;
     line-height: 1.3 !important;
-    white-space: pre-wrap; 
+    white-space: pre-wrap !important; 
+    font-size:20px !important;
+    padding-left: 30px !important;
   }
 
   @media screen and (max-width: 480px){
+
+    .cd-Cur-main{
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
     .cd-content-cell{
+      
       font-size: 16px !important;
     }
+
+    .cd-content-cell {
+      
+      line-height: 1.3 !important;
+      white-space: pre-wrap !important; 
+      font-size:18px !important;
+      padding-left: 0px !important;
+    }
+  
   }
   

@@ -24,7 +24,7 @@ const FooterComp = () => {
       <Box className="footer-container">
         {/* About Section */}
         <Box className="footer-about">
-          <Typography variant="h5" className="footer-title">Learners Space</Typography>
+          <Typography variant="h5" className="footer-title">Learners' Space</Typography>
           <Typography className="footer-text">
           This edition of Learners' Space brings to you carefully curated courses and the chance to upskill and learn various topics catering to the taste of students today!
           </Typography>

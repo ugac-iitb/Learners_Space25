@@ -31,7 +31,7 @@ const SchoolList = () => {
 
                 {/* Title and breadcrumb */}
                 <Typography variant="h2" className="banner-title">
-                    Course
+                    Courses
                 </Typography>
             </Box>
             <Box className="course-list">

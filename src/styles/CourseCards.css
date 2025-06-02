@@ -59,8 +59,8 @@
 }
 
 .author-name {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 600 !important;
+  font-size: 18px   !important;
   color:#1a1729 !important;
 }
 
@@ -72,12 +72,13 @@
 }
 
 .course-description {
-  font-size: 18px !important;
-  color: #333;
+  font-size: 19px !important;
+  color: #282828;
   overflow: hidden;
   max-height: 60px;
   transition: max-height 0.3s ease;
   line-height: 1.5;
+  font-weight: 500 !important;
 }
 
 .course-description.expanded {
@@ -157,5 +158,11 @@
 
   .course-description {
     font-size: 15px !important;
+  }
+
+  .author-name {
+    font-weight: 600 !important;
+    font-size: 15px   !important;
+    color:#1a1729 !important;
   }
 }

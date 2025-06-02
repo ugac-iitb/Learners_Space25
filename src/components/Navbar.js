@@ -96,11 +96,11 @@ const Navbar = () => {
         <AppBar position="static" className="navbar">
             <Toolbar className='navbar-toolbar' >
                 {/* <IconButton edge="start" color="inherit" aria-label="logo"> */}
-                    <img src={UGACLogo} alt="Career Cell Logo" className='ugac-logo' />
+                    {/* <img src={UGACLogo} alt="Career Cell Logo" className='ugac-logo' /> */}
                     <img src={CareerCellLgo} alt="Career Cell Logo" className='navbar-logo' />
                 {/* </IconButton> */}
                 <Typography variant="h6" component="div" className="navbar-title">
-                    Learners Space
+                    Learners' Space
                 </Typography>
 
                 {isMobile ? (
@@ -116,7 +116,7 @@ const Navbar = () => {
                     </>
                 ) : (
                     <>
-                        <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+                        <Box className="nv-buttons" sx={{ flexGrow: 1, display: 'flex', justifyContent: 'right' }}>
                             <Link to="/" className="navbar-button">Home</Link>
                             <Link to="/Schools" className="navbar-button">Courses</Link>
                             <Link to="/FAQ" className="navbar-button">FAQ</Link>

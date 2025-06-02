@@ -16,7 +16,7 @@ const OvCourse = ({ courseData }) => {
   
     return (
       <div className="cd-Ov-main">
-        <h2>{decodeUnicode(courseData["Course Name"])}</h2>
+        <h2 className="cd-course-name">{decodeUnicode(courseData["Course Name"])}</h2>
   
         <h3>Description</h3>
         {renderParagraphs(courseData["Desc"])}

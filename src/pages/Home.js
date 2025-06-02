@@ -9,8 +9,14 @@ import homeCardData from "../data/HomeCards.json";
 import HomeCards from "../components/HomeCards";
 import { useNavigate } from "react-router-dom";
 
+import itcLogo from "../data/images/ITC.png";
+import iccLogo from "../data/images/ICC.png";
+import iscLogo from "../data/images/ISC.png";
+import ugacLogo from "../data/images/ugac.png";
+import { Grid } from "@mui/material";
+
 const HomePage = () => {
-    const aboutText = "Learners Space is an online platform with a set of diverse courses for you to start exploring various topics propagated by student bodies across the institute. We bring to you a plethora of courses, all made with utmost attention to help serve you the best! In this 9th edition of Learners Space, we are back bigger and better, with 40+ courses spread across 6 schools, being offered by 25+ student bodies. The courses will be spread out over a few weeks, each week building your skills even more. Go through the courses section of the website to explore the topics in detail. We have received an enormous amount of participation in the past few years and this time, we hope to see you too!";
+    const aboutText = "Learners' Space is an online platform with a set of diverse courses for you to start exploring various topics propagated by student bodies across the institute. We bring to you a plethora of courses, all made with utmost attention to help serve you the best! In this 9th edition of Learners' Space, we are back bigger and better, with 40+ courses spread across 6 schools, being offered by 25+ student bodies. The courses will be spread out over a few weeks, each week building your skills even more. Go through the courses section of the website to explore the topics in detail. We have received an enormous amount of participation in the past few years and this time, we hope to see you too!";
 
     const navigate = useNavigate();
 
@@ -45,6 +51,26 @@ const HomePage = () => {
                 </div>
             </section>
 
+            <section className="home-collab-section">
+                <h1 className="collab-heading">
+                    In Collaboration With
+                </h1>
+                <Grid container className="collab-grid">
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={ugacLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" style={{backgroundColor:"black"}} src={itcLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo"  src={iccLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={iscLogo} alt="" />
+                    </Grid>
+                </Grid>
+            </section>
+
             <section className="home-cards-section">
                 {homeCardData.map((data, index) => (
                     <HomeCards key={index} title={data.title} description={data.desc} index={index} />
@@ -67,7 +93,7 @@ const HomePage = () => {
                 </div>
                 {/* Text Content */}
                 <div className="about-text">
-                    <h6 className="about-subheading">About Learners Space</h6>
+                    <h6 className="about-subheading">About Learners' Space</h6>
                     <h1 className="about-heading">
                     Explore. Evolve. Excel.
                         {/* <span className="highlight">Experience</span> with <span className="bold">Eduko.</span> */}

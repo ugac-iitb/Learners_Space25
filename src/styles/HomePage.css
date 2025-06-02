@@ -160,6 +160,22 @@
     width:"25%";
 }
 
+.collab-heading {
+    font-size: 24px !important;
+    text-align: center;
+  }
+
+  .collab-logo {
+    max-height: 50px;
+    width: auto;
+
+  }
+
+  .collab-grid-item {
+    padding: 8px;
+    margin: 0 auto;
+  }
+
 /*---------------------- Responsive Styles -----------*/
 @media (min-width: 480px) {
     .about-image {
@@ -172,19 +188,18 @@
     }
 
     .about-subtext {
-        font-size: 18px !important;
+        font-size: 22px !important;
     }
-
 
     .about-heading {
         font-size: 40px !important;
     }
 
     .about-section {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 48px 64px;
-        text-align: left;
+        flex-direction: row !important;
+        justify-content: space-between  !important;
+        padding: 48px 64px !important;
+        text-align: left  !important;
     }
 
     .hero-image {
@@ -197,7 +212,7 @@
     }
 
     .hero-subtext {
-        font-size: 20px !important;
+        font-size: 22px !important;
     }
 
     .hero-section {
@@ -210,4 +225,43 @@
     .hero-heading {
         font-size: 67px !important;
     }
+
+    .home-collab-section {
+        padding: 60px 20px;
+        background-color: #ffffff;
+        text-align: center;
+        padding-top:10px;
+      }
+      
+    .collab-grid {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .collab-heading{
+        font-family: 'Urbanist', sans-serif !important;
+        font-size: 40px !important;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 40px;
+    }
+    
+    .collab-grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+    .collab-logo {
+        max-height: 200px;
+        max-width: 100%;
+    }
+    
+    .collab-logo:hover {
+    opacity: 1;
+    }
+      
 }

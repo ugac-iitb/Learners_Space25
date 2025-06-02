@@ -51,11 +51,12 @@
 }
 
 .design-desc {
-    color: #625F71 !important;
+    color: #4e4c58 !important;
     font-family: 'Urbanist', sans-serif !important;
     font-size: 19px !important;
     margin-bottom: 20px !important;
     justify-content: center;
+    font-weight: 500 !important;
 }
 
 .design-card:hover .design-title,

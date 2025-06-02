@@ -98,15 +98,24 @@
     max-width: 100%; /* Ensure it doesn't overflow */
 }
 
+.cd-Ov-main{
+    font-size: 28px !important;
+}
+
+.cd-course-name{
+    font-size: 50px !important;
+}
+
 .cd-course-description {
-    color: #555;
-    font-size: 20px !important;
+    color: #303030 !important;
+    font-size: 22px !important;
     line-height: 1.6;
     margin: 15px 0;
-    white-space: normal;          /* Allow wrapping */
-    word-break: break-word;       /* Prevent overflow */
-    overflow-wrap: break-word;    /* Fallback for older browsers */
-    text-align: justify;          /* Even out line endings */
+    white-space: normal !important;          
+    word-break: break-word !important;        
+    overflow-wrap: break-word !important;    
+    text-align: justify !important;       
+    font-weight: 500 !important;   
 }
 
 
@@ -134,7 +143,7 @@
     background-color: #16a085;
     width: 100%;
     padding: 10px 16px !important;
-    font-size: 16px !important; 
+    font-size: 20px !important; 
     font-weight: bold !important;
     text-transform: none;
     display: flex;
@@ -146,11 +155,11 @@
 }
 
 .cd-course-details p {
-    font-size: 16px;
+    font-size: 20px !important;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    color:#484654 !important;
+    margin-top: 20px !important;
+    color:#393843 !important;
 }
 
 /* ----------------------------------------------------------------- */
@@ -324,12 +333,27 @@
 }
 
 @media screen and (max-width: 480px) {
+    .cd-course-page {
+        padding: 10px 5px !important;
+        font-family: 'Urbanist', sans-serif;
+        background-color: #fefefe;
+    }
+
     .cd-banner-title {
         font-size: 28px !important;
     }
 
     .cd-course-content {
         padding: 30px 15px;
+    }
+
+    .cd-Ov-main{
+        font-size: 20px !important;
+    }
+    
+    .cd-course-name{
+        font-size: 28px !important;
+        text-align: center !important;
     }
 
     .cd-deal-tag {
@@ -342,12 +366,13 @@
     }
 
     .cd-course-description {
-        font-size: 16px !important;
-        line-height: 1.5;
+        color: #303030;
+        font-size: 18px !important;
+        line-height: 1.6;
     }
 
     .cd-course-details p {
-        font-size: 13px;
+        font-size: 18px !important;
     }
 
     .cd-tab-buttons {
