@@ -49,7 +49,7 @@ const CourseList = () => {
         <GrainIcon className="cl-decor-icon cl-dots" />
 
         <Typography variant="h2" className="cl-banner-title">
-          Course
+          Courses
         </Typography>
       </Box>
 

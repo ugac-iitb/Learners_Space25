@@ -55,15 +55,19 @@ const HomePage = () => {
                 <h1 className="collab-heading">
                     In Collaboration With
                 </h1>
+
+                <p className="collab-subtext">
+                Brought to you by the Career Cell in collaboration with the student bodies of UGAC, ITC, ISC, and ICC, Department Councils (EESA, SAPD, Economics Association), Tech Teams (SHUNYA, Zero Waste, iGEM and ChemECA), ELP, EnB Club and the Sustainability Cell.
+                </p>
                 <Grid container className="collab-grid">
                     <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
                         <img className="collab-logo" src={ugacLogo} alt="" />
                     </Grid>
                     <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
-                        <img className="collab-logo" style={{backgroundColor:"black"}} src={itcLogo} alt="" />
+                        <img className="collab-logo" style={{height:"140px"}} src={itcLogo} alt="" />
                     </Grid>
                     <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
-                        <img className="collab-logo"  src={iccLogo} alt="" />
+                        <img className="collab-logo" style={{height:"140px"}} src={iccLogo} alt="" />
                     </Grid>
                     <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
                         <img className="collab-logo" src={iscLogo} alt="" />

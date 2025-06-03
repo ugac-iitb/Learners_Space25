@@ -17,7 +17,8 @@ import {
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const baseURL = 'http://localhost:8000/user/signup/';
+const baseURL = process.env.REACT_APP_baseURL;
+
 
 const Signup = () => {
   const [error, setError] = useState(null);
@@ -29,7 +30,7 @@ const Signup = () => {
       const { confirm_password, ...formData } = values; // Remove confirm_password before sending
 
       console.log(formData);
-      const res = await axios.post(baseURL, formData);
+      const res = await axios.post(baseURL+'user/signup/', formData);
       console.log(res.data);
       navigate('/SignIn');
       // Redirect or display success message here

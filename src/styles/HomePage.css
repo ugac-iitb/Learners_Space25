@@ -165,6 +165,14 @@
     text-align: center;
   }
 
+.collab-subtext{
+    font-size: 17px !important;
+    color: #4b5563;
+    width:100%;
+    
+    font-family: 'Urbanist', sans-serif !important;
+    text-align: center;
+}
   .collab-logo {
     max-height: 50px;
     width: auto;
@@ -262,6 +270,16 @@
     
     .collab-logo:hover {
     opacity: 1;
+    }
+
+    .collab-subtext{
+        font-size: 20px !important;
+        color: #4b5563;
+        margin-top: 8px;
+        text-align: center;
+        width:70%;
+        margin-left: 15%; 
+        margin-right: 15%;
     }
       
 }

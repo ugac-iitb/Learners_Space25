@@ -71,7 +71,7 @@ const Contact = () => {
                 </Typography>
                 <Typography className="co-role">{renderParagraphs(person.position)}</Typography>
                 <Typography variant="body2" className="co-description">
-                  <span className="co-contact">Contact Number: </span> <span>{person.contact}</span>   
+                  {person.contact && (<><span className="co-contact">Contact Number: </span> <span>{person.contact}</span></>  )} 
                 </Typography>
                 
               </Box>

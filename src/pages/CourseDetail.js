@@ -19,7 +19,7 @@ import axios from 'axios';
 import { Add, Padding } from '@mui/icons-material';
 
 export default function CoursePage() {
-    const baseURL = "http://127.0.0.1:8000/user/";
+    const baseURL = process.env.REACT_APP_baseURL;
 
     const dispatch = useDispatch();
 
@@ -55,7 +55,6 @@ export default function CoursePage() {
             if(schoolVal)
                 setSchool(schoolVal["School Name"]);
 
-            console.log(schoolVal);
         }
             
        
@@ -87,7 +86,7 @@ export default function CoursePage() {
             }
 
             try {
-                const res = await axios.post(baseURL+'courses/',data, {
+                const res = await axios.post(baseURL+'user/courses/',data, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -129,14 +128,13 @@ export default function CoursePage() {
         const courseId = courseData["Course ID"];
         const token = selector.token;
 
-        console.log(token)
 
         const data = {
             courses: [courseId],
         }
 
         try {
-            const res = await axios.delete(baseURL+'courses/', {
+            const res = await axios.delete(baseURL+'user/courses/', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

@@ -5,14 +5,11 @@ import testImg from '../data/images/img.png'
 const InsCourse = ({courseData}) => {
     const ContactInfo = courseData["Contact info"];
 
-    console.log(ContactInfo)
-
     const contacts = Array.from(ContactInfo.matchAll(/([^,]+?)\s*\(([^)]+)\)/g)).map(match => ({
         name: match[1].trim(),
         phone: match[2].trim(),
     }));
       
-    console.log(contacts);
     return ( 
         <Box className="cd-profile-container">
             <img

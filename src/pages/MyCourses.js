@@ -23,9 +23,8 @@ const MyCourses = () => {
 
     const token = useSelector((state) => state.auth.token);
 
-    const dataURL = `${baseURL}/user/courses/`;
+    const dataURL = `${baseURL}user/courses/`;
 
-    console.log(dataURL);
     const [school, setSchool] = useState({});
     const [courseData,setCourseData] = useState([]);
 
@@ -40,7 +39,6 @@ const MyCourses = () => {
                 if (response.status === 200) {
                     const cours_keys = response.data['courses'];
                     const filteredCourses = courses.filter(course => cours_keys.includes(course["Course ID"]));
-                    console.log(filteredCourses);
                     setCourseData(filteredCourses);
 
                 }

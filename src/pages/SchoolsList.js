@@ -14,8 +14,6 @@ const SchoolList = () => {
 
     useEffect(() => {
         setSchoolDetails(schoolData);
-
-        console.log(schoolData)
     }
     , []);
 

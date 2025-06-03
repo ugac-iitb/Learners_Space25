@@ -18,7 +18,7 @@ import {
   Divider,
 } from '@mui/material';
 
-const baseURL = "http://localhost:8000/user/";
+const baseURL = process.env.REACT_APP_baseURL;
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -30,7 +30,7 @@ const Login = () => {
 
     try {
 
-      const res = await axios.post(baseURL+'login/', values);
+      const res = await axios.post(baseURL+'user/login/', values);
       dispatch(authSlice.actions.setAuthTokens({ token: res.data.tokens.access }));
       dispatch(authSlice.actions.setAccount({
         username:values.roll_no,
@@ -38,13 +38,11 @@ const Login = () => {
       }))
 
       try{
-        const userCourses = await axios.get(baseURL + 'courses/', {
+        const userCourses = await axios.get(baseURL + 'user/courses/', {
           headers: {
             Authorization: `Bearer ${res.data.tokens.access}`,
           },
         });
-
-        console.log(userCourses.data);
         
         dispatch(authSlice.actions.setCourses(userCourses.data.courses));
       } catch (err) {
