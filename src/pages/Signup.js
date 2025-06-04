@@ -134,7 +134,7 @@ const Signup = () => {
         <TextField
           select
           fullWidth
-          label="Year of Study (in 2025)"
+          label="Year of Study (in Autumn 2025)"
           name="year_of_study"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
