@@ -60,7 +60,10 @@ const Signup = () => {
     },
     validationSchema: Yup.object({
       roll_no: Yup.string().required('Roll No. is required'),
-      ldap_id: Yup.string().email("Not a valid LDAP ip").required('LDAP ID is required'),
+      ldap_id: Yup.string()
+                  .email("Not a valid email")
+                  .matches(/^[a-zA-Z0-9._%+-]+@iitb\.ac\.in$/, "Not a valid IITB LDAP ID")
+                  .required("LDAP ID is required"),
       password: Yup.string().required('Password is required'),
       confirm_password: Yup.string()
         .oneOf([Yup.ref('password'), null], 'Passwords must match')
@@ -190,6 +193,8 @@ const Signup = () => {
         >
           SIGN UP
         </Button>
+        
+        {/* <a href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=YOUR_CLIENT_ID&response_type=code&scope=basic&redirect_uri=REDIRECT_URI&state=some_state">SSO</a> */}
       </form>
     </Box>
   );
