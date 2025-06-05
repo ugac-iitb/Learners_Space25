@@ -1,7 +1,7 @@
 {
   "name": "ls_2025",
   "version": "0.1.0",
-  "homepage": "https://shrey312003.github.io/ls25_test",
+  "homepage": "https://shrey312003.github.io/ls25_test/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
