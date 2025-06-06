@@ -29,7 +29,6 @@ const Navbar = () => {
         setDrawerOpen(open);
     };
 
-
     const dispatch = useDispatch();
 
     const handleLogout = () => {
@@ -37,12 +36,24 @@ const Navbar = () => {
         console.log("User logged out");
     }
 
-
     const navigate = useNavigate();
 
     const handleLoginClick = () => {
-        navigate('/SignIn');
+        navigate({ pathname: '/SignIn' }, { replace: true });
     }
+
+    const CLIENT_ID = '4KyHuzDgtD3gRt69egQDlBzTF9i4JQWq2O7ByTJl';
+    const authURL = `https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=${CLIENT_ID}&response_type=code&scope=ldap`;
+
+    const handleSSO = () => {
+        window.location.href = authURL;
+    }
+
+    const clearQueryAndNavigate = (path) => {
+        const hash = `#${path}`;
+        window.location.href = `${window.location.origin}${window.location.pathname}${hash}`;
+    };
+
 
     const drawerContent = (
         <Box
@@ -57,48 +68,55 @@ const Navbar = () => {
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
         >
-                <Box
-                    onClick={toggleDrawer(false)}
-                    onKeyDown={toggleDrawer(false)}
-                    className="drawer-list"
-                    role="presentation"
-                >
-                    <List>
-                        {linkList.map((text, index) => (
-                            <ListItem key={index} disablePadding component={Link} to={text.path} className="drawer-item">
-                                <ListItemText primary={text.text} slotProps={{ component: 'div' }} />
-                            </ListItem>
-                        ))}
+            <Box
+                onClick={toggleDrawer(false)}
+                onKeyDown={toggleDrawer(false)}
+                className="drawer-list"
+                role="presentation"
+            >
+                <List>
+                    {linkList.map((text, index) => (
+                        <ListItem
+                            key={index}
+                            disablePadding
+                            component={Link}
+                            to={{ pathname: text.path }}
+                            className="drawer-item"
+                        >
+                            <ListItemText primary={text.text} slotProps={{ component: 'div' }} />
+                        </ListItem>
+                    ))}
 
-                        {isAuthenticated && (
-                            <ListItem disablePadding component={Link} to="/MyCourses" className="drawer-item">
-                                <ListItemText primary="My Courses" slotProps={{ component: 'div' }} />
-                            </ListItem>
-                        )}
+                    {isAuthenticated && (
+                        <ListItem
+                            disablePadding
+                            component={Link}
+                            to={{ pathname: "/MyCourses" }}
+                            className="drawer-item"
+                        >
+                            <ListItemText primary="My Courses" slotProps={{ component: 'div' }} />
+                        </ListItem>
+                    )}
 
-                        {!isAuthenticated && (
-                            <ListItem disablePadding onClick={handleLoginClick} className="drawer-item">
-                                <ListItemText primary="Sign In" slotProps={{ component: 'div' }} />
-                            </ListItem>
-                        )}
-                        {isAuthenticated && (
-                            <ListItem disablePadding onClick={handleLogout} className="drawer-item">
-                                <ListItemText primary="Logout" slotProps={{ component: 'div' }} />
-                            </ListItem>
-                        )}
-                    </List>
-                </Box>
+                    {!isAuthenticated && (
+                        <ListItem disablePadding onClick={handleLoginClick} className="drawer-item">
+                            <ListItemText primary="Sign In" slotProps={{ component: 'div' }} />
+                        </ListItem>
+                    )}
+                    {isAuthenticated && (
+                        <ListItem disablePadding onClick={handleLogout} className="drawer-item">
+                            <ListItemText primary="Logout" slotProps={{ component: 'div' }} />
+                        </ListItem>
+                    )}
+                </List>
+            </Box>
         </Box>
     );
-    
 
     return (
         <AppBar position="static" className="navbar">
             <Toolbar className='navbar-toolbar' >
-                {/* <IconButton edge="start" color="inherit" aria-label="logo"> */}
-                    {/* <img src={UGACLogo} alt="Career Cell Logo" className='ugac-logo' /> */}
-                    <img src={CareerCellLgo} alt="Career Cell Logo" className='navbar-logo' />
-                {/* </IconButton> */}
+                <img src={CareerCellLgo} alt="Career Cell Logo" className='navbar-logo' />
                 <Typography variant="h6" component="div" className="navbar-title">
                     Learners' Space
                 </Typography>
@@ -117,12 +135,16 @@ const Navbar = () => {
                 ) : (
                     <>
                         <Box className="nv-buttons" sx={{ flexGrow: 1, display: 'flex', justifyContent: 'right' }}>
-                            <Link to="/" className="navbar-button">Home</Link>
-                            <Link to="/Schools" className="navbar-button">Courses</Link>
-                            <Link to="/FAQ" className="navbar-button">FAQ</Link>
-                            <Link to="/Contact" className="navbar-button">Contact Us</Link>
-                            {isAuthenticated&&(<Link to="/MyCourses" className="navbar-button">My Courses</Link>)}
+                            <Button onClick={() => clearQueryAndNavigate('/')} className="navbar-button">Home</Button>
+                            <Button onClick={() => clearQueryAndNavigate('/Schools')} className="navbar-button">Courses</Button>
+                            <Button onClick={() => clearQueryAndNavigate('/FAQ')} className="navbar-button">FAQ</Button>
+                            <Button onClick={() => clearQueryAndNavigate('/Contact')} className="navbar-button">Contact Us</Button>
+                            {isAuthenticated && (
+                                <Button onClick={() => clearQueryAndNavigate('/MyCourses')} className="navbar-button">My Courses</Button>
+                            )}
                         </Box>
+
+                        {(<Button onClick={() => handleSSO()} className='navbar-login'>SSO</Button>)}
                         {!isAuthenticated && (<Button onClick={() => handleLoginClick()} className='navbar-login'>Sign In</Button>)}
                         {isAuthenticated && (<Button onClick={() => handleLogout()} className='navbar-login'>Logout</Button>)}
                     </>

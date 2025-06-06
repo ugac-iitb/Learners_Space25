@@ -24,6 +24,7 @@ const Signup = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
+
   const onSubmit = async (values, actions) => {
     setError(null);
     try {
@@ -47,6 +48,8 @@ const Signup = () => {
     }
     actions.setSubmitting(false);
   };
+
+  
 
   const formik = useFormik({
     initialValues: {
@@ -192,6 +195,10 @@ const Signup = () => {
           disabled={formik.isSubmitting}
         >
           SIGN UP
+        </Button>
+
+        <Button onClick={()=>handleSSO()}>
+          SSO
         </Button>
         
         {/* <a href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=YOUR_CLIENT_ID&response_type=code&scope=basic&redirect_uri=REDIRECT_URI&state=some_state">SSO</a> */}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/HomePage.css";
 
 // import homeImg from "../data/images/HomePage.png"
@@ -7,22 +7,59 @@ import AboutIng from "../data/images/about-home.webp";
 import AboutImgBg from "../data/images/aboutImgBg.png"
 import homeCardData from "../data/HomeCards.json";
 import HomeCards from "../components/HomeCards";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 import itcLogo from "../data/images/ITC.png";
 import iccLogo from "../data/images/ICC.png";
 import iscLogo from "../data/images/ISC.png";
 import ugacLogo from "../data/images/ugac.png";
 import { Grid } from "@mui/material";
+import axios from "axios";
 
 const HomePage = () => {
     const aboutText = "Learners' Space is an online platform with a set of diverse courses for you to start exploring various topics propagated by student bodies across the institute. We bring to you a plethora of courses, all made with utmost attention to help serve you the best! In this 9th edition of Learners' Space, we are back bigger and better, with 40+ courses spread across 6 schools, being offered by 25+ student bodies. The courses will be spread out over a few weeks, each week building your skills even more. Go through the courses section of the website to explore the topics in detail. We have received an enormous amount of participation in the past few years and this time, we hope to see you too!";
 
     const navigate = useNavigate();
 
+    const sso_code = new URLSearchParams(window.location.search).get("code");
+
     const handleClick = () => {
         navigate("/Schools");
     }
+
+    const AUTHENTICATION_TOKEN = '17xaGhlTwmxMJcbmkYp6xNojsmDpYJLuQoK144DhgueqCUwrFw2SZQgTZLbQrzFwYE6sv74I1NLtuIiwAPyzu5ssNTQarKwMQ4QGQByOdOSCPH67WAFPsNeGL1gLajDC';
+
+    useEffect(()=>{
+        const generateSSOToken = async(code) =>{
+            try {
+                    const response = await axios.post(
+                        "https://gymkhana.iitb.ac.in/profiles/oauth/token/",
+                        new URLSearchParams({
+                            code: code,
+                            grant_type: 'authorization_code',
+                            redirect_uri: 'http://localhost:3000/ls25_test',
+                        }),
+                        {
+                            headers: {
+                            'Authorization': `Basic ${AUTHENTICATION_TOKEN}`,
+                            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                            }
+                        }
+                    )
+                    console.log("SSO Token Response: ", response.data);
+                    
+            } catch (error) {
+                console.error("Error generating SSO token: ", error);
+                alert("Error generating SSO token. Please try again later.");   
+            }
+        }
+
+        if(sso_code){
+            generateSSOToken(sso_code);
+        }
+    },[]);
+
+
     return ( 
         <div>
             <section className="hero-section">
