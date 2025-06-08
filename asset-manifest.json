@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Learners_Space25/static/css/main.b0e54cf7.css",
-    "main.js": "/Learners_Space25/static/js/main.7c08ae3c.js",
+    "main.js": "/Learners_Space25/static/js/main.7ee97110.js",
     "static/media/ICC.png": "/Learners_Space25/static/media/ICC.25167e37bb17609e929e.png",
     "static/media/img.png": "/Learners_Space25/static/media/img.1662c271e466d8672f12.png",
     "static/media/ugac.png": "/Learners_Space25/static/media/ugac.aab971f0fea296b2ca32.png",
@@ -14,10 +14,10 @@
     "static/media/ISC.png": "/Learners_Space25/static/media/ISC.a9f661137a7faf232c54.png",
     "index.html": "/Learners_Space25/index.html",
     "main.b0e54cf7.css.map": "/Learners_Space25/static/css/main.b0e54cf7.css.map",
-    "main.7c08ae3c.js.map": "/Learners_Space25/static/js/main.7c08ae3c.js.map"
+    "main.7ee97110.js.map": "/Learners_Space25/static/js/main.7ee97110.js.map"
   },
   "entrypoints": [
     "static/css/main.b0e54cf7.css",
-    "static/js/main.7c08ae3c.js"
+    "static/js/main.7ee97110.js"
   ]
 }
