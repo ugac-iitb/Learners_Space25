@@ -112,13 +112,13 @@ const Login = () => {
           LOGIN
         </Button>
 
-        <Typography variant="body2" align="center" className="lg-signup-link">
+        {/* <Typography variant="body2" align="center" className="lg-signup-link">
           Don’t have an account? <Link to="/Signup">Create account</Link>
         </Typography>
 
         <Typography variant="body2" align="center" className="lg-signup-link">
           <a href="https://forms.gle/Cfw46uP8Vj9qjwUG7">Forgot Password</a>
-        </Typography>
+        </Typography> */}
       </form>
     </Box>
   );

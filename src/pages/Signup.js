@@ -18,6 +18,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 
 const baseURL = process.env.REACT_APP_baseURL;
+console.log(baseURL);
 
 
 const Signup = () => {

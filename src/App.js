@@ -28,7 +28,7 @@ function App() {
           <Route path="/Schools/:id" element={<CourseList />} />
           <Route path="/Course" element={<CoursePage />} />
           <Route path="/SignIn" element={<Login />} />
-          <Route path="/Signup" element={<Signup />} />
+          {/* <Route path="/Signup" element={<Signup />} /> */}
           <Route path="/MyCourses" element={<PrivateRoute><MyCourses /></PrivateRoute>} />
         </Routes>
         <FooterComp />
