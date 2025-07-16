@@ -121,6 +121,7 @@ const Navbar = () => {
                             <Link to="/Schools" className="navbar-button">Courses</Link>
                             <Link to="/FAQ" className="navbar-button">FAQ</Link>
                             <Link to="/Contact" className="navbar-button">Contact Us</Link>
+                            <Link to="/Certificates" className="navbar-button">Certificates</Link>
                             {isAuthenticated&&(<Link to="/MyCourses" className="navbar-button">My Courses</Link>)}
                         </Box>
                         {!isAuthenticated && (<Button onClick={() => handleLoginClick()} className='navbar-login'>Sign In</Button>)}

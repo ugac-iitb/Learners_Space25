@@ -13,6 +13,7 @@ import Signup from "./pages/Signup";
 import MyCourses from "./pages/MyCourses";
 import PrivateRoute from "./assets/PrivateRoute";
 import ScrollToTop from "./assets/ScrollToTop";
+import CertificatePage from "./pages/CertificatePage";
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
           <Route path="/Schools/:id" element={<CourseList />} />
           <Route path="/Course" element={<CoursePage />} />
           <Route path="/SignIn" element={<Login />} />
-          {/* <Route path="/Signup" element={<Signup />} /> */}
+          <Route path="/Signup" element={<Signup />} />
           <Route path="/MyCourses" element={<PrivateRoute><MyCourses /></PrivateRoute>} />
+          <Route path="/Certificates" element={<PrivateRoute><CertificatePage/></PrivateRoute>}/>
         </Routes>
         <FooterComp />
       </HashRouter>
