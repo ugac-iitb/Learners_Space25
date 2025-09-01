@@ -135,13 +135,12 @@ const Navbar = () => {
                 ) : (
                     <>
                         <Box className="nv-buttons" sx={{ flexGrow: 1, display: 'flex', justifyContent: 'right' }}>
-                            <Button onClick={() => clearQueryAndNavigate('/')} className="navbar-button">Home</Button>
-                            <Button onClick={() => clearQueryAndNavigate('/Schools')} className="navbar-button">Courses</Button>
-                            <Button onClick={() => clearQueryAndNavigate('/FAQ')} className="navbar-button">FAQ</Button>
-                            <Button onClick={() => clearQueryAndNavigate('/Contact')} className="navbar-button">Contact Us</Button>
-                            {isAuthenticated && (
-                                <Button onClick={() => clearQueryAndNavigate('/MyCourses')} className="navbar-button">My Courses</Button>
-                            )}
+                            <Link to="/" className="navbar-button">Home</Link>
+                            <Link to="/Schools" className="navbar-button">Courses</Link>
+                            <Link to="/FAQ" className="navbar-button">FAQ</Link>
+                            <Link to="/Contact" className="navbar-button">Contact Us</Link>
+                            <Link to="/Certificates" className="navbar-button">Certificates</Link>
+                            {isAuthenticated&&(<Link to="/MyCourses" className="navbar-button">My Courses</Link>)}
                         </Box>
 
                         {(<Button onClick={() => handleSSO()} className='navbar-login'>SSO</Button>)}

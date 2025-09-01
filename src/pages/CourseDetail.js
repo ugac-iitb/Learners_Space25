@@ -248,13 +248,13 @@ export default function CoursePage() {
 
                     <div className="cd-course-right">
                         <div className="cd-price-box">
-                            {!isAdded && (<Button disabled={isAdded} onClick={handleRegisterClick} variant="contained" className="cd-add-to-cart">
+                            {/* {!isAdded && (<Button disabled={isAdded} onClick={handleRegisterClick} variant="contained" className="cd-add-to-cart">
                                 Register
                             </Button>)}
 
                             {isAdded && (<Button disabled={!isAdded} onClick={handleRemoveClick} variant="contained" className="cd-add-to-cart" sx={{backgroundColor:'red'}}>
                                 De Register
-                            </Button>)}
+                            </Button>)} */}
 
                             <div className="cd-course-details">
                                 
