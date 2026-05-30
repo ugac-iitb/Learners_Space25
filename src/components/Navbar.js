@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
-import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme, useMediaQuery } from '@mui/material';
 import '../styles/Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 import CareerCellLgo from '../data/images/Career_Cell_logo.png'
-import UGACLogo from '../data/images/ugac.png';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import authSlice from '../store/authSlice';
@@ -17,12 +15,12 @@ const Navbar = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
     const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+    const user = useSelector((state) => state.auth.user);
 
     const linkList = [
         { text: 'Home', path: '/' },
         { text: 'Courses', path: '/Schools' },
         { text: 'FAQ', path: '/FAQ' },
-        { text: 'Contact Us', path: '/Contact' }
     ]
 
     const toggleDrawer = (open) => () => {
@@ -33,7 +31,7 @@ const Navbar = () => {
 
     const handleLogout = () => {
         dispatch(authSlice.actions.logout());
-        console.log("User logged out");
+        navigate('/');
     }
 
     const navigate = useNavigate();
@@ -41,19 +39,6 @@ const Navbar = () => {
     const handleLoginClick = () => {
         navigate({ pathname: '/SignIn' }, { replace: true });
     }
-
-    const CLIENT_ID = '4KyHuzDgtD3gRt69egQDlBzTF9i4JQWq2O7ByTJl';
-    const authURL = `https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=${CLIENT_ID}&response_type=code&scope=ldap`;
-
-    const handleSSO = () => {
-        window.location.href = authURL;
-    }
-
-    const clearQueryAndNavigate = (path) => {
-        const hash = `#${path}`;
-        window.location.href = `${window.location.origin}${window.location.pathname}${hash}`;
-    };
-
 
     const drawerContent = (
         <Box
@@ -86,6 +71,12 @@ const Navbar = () => {
                             <ListItemText primary={text.text} slotProps={{ component: 'div' }} />
                         </ListItem>
                     ))}
+
+                    {isAuthenticated && (
+                        <ListItem disablePadding className="drawer-item navbar-profile-mobile">
+                            <ListItemText primary={user?.full_name || user?.email || "Profile"} slotProps={{ component: 'div' }} />
+                        </ListItem>
+                    )}
 
                     {isAuthenticated && (
                         <ListItem
@@ -138,13 +129,15 @@ const Navbar = () => {
                             <Link to="/" className="navbar-button">Home</Link>
                             <Link to="/Schools" className="navbar-button">Courses</Link>
                             <Link to="/FAQ" className="navbar-button">FAQ</Link>
-                            <Link to="/Contact" className="navbar-button">Contact Us</Link>
-                            <Link to="/Certificates" className="navbar-button">Certificates</Link>
                             {isAuthenticated&&(<Link to="/MyCourses" className="navbar-button">My Courses</Link>)}
                         </Box>
 
-                        {(<Button onClick={() => handleSSO()} className='navbar-login'>SSO</Button>)}
                         {!isAuthenticated && (<Button onClick={() => handleLoginClick()} className='navbar-login'>Sign In</Button>)}
+                        {isAuthenticated && (
+                            <Typography className="navbar-profile">
+                                {user?.full_name || user?.email || "Profile"}
+                            </Typography>
+                        )}
                         {isAuthenticated && (<Button onClick={() => handleLogout()} className='navbar-login'>Logout</Button>)}
                     </>
                 )}

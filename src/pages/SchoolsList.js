@@ -1,22 +1,16 @@
-import React, { use, useEffect, useState } from 'react';
-import { Box, Typography,Grid } from '@mui/material';
+import React from 'react';
+import { Box, Typography } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
 import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
 import GrainIcon from '@mui/icons-material/Grain';
 import LineAxisIcon from '@mui/icons-material/LineAxis';
 import BlurCircularIcon from '@mui/icons-material/BlurCircular';
 import '../styles/SchoolsList.css';
-import schoolData from '../data/SchoolInfo.json' 
 import SchoolCards from '../components/SchoolCards';
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 
 const SchoolList = () => {
-    const [schoolDetails,setSchoolDetails] = useState([]);
-
-    useEffect(() => {
-        setSchoolDetails(schoolData);
-    }
-    , []);
-
     return ( 
         <div>
             <Box className="banner-root">
@@ -34,27 +28,43 @@ const SchoolList = () => {
             </Box>
             <Box className="course-list">
                 <Typography variant="div" className='course-list-subtitle'> Our Courses</Typography>
-                <Typography variant="h2" className="course-list-title">Explore Courses in Various Schools</Typography>
+                <Typography variant="h2" className="course-list-title">Choose Your Summer School</Typography>
 
                 <Box className="course-list-cards">
                     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '24px' }}>
-                        {schoolDetails && schoolDetails.map((school, index) => (
-                            <div 
-                                key={index} 
-                                style={{
-                                    flex: '1 1 calc(33.333% - 24px)', // 3 columns with gap consideration
-                                    maxWidth: 'calc(33.333% - 24px)',
-                                    boxSizing: 'border-box',
-                                    minWidth: '280px', // fallback for small screens
-                                }}
-                            >
-                            <SchoolCards 
-                                title={school["School Name"]}
-                                description={school["Description"]}
-                                id = {school["School ID"]}
+                        <div
+                            style={{
+                                flex: '1 1 calc(33.333% - 24px)',
+                                maxWidth: 'calc(33.333% - 24px)',
+                                boxSizing: 'border-box',
+                                minWidth: '280px',
+                            }}
+                        >
+                            <SchoolCards
+                                title="Technical Summer School (TSS)"
+                                description="Explore technical courses across engineering, sciences, CS/DS and more."
+                                id="3"
+                                navigateTo="/Schools/TSS"
+                                icon={<EngineeringIcon fontSize="large" />}
                             />
-                            </div>
-                        ))}
+                        </div>
+
+                        <div
+                            style={{
+                                flex: '1 1 calc(33.333% - 24px)',
+                                maxWidth: 'calc(33.333% - 24px)',
+                                boxSizing: 'border-box',
+                                minWidth: '280px',
+                            }}
+                        >
+                            <SchoolCards
+                                title="Non Technical Summer School (NTSS)"
+                                description="Explore non-technical courses across management, communication, sustainability and more."
+                                id="2"
+                                navigateTo="/Schools/NTSS"
+                                icon={<PsychologyAltIcon fontSize="large" />}
+                            />
+                        </div>
                     </div>
                 </Box>
             </Box>

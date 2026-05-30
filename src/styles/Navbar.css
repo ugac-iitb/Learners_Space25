@@ -63,6 +63,22 @@
     text-transform: none !important;
 }
 
+.navbar-profile {
+    font-family: 'Urbanist' !important;
+    font-size: 15px !important;
+    color:#625F71 !important;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 8px !important;
+}
+
+.navbar-profile-mobile {
+    text-transform: none !important;
+    font-weight: 700 !important;
+}
+
 
 .navbar-login:hover{
     color: #f2bc00 !important;
@@ -125,6 +141,11 @@
 
     .navbar-login {
         font-size: 16px !important;
+    }
+
+    .navbar-profile {
+        max-width: 120px;
+        font-size: 13px !important;
     }
 }
 

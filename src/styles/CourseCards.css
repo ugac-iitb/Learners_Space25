@@ -99,6 +99,27 @@
   font-size: 14px;
 }
 
+.course-register-btn {
+  margin-top: 12px !important;
+  background-color: #16a085 !important;
+  color: #fff !important;
+  padding: 10px 16px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  border-radius: 8px !important;
+  font-family: 'Urbanist', sans-serif !important;
+}
+
+.course-register-btn:hover {
+  background-color: #138a72 !important;
+}
+
+.course-register-btn.Mui-disabled {
+  background-color: #d8d8d8 !important;
+  color: #555 !important;
+}
+
 .course-footer {
   display: flex;
   justify-content: space-between;
@@ -119,6 +140,42 @@
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.track-course-card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.track-course-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.track-course-card-link:hover .track-course-card {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.14);
+}
+
+.track-course-preview {
+  font-size: 16px !important;
+  max-height: none !important;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.track-course-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.registered-course-card {
+  min-height: 190px;
+}
+
+.registered-course-meta {
+  margin-top: 14px;
 }
 
 @media (max-width: 768px) {

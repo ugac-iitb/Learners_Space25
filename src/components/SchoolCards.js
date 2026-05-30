@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import '../styles/SchoolCards.css';
@@ -9,7 +9,7 @@ import EnergySavingsLeafIcon from '@mui/icons-material/EnergySavingsLeaf';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 
-const SchoolCards = ({ title, description, id }) => {
+const SchoolCards = ({ title, description, id, navigateTo, color, icon }) => {
   const [clicked, setClicked] = useState(false);
   const navigate = useNavigate();
 
@@ -32,15 +32,26 @@ const SchoolCards = ({ title, description, id }) => {
     
   };
 
-  const colVal = colors[id];
-  const iconVal = iconOptions[id];
+  const colVal = useMemo(() => {
+    if (color) return color;
+    return colors[id] || '#f2bc28';
+  }, [color, id]);
+
+  const iconVal = useMemo(() => {
+    if (icon) return { icon };
+    return iconOptions[id] || { icon: <ScienceIcon fontSize="large" /> };
+  }, [icon, id]);
 
   title = title.trim();
 
   const handleCardClick = () => {
     setClicked(true);
     setTimeout(() => {
-      navigate(`/Schools/${id}`);
+      if (navigateTo) {
+        navigate(navigateTo);
+      } else {
+        navigate(`/Schools/${id}`);
+      }
     }, 400); // 400ms matches the CSS animation
   };
 

@@ -16,6 +16,29 @@
     width: 100%;
     box-sizing: border-box;
   }
+
+  .lg-mode-toggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 20px;
+    background-color: #fcf8ef;
+    border-radius: 8px;
+    padding: 6px;
+  }
+
+  .lg-mode-btn {
+    color: #625F71 !important;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: none !important;
+    border-radius: 6px !important;
+  }
+
+  .lg-mode-btn.active {
+    background-color: #f2bc00 !important;
+    color: #1A1729 !important;
+  }
   
   .lg-title {
     text-align: center;
@@ -67,6 +90,28 @@
     margin-bottom: 16px;
     text-align: center;
     font-family: 'Urbanist', sans-serif !important;
+  }
+
+  .lg-success {
+    color: #138a72;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+
+  .lg-inline-action {
+    background: none;
+    border: none;
+    color: #1A1729;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  .lg-inline-action:hover {
+    color: #f2bc00;
   }
   
   /* ========== RESPONSIVE STYLES ========== */

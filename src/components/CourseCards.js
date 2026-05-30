@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/CourseCards.css';
-import { Avatar, Divider } from '@mui/material';
+import { Divider } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { Link } from 'react-router-dom';
+import RegistrationButton from './RegistrationButton';
 
 
 const CourseCard = ({ course }) => {
@@ -49,6 +50,11 @@ const CourseCard = ({ course }) => {
             </>
           )}
         </button>
+        <RegistrationButton
+          courseId={course["Course ID"]}
+          fullWidth
+          className="course-register-btn"
+        />
       </div>
     </div>
   );

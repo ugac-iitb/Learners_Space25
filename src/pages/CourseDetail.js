@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Typography, Button, Chip, Divider, Avatar, Snackbar, Alert } from '@mui/material';
+import { Box, Typography, Divider } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
 import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
 import GrainIcon from '@mui/icons-material/Grain';
@@ -7,25 +7,14 @@ import LineAxisIcon from '@mui/icons-material/LineAxis';
 import BlurCircularIcon from '@mui/icons-material/BlurCircular';
 import '../styles/CourseDetails.css';
 import InsCourse from '../components/InsCourse';
-import testImg from '../data/images/courseTest.webp';
 import { useSearchParams } from 'react-router-dom';
 import CourseData from '../data/Courses.json';
 import OvCourse from '../components/OverviewCourse';
 import CurCourse from '../components/CurriculumCourse';
 import schoolData from '../data/SchoolInfo.json';
-import authSlice from '../store/authSlice';
-import { useDispatch, useSelector } from 'react-redux';
-import axios from 'axios';
-import { Add, Padding } from '@mui/icons-material';
+import RegistrationButton from '../components/RegistrationButton';
 
 export default function CoursePage() {
-    const baseURL = process.env.REACT_APP_baseURL;
-
-    const dispatch = useDispatch();
-
-    const selector = useSelector((state) => state.auth);
-    const AddedCourses = useSelector((state) => state.auth.courses);
-
     const [Ovclicked, setOvClicked] = useState(true);
     const [Curclicked, setCurClicked] = useState(false);
     const [Insclicked, setInsClicked] = useState(false);
@@ -35,11 +24,6 @@ export default function CoursePage() {
     const id = searchParams.get('id');
 
     const [courseData, setCourseData] = useState({});
-    const [openSnackbar, setOpenSnackbar] = useState(false);
-    const [snackbarMessage, setSnackbarMessage] = useState('');
-    const [snackbarSeverity, setSnackbarSeverity] = useState('success');
-
-    const [isAdded,setIsAdded] = useState(AddedCourses.includes(id));
 
     const [school, setSchool] = useState(null);
 
@@ -76,99 +60,6 @@ export default function CoursePage() {
         }
     };
 
-    const  handleRegisterClick = async () => {
-        if (courseData && courseData["Course ID"]) {
-            const courseId = courseData["Course ID"];
-            const token = selector.token;
-
-            const data = {
-                courses: [courseId],
-            }
-
-            try {
-                const res = await axios.post(baseURL+'user/courses/',data, {
-                    headers: {
-                        Authorization: `Bearer ${token}`,
-                    },
-                });
-
-                dispatch(authSlice.actions.setCourses(courseId));
-                setSnackbarMessage("Course Registered Successfully!");
-                setSnackbarSeverity("success");
-
-                setIsAdded(true);
-
-            } catch (error) {
-                console.error("Error adding course:", error);
-                
-                if(error.response && error.response.status == 401){
-                    console.log(error.response.status)
-                    setSnackbarMessage("Unauthorized. Please log in again.");
-                    setSnackbarSeverity("error");
-                    dispatch(authSlice.actions.logout());
-                    
-                }
-                else{
-                    setSnackbarMessage("Failed to add course. Please try again.");
-                    setSnackbarSeverity("error");
-                }
-                
-            }
-            setOpenSnackbar(true);
-        }
-        else{
-            setSnackbarMessage("No course data available to register.");
-            setSnackbarSeverity("error");
-            setOpenSnackbar(true);
-        }
-    }
-
-    const handleRemoveClick = async () => {
-        if (courseData && courseData["Course ID"]) {
-        const courseId = courseData["Course ID"];
-        const token = selector.token;
-
-
-        const data = {
-            courses: [courseId],
-        }
-
-        try {
-            const res = await axios.delete(baseURL+'user/courses/', {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                },
-                data
-            });
-
-            setSnackbarMessage("Course De Registered Successfully!");
-            setSnackbarSeverity("success");
-
-            setIsAdded(false);
-
-        } catch (error) {
-            console.error("Error adding course:", error);
-            
-            if(error.response && error.response.status == 401){
-                console.log(error.response.status)
-                setSnackbarMessage("Unauthorized. Please log in again.");
-                setSnackbarSeverity("error");
-                dispatch(authSlice.actions.logout());
-                
-            }
-            else{
-                setSnackbarMessage("Failed to remove course. Please try again.");
-                setSnackbarSeverity("error");
-            }
-            
-        }
-        setOpenSnackbar(true);
-    }
-    else{
-        setSnackbarMessage("No course data available to register.");
-        setSnackbarSeverity("error");
-        setOpenSnackbar(true);
-    }}
     return (
         <div className="cd-course-page">
             <Box className="cd-banner-root">
@@ -248,13 +139,11 @@ export default function CoursePage() {
 
                     <div className="cd-course-right">
                         <div className="cd-price-box">
-                            {/* {!isAdded && (<Button disabled={isAdded} onClick={handleRegisterClick} variant="contained" className="cd-add-to-cart">
-                                Register
-                            </Button>)}
-
-                            {isAdded && (<Button disabled={!isAdded} onClick={handleRemoveClick} variant="contained" className="cd-add-to-cart" sx={{backgroundColor:'red'}}>
-                                De Register
-                            </Button>)} */}
+                            <RegistrationButton
+                                courseId={courseData["Course ID"]}
+                                fullWidth
+                                className="cd-add-to-cart"
+                            />
 
                             <div className="cd-course-details">
                                 
@@ -269,18 +158,6 @@ export default function CoursePage() {
                     </div>
                 </div>
             )}
-
-            {/* Snackbar Notification */}
-            <Snackbar
-                open={openSnackbar}
-                autoHideDuration={4000}
-                onClose={() => setOpenSnackbar(false)}
-                anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-            >
-                <Alert onClose={() => setOpenSnackbar(false)} severity={snackbarSeverity} sx={{ width: '100%' }}>
-                    {snackbarMessage}
-                </Alert>
-            </Snackbar>
         </div>
     );
 }

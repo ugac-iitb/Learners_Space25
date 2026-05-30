@@ -1,8 +1,8 @@
 [
     {
-        "name":"Parv Khandelwal",
+        "name":"Siddhant Gupta",
         "position":"Institute Secretary, Academic Affairs\nHead, Career Cell",
-        "contact":"8302649745",
+        "contact":"91670 95841",
         "img":"/data/images/contact/parv.png"
     },
     {
@@ -30,13 +30,13 @@
         "img":"/data/images/contact/Tanish.png"
     },
     {
-        "name":"Shrey Aggarwal",
-        "position":"Web Heads",
+        "name":"Surhud Naik",
+        "position":"UGAC Web Head",
         "img": "/data/images/contact/shrey.jpeg"
     },
     {
-        "name":"Abhijat Bharadwaj",
-        "position":"Web Heads",
+        "name":"Ansh Oswal",
+        "position":"UGAC Web Head",
         "img": "/data/images/contact/abhijat.jpeg"
     }
 ]
