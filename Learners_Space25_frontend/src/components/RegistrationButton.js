@@ -13,13 +13,13 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import authSlice from "../store/authSlice";
+import baseURL from "../config/api";
 
 const RegistrationButton = ({ courseId, fullWidth = false, className = "" }) => {
-  const baseURL = process.env.REACT_APP_baseURL;
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { token, isAuthenticated, courses } = useSelector((state) => state.auth);
+  const { token, isAuthenticated, courses, coursesLocked } = useSelector((state) => state.auth);
   const isRegistered = courses.includes(courseId);
 
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -37,6 +37,11 @@ const RegistrationButton = ({ courseId, fullWidth = false, className = "" }) => 
     if (!isAuthenticated || !token) {
       showMessage("Please sign in to register for this course.", "error");
       navigate("/SignIn", { state: { from: `${location.pathname}${location.search}` } });
+      return;
+    }
+
+    if (coursesLocked) {
+      showMessage("Your course selection is locked and cannot be changed.", "info");
       return;
     }
 
@@ -59,7 +64,7 @@ const RegistrationButton = ({ courseId, fullWidth = false, className = "" }) => 
         }
       );
 
-      dispatch(authSlice.actions.setCourses(response.data.courses || [...courses, courseId]));
+      dispatch(authSlice.actions.setCourses(response.data));
       showMessage("Course registered successfully.");
       setDialogOpen(false);
     } catch (error) {
@@ -85,10 +90,10 @@ const RegistrationButton = ({ courseId, fullWidth = false, className = "" }) => 
         variant="contained"
         className={className}
         fullWidth={fullWidth}
-        disabled={!courseId || isRegistered || isSubmitting}
+        disabled={!courseId || isRegistered || isSubmitting || coursesLocked}
         onClick={handleOpen}
       >
-        {isSubmitting ? "Registering..." : isRegistered ? "Registered" : "Register"}
+        {isSubmitting ? "Registering..." : coursesLocked ? "Locked" : isRegistered ? "Registered" : "Register"}
       </Button>
 
       <Dialog open={dialogOpen} onClose={() => !isSubmitting && setDialogOpen(false)}>

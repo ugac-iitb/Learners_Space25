@@ -16,9 +16,7 @@ import {
   FormControlLabel,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-
-const baseURL = process.env.REACT_APP_baseURL;
-console.log(baseURL);
+import baseURL from '../config/api';
 
 
 const Signup = () => {

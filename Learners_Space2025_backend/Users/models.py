@@ -31,6 +31,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     # Course registrations stored as a list of course ID strings
     courses = models.JSONField(blank=True, null=True, default=list)
+    courses_locked = models.BooleanField(default=False)
 
     # Required for Django auth system
     is_active = models.BooleanField(default=True)

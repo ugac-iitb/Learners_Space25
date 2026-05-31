@@ -7,6 +7,7 @@ const initialState = {
     user: null,
     isAuthenticated: false,
     courses: [],
+    coursesLocked: false,
     loginTime: null,
 };
 
@@ -25,6 +26,7 @@ const authSlice = createSlice({
             const payload = action.payload || {};
             state.user = payload.user || payload;
             state.username = payload.username || payload.full_name || payload.email || payload;
+            state.coursesLocked = Boolean(payload.courses_locked);
             state.isAuthenticated = true;
             
         },
@@ -35,7 +37,19 @@ const authSlice = createSlice({
                 return;
             }
 
-            state.courses = Array.isArray(action.payload) ? action.payload : [action.payload];
+            if (Array.isArray(action.payload)) {
+                state.courses = action.payload;
+                return;
+            }
+
+            state.courses = Array.isArray(action.payload.courses) ? action.payload.courses : [action.payload];
+            if (typeof action.payload.courses_locked === "boolean") {
+                state.coursesLocked = action.payload.courses_locked;
+            }
+        },
+
+        setCoursesLocked: (state, action) => {
+            state.coursesLocked = Boolean(action.payload);
         },
 
         addCourse: (state, action) => {
@@ -55,6 +69,7 @@ const authSlice = createSlice({
             state.user = null;
             state.isAuthenticated = false;
             state.courses = [];
+            state.coursesLocked = false;
             state.loginTime = null;
         },
     },
