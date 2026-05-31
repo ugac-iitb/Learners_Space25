@@ -1,23 +1,62 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ==========================
+# Backend (Django/Python)
+# ==========================
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
 
-# testing
-/coverage
+# Environments
+.env
+.venv
+venv/
+venv_win/
+env/
+ENV/
 
-# production
-/build
+# Database
+db.sqlite3
+db.sqlite3-journal
 
-# misc
+# Django stuff
+*.log
+local_settings.py
+static/
+
+# ==========================
+# Frontend (React/Node)
+# ==========================
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build folder
+Learners_Space25_frontend/build/
+build/
+dist/
+
+# Env files (keep secret)
+Learners_Space25_frontend/.env
+Learners_Space25_frontend/.env.local
+Learners_Space25_frontend/.env.development.local
+Learners_Space25_frontend/.env.test.local
+Learners_Space25_frontend/.env.production.local
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
