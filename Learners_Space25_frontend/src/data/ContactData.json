@@ -1,42 +1,42 @@
 [
     {
-        "name":"Siddhant Gupta",
+        "name":"Preisha Desai",
         "position":"Institute Secretary, Academic Affairs\nHead, Career Cell",
-        "contact":"91670 95841",
-        "img":"/data/images/contact/parv.png"
+        "contact":"9769623937",
+        "img":"/data/images/contact/preisha.jpeg"
     },
     {
-        "name":"Mridhula Vishwanath",
+        "name":"Harshia Goyal",
         "position":"Academic Coordinator, Career Cell",
-        "contact":"9108224749",
-        "img":"/data/images/contact/mridhula.png"
+        "contact":"74012 00003",
+        "img":"/data/images/contact/harshia.jpeg"
     },
     {
-        "name":"Saksham Agrawal",
+        "name":"Arnav Purohit",
         "position":"Academic Coordinator, Career Cell",
-        "contact":"7857070220",
-        "img":"/data/images/contact/Saksham.png"
+        "contact":"9730924447",
+        "img":"/data/images/contact/arnav.jpeg"
     },
     {
-        "name":"Syed Mohammad Ali",
+        "name":"Yash Rastogi",
         "position":"Academic Coordinator, Career Cell",
-        "contact":"6394872284",
-        "img":"/data/images/contact/syed.png"
+        "contact":"96860 55513",
+        "img":"/data/images/contact/yash.jpeg"
     },
     {
-        "name":"Tanish Kharbanda",
+        "name":"Yojit Saini",
         "position":"Academic Coordinator, Career Cell",
-        "contact":"7385538716",
-        "img":"/data/images/contact/Tanish.png"
+        "contact":"90246 54223",
+        "img":"/data/images/contact/yojit.jpeg"
     },
     {
         "name":"Surhud Naik",
         "position":"UGAC Web Head",
-        "img": "/data/images/contact/shrey.jpeg"
+        "img": "/data/images/contact/surhud.jpeg"
     },
     {
         "name":"Ansh Oswal",
         "position":"UGAC Web Head",
-        "img": "/data/images/contact/abhijat.jpeg"
+        "img": "/data/images/contact/ansh.jpeg"
     }
 ]

@@ -2,12 +2,8 @@ import React from "react";
 import "../styles/ContactPage.css";
 import {
   Box,
-  Typography,
-  IconButton
+  Typography
 } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
 
 import CircleIcon from '@mui/icons-material/Circle';
 import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
@@ -16,6 +12,17 @@ import LineAxisIcon from '@mui/icons-material/LineAxis';
 import BlurCircularIcon from '@mui/icons-material/BlurCircular';
 
 import contactInfo from "../data/ContactData.json";
+
+const contactImageContext = require.context("../data/images/contact", false, /\.(png|jpe?g|webp)$/);
+const contactImages = contactImageContext.keys().reduce((images, imagePath) => {
+  const fileName = imagePath.replace("./", "");
+  const baseName = fileName.replace(/\.[^.]+$/, "");
+  const resolvedImage = contactImageContext(imagePath);
+
+  images[fileName.toLowerCase()] = resolvedImage;
+  images[baseName.toLowerCase()] = resolvedImage;
+  return images;
+}, {});
 
 const Contact = () => {
   const decodeUnicode = (str) => {
@@ -32,6 +39,18 @@ const Contact = () => {
       <p key={i} className="co-role-desc">{line}</p>
     ));
   };
+
+  const getContactImage = (imagePath) => {
+    const fileName = (imagePath || "").split("/").pop() || "";
+    const baseName = fileName.replace(/\.[^.]+$/, "");
+
+    return (
+      contactImages[fileName.toLowerCase()] ||
+      contactImages[baseName.toLowerCase()] ||
+      `${process.env.PUBLIC_URL}${imagePath}`
+    );
+  };
+
   return (
     
     <div>
@@ -62,7 +81,7 @@ const Contact = () => {
             <Box className="co-profile" key={index}>
               <img
                 className="co-avatar"
-                src={`${process.env.PUBLIC_URL}${person.img}`}
+                src={getContactImage(person.img)}
                 alt={person.name}
               />
               <Box className="co-profile-info">

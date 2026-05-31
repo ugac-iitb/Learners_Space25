@@ -54,7 +54,7 @@ const FooterComp = () => {
           <Typography variant="h5" className="footer-heading">Contact Us</Typography>
           <Stack direction="row" alignItems="center" spacing={1} mb={1}>
             {/* <Email fontSize="small" /> */}
-            <Typography className="footer-contact">Parv Khandelwal</Typography>
+            <Typography className="footer-contact">Preisha Desai</Typography>
           </Stack>
 
           <Stack direction="row" alignItems="center" spacing={1} mb={1}>
@@ -75,7 +75,7 @@ const FooterComp = () => {
           </Stack>
           <Stack direction="row" alignItems="center" spacing={1} mb={1}>
             <Phone fontSize="small" />
-            <Typography className="footer-contact">8302649745</Typography>
+            <Typography className="footer-contact">9769623937</Typography>
           </Stack>
         </Box>
       </Box>

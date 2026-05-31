@@ -12,9 +12,27 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+def load_local_env():
+    env_path = BASE_DIR / '.env'
+    if not env_path.exists():
+        return
+
+    for raw_line in env_path.read_text(encoding='utf-8').splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith('#') or '=' not in line:
+            continue
+
+        key, value = line.split('=', 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+load_local_env()
 
 
 # Quick-start development settings - unsuitable for production
@@ -79,13 +97,32 @@ WSGI_APPLICATION = 'ls_2025_backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+#
+# Production/default database is PostgreSQL. Tests can still run against
+# SQLite unless LS_TEST_DATABASE=postgres is explicitly set.
+RUNNING_TESTS = 'test' in sys.argv
+DATABASE_ENGINE = os.environ.get('LS_DATABASE_ENGINE', 'postgres').lower()
+USE_SQLITE_FOR_TESTS = RUNNING_TESTS and os.environ.get('LS_TEST_DATABASE', '').lower() != 'postgres'
+USE_SQLITE = DATABASE_ENGINE == 'sqlite' or USE_SQLITE_FOR_TESTS
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if USE_SQLITE:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / ('test.sqlite3' if USE_SQLITE_FOR_TESTS else 'db.sqlite3'),
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.environ.get('POSTGRES_DB', 'learners_space25'),
+            'USER': os.environ.get('POSTGRES_USER', 'postgres'),
+            'PASSWORD': os.environ.get('POSTGRES_PASSWORD', ''),
+            'HOST': os.environ.get('POSTGRES_HOST', '127.0.0.1'),
+            'PORT': os.environ.get('POSTGRES_PORT', '5432'),
+        }
+    }
 
 
 # Password validation
@@ -145,15 +182,13 @@ SIMPLE_JWT = {
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-EMAIL_BACKEND = os.environ.get(
-    'DJANGO_EMAIL_BACKEND',
-    'django.core.mail.backends.smtp.EmailBackend'
-    if os.environ.get('EMAIL_HOST')
-    else 'django.core.mail.backends.console.EmailBackend',
-)
+EMAIL_BACKEND = os.environ.get('DJANGO_EMAIL_BACKEND', 'django.core.mail.backends.smtp.EmailBackend')
 EMAIL_HOST = os.environ.get('EMAIL_HOST', '')
 EMAIL_PORT = int(os.environ.get('EMAIL_PORT', '587'))
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
 EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', 'true').lower() == 'true'
 DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', EMAIL_HOST_USER or 'no-reply@iitb.ac.in')
+DJANGO_ALLOW_CONSOLE_EMAIL = os.environ.get('DJANGO_ALLOW_CONSOLE_EMAIL', 'false').lower() == 'true'
+SIGNUP_OTP_TIMEOUT_SECONDS = int(os.environ.get('SIGNUP_OTP_TIMEOUT_SECONDS', '600'))
+SIGNUP_OTP_RESEND_SECONDS = int(os.environ.get('SIGNUP_OTP_RESEND_SECONDS', '60'))

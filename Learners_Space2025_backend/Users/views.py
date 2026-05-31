@@ -1,3 +1,4 @@
+import logging
 import secrets
 
 from django.core.cache import cache
@@ -13,8 +14,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
-SIGNUP_OTP_TIMEOUT_SECONDS = 10 * 60
-
+logger = logging.getLogger(__name__)
 
 def get_tokens_for_user(user):
     refresh = RefreshToken.for_user(user)
@@ -28,8 +28,39 @@ def get_signup_cache_key(email):
     return f'pending_signup:{email.lower()}'
 
 
+def get_signup_resend_cache_key(email):
+    return f'pending_signup_resend:{email.lower()}'
+
+
 def generate_otp():
     return f'{secrets.randbelow(1000000):06d}'
+
+
+def can_send_signup_email():
+    if settings.EMAIL_BACKEND == 'django.core.mail.backends.locmem.EmailBackend':
+        return True
+
+    if settings.EMAIL_BACKEND == 'django.core.mail.backends.console.EmailBackend':
+        return settings.DJANGO_ALLOW_CONSOLE_EMAIL
+
+    return all([settings.EMAIL_HOST, settings.DEFAULT_FROM_EMAIL])
+
+
+def send_signup_otp(email, otp):
+    if not can_send_signup_email():
+        return False
+
+    sent_count = send_mail(
+        subject='Learners Space email verification OTP',
+        message=(
+            f'Your Learners Space signup OTP is {otp}. '
+            'It expires in 10 minutes.'
+        ),
+        from_email=settings.DEFAULT_FROM_EMAIL,
+        recipient_list=[email],
+        fail_silently=False,
+    )
+    return sent_count == 1
 
 
 class SignupView(APIView):
@@ -44,23 +75,40 @@ class SignupView(APIView):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
         pending_signup = serializer.validated_data.copy()
-        otp = generate_otp()
-        cache.set(
-            get_signup_cache_key(pending_signup['email']),
-            {**pending_signup, 'otp': otp},
-            timeout=SIGNUP_OTP_TIMEOUT_SECONDS,
-        )
+        email = pending_signup['email']
+        resend_cache_key = get_signup_resend_cache_key(email)
 
-        send_mail(
-            subject='Learners Space email verification OTP',
-            message=(
-                f'Your Learners Space signup OTP is {otp}. '
-                'It expires in 10 minutes.'
-            ),
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[pending_signup['email']],
-            fail_silently=False,
+        if cache.get(resend_cache_key):
+            return Response(
+                {'error': 'An OTP was already sent recently. Please wait a minute before requesting another.'},
+                status=status.HTTP_429_TOO_MANY_REQUESTS,
+            )
+
+        otp = generate_otp()
+
+        try:
+            otp_sent = send_signup_otp(email, otp)
+        except Exception:
+            logger.exception('Failed to send signup OTP email to %s', email)
+            otp_sent = False
+
+        if not otp_sent:
+            return Response(
+                {
+                    'error': (
+                        'OTP email could not be sent. Configure SMTP settings '
+                        '(EMAIL_HOST, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, DEFAULT_FROM_EMAIL) and try again.'
+                    )
+                },
+                status=status.HTTP_503_SERVICE_UNAVAILABLE,
+            )
+
+        cache.set(
+            get_signup_cache_key(email),
+            {**pending_signup, 'otp': otp},
+            timeout=settings.SIGNUP_OTP_TIMEOUT_SECONDS,
         )
+        cache.set(resend_cache_key, True, timeout=settings.SIGNUP_OTP_RESEND_SECONDS)
 
         return Response(
             {'message': 'Verification OTP sent to your IITB email address.'},

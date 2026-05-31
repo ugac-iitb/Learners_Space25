@@ -21,6 +21,7 @@ const Navbar = () => {
         { text: 'Home', path: '/' },
         { text: 'Courses', path: '/Schools' },
         { text: 'FAQ', path: '/FAQ' },
+        { text: 'Contact Us', path: '/Contact' },
     ]
 
     const toggleDrawer = (open) => () => {
@@ -129,6 +130,7 @@ const Navbar = () => {
                             <Link to="/" className="navbar-button">Home</Link>
                             <Link to="/Schools" className="navbar-button">Courses</Link>
                             <Link to="/FAQ" className="navbar-button">FAQ</Link>
+                            <Link to="/Contact" className="navbar-button">Contact Us</Link>
                             {isAuthenticated&&(<Link to="/MyCourses" className="navbar-button">My Courses</Link>)}
                         </Box>
 

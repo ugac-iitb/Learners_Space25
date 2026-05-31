@@ -13,6 +13,10 @@ import itcLogo from "../data/images/ITC.png";
 import iccLogo from "../data/images/ICC.png";
 import iscLogo from "../data/images/ISC.png";
 import ugacLogo from "../data/images/ugac.png";
+import susLogo from "../data/images/sus_logo.png"
+import enbLogo from "../data/images/enb_club_logo.png"
+import penLogo from "../data/images/pen.png"
+import elpLogo from "../data/images/elp.png"
 import { Grid } from "@mui/material";
 import axios from "axios";
 
@@ -94,7 +98,7 @@ const HomePage = () => {
                 </h1>
 
                 <p className="collab-subtext">
-                Brought to you by the Career Cell in collaboration with the student bodies of UGAC, ITC, ISC, and ICC, Department Councils (EESA, SAPD, Economics Association), Tech Teams (SHUNYA, Zero Waste, iGEM and ChemECA), ELP, EnB Club and the Sustainability Cell.
+                Brought to you by the Career Cell in collaboration with the clubs and communities of the Undergraduate Academic Council (UGAC), Institute Technical Council (ITC), Institute Cultural Council (ICC), Sustainability Cell, English Learning Program (ELP), Insight and Entrepreneurship & Business Club (EnB). We are delighted to present the 10th edition of Learners’ Space: Igniting Curiosity, Inspiring Excellence.
                 </p>
                 <Grid container className="collab-grid">
                     <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
@@ -104,10 +108,19 @@ const HomePage = () => {
                         <img className="collab-logo" style={{height:"140px"}} src={itcLogo} alt="" />
                     </Grid>
                     <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
-                        <img className="collab-logo" style={{height:"140px"}} src={iccLogo} alt="" />
+                        <img className="collab-logo" src={iccLogo} alt="" />
                     </Grid>
                     <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
-                        <img className="collab-logo" src={iscLogo} alt="" />
+                        <img className="collab-logo" src={enbLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={penLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={elpLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={susLogo} alt="" />
                     </Grid>
                 </Grid>
             </section>

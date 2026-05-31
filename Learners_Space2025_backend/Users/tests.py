@@ -1,4 +1,5 @@
 from django.core import mail
+from django.core.cache import cache
 from django.test import override_settings
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -16,6 +17,9 @@ from .models import User
     },
 )
 class SignupOtpTests(APITestCase):
+    def setUp(self):
+        cache.clear()
+
     def signup_payload(self, email='student@iitb.ac.in'):
         return {
             'full_name': 'Test Student',
@@ -39,6 +43,16 @@ class SignupOtpTests(APITestCase):
         self.assertEqual(len(mail.outbox), 1)
         self.assertIn('student@iitb.ac.in', mail.outbox[0].to)
         self.assertEqual(User.objects.count(), 0)
+
+    def test_signup_throttles_repeated_otp_requests(self):
+        payload = self.signup_payload()
+
+        first_response = self.client.post('/user/signup/', payload, format='json')
+        second_response = self.client.post('/user/signup/', payload, format='json')
+
+        self.assertEqual(first_response.status_code, status.HTTP_200_OK)
+        self.assertEqual(second_response.status_code, status.HTTP_429_TOO_MANY_REQUESTS)
+        self.assertEqual(len(mail.outbox), 1)
 
     def test_verify_signup_creates_user_and_returns_tokens(self):
         self.client.post('/user/signup/', self.signup_payload(), format='json')
@@ -75,6 +89,32 @@ class SignupOtpTests(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertIn('contact_number', response.data)
+
+
+@override_settings(
+    EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend',
+    DJANGO_ALLOW_CONSOLE_EMAIL=False,
+)
+class SignupEmailConfigurationTests(APITestCase):
+    def setUp(self):
+        cache.clear()
+
+    def test_signup_fails_clearly_when_email_delivery_is_not_configured(self):
+        response = self.client.post(
+            '/user/signup/',
+            {
+                'full_name': 'No SMTP',
+                'email': 'nosmtp@iitb.ac.in',
+                'contact_number': '9876543210',
+                'password': 'strongpass123',
+                'confirm_password': 'strongpass123',
+            },
+            format='json',
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_503_SERVICE_UNAVAILABLE)
+        self.assertIn('Configure SMTP settings', response.data['error'])
+        self.assertEqual(User.objects.count(), 0)
 
 
 class CourseLockTests(APITestCase):
