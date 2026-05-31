@@ -29,7 +29,7 @@ def load_local_env():
             continue
 
         key, value = line.split('=', 1)
-        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+        os.environ[key.strip()] = value.strip().strip('"').strip("'")
 
 
 load_local_env()
@@ -192,3 +192,4 @@ DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', EMAIL_HOST_USER or 'no
 DJANGO_ALLOW_CONSOLE_EMAIL = os.environ.get('DJANGO_ALLOW_CONSOLE_EMAIL', 'false').lower() == 'true'
 SIGNUP_OTP_TIMEOUT_SECONDS = int(os.environ.get('SIGNUP_OTP_TIMEOUT_SECONDS', '600'))
 SIGNUP_OTP_RESEND_SECONDS = int(os.environ.get('SIGNUP_OTP_RESEND_SECONDS', '60'))
+EMAIL_TIMEOUT = 10
