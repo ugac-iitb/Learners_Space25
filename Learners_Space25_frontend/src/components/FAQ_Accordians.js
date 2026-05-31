@@ -38,7 +38,7 @@ const CustomAccordion = ({ index, expandedIndex, setExpandedIndex, title, conten
       <AccordionSummary
         expandIcon={
           <IconButton className="accordion-icon">
-            {isExpanded ? <RemoveIcon sx={{color:'white'}} /> : <AddIcon sx={{color:'inherit'}}/>}
+            {isExpanded ? <RemoveIcon sx={{color:'inherit'}} /> : <AddIcon sx={{color:'inherit'}}/>}
           </IconButton>
         }
         className={`accordion-summary ${isExpanded ? 'expanded' : ''}`}

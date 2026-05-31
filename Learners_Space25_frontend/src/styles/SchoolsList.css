@@ -71,8 +71,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 120px;
-    background-color: #ffff !important;
+    padding: 40px 120px 120px 120px;
+    background-color: #13111C !important;
 }
 
 .course-list-subtitle{
@@ -87,7 +87,7 @@
 .course-list-title{
     font-family: 'Urbanist', sans-serif !important;
     font-weight: 700 !important;
-    color: #1A1729 !important;
+    color: #E5E2F2 !important;
     font-size: 55px !important;
     margin-top: 10px !important;
     text-align: center;

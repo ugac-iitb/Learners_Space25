@@ -52,11 +52,11 @@ const TrackCourses = ({ type }) => {
     <div>
       <Box className="cl-course-list">
         <Typography className="cl-course-list-subtitle">Our Courses</Typography>
-        <Typography variant="h2" className="cl-course-list-title">
+        <Typography variant="h2" className="cl-course-list-title track-courses-title">
           {title}
         </Typography>
 
-        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.2, justifyContent: "center", marginTop: 4 }}>
+        <Box className="track-filters" sx={{ display: "flex", flexWrap: "wrap", gap: 1.2, justifyContent: "center", marginTop: 4 }}>
           <Chip
             label="All Schools"
             clickable

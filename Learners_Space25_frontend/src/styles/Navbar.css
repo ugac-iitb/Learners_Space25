@@ -1,9 +1,9 @@
 
 .navbar {
-    background-color: #ffff !important;
+    background-color: #1E1B2A !important;
     height: 100px; /* Adjust the height as needed */
-    box-shadow: none !important; /* Removes the shadow */
-    color:#625F71 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important; /* Premium dark shadow */
+    color:#E5E2F2 !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
 }
@@ -11,7 +11,7 @@
 .navbar-title{
     font-family: 'Urbanist' !important;
     font-size: 34px !important;
-    color:#1A1729 !important;
+    color:#E5E2F2 !important;
     font-weight: 700 !important;
     margin-left: 10px !important;
 }
@@ -23,7 +23,7 @@
 .navbar-button {
     font-family: 'Urbanist' !important;
     font-size: 22px !important;
-    color:#625F71 !important;
+    color:#A6A2BC !important;
     padding: 30px 6px 30px 6px !important;
     margin: 5px 30px 5px 15px !important;
     position: relative;
@@ -69,7 +69,7 @@
 .navbar-login{
     font-family: 'Urbanist' !important;
     font-size: 20px !important;
-    color:#1A1729 !important;
+    color:#E5E2F2 !important;
     text-transform: none !important;
 }
 
@@ -111,16 +111,16 @@
 
 .drawer-list {
     width: 250px;
-    background-color: #f2bc00;
+    background-color: #1E1B2A;
     height: 100%;
     padding-top: 20px;
-    color: #060606;
+    color: #E5E2F2;
 }
 
 .drawer-item {
     font-family: 'Urbanist' !important;
     font-size: 20px;
-    color: #060606;
+    color: #A6A2BC;
     padding: 12px 20px;
     margin: 10px 15px;
     border-radius: 8px;

@@ -3,15 +3,15 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #13111C !important;
     padding: 20px;
   }
   
   .lg-form {
-    background-color: white;
+    background-color: #1E1B2A !important;
     padding: 32px;
     border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
     max-width: 400px;
     width: 100%;
     box-sizing: border-box;
@@ -22,13 +22,13 @@
     grid-template-columns: 1fr 1fr;
     gap: 8px;
     margin-bottom: 20px;
-    background-color: #fcf8ef;
+    background-color: #13111C !important;
     border-radius: 8px;
     padding: 6px;
   }
 
   .lg-mode-btn {
-    color: #625F71 !important;
+    color: #A6A2BC !important;
     font-family: 'Urbanist', sans-serif !important;
     font-weight: 700 !important;
     text-transform: none !important;
@@ -45,12 +45,13 @@
     font-weight: 600;
     margin-bottom: 4px;
     font-size: 28px;
+    color: #E5E2F2 !important;
     font-family: 'Urbanist', sans-serif !important;
   }
   
   .lg-subtitle {
     text-align: center;
-    color: #777;
+    color: #A6A2BC !important;
     margin-bottom: 24px !important;
     font-size: 16px ;
     font-family: 'Urbanist', sans-serif !important;
@@ -78,7 +79,7 @@
   
   
   .lg-signup-link {
-    color: #555;
+    color: #A6A2BC !important;
     font-size: 14px !important;
     text-align: center;
     font-family: 'Urbanist', sans-serif !important;
@@ -103,7 +104,7 @@
   .lg-inline-action {
     background: none;
     border: none;
-    color: #1A1729;
+    color: #E5E2F2 !important;
     cursor: pointer;
     font-family: 'Urbanist', sans-serif !important;
     font-weight: 700;
@@ -154,4 +155,29 @@
       margin: 0;
     }
   }
+
+/* Custom MUI Textfield overrides for Dark Mode */
+.lg-textfield .MuiInputLabel-root {
+  color: #A6A2BC !important;
+}
+
+.lg-textfield .MuiInputLabel-root.Mui-focused {
+  color: #f2bc00 !important;
+}
+
+.lg-textfield .MuiInputBase-input {
+  color: #E5E2F2 !important;
+}
+
+.lg-textfield .MuiOutlinedInput-notchedOutline {
+  border-color: #2D293E !important;
+}
+
+.lg-textfield:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #A6A2BC !important;
+}
+
+.lg-textfield .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #f2bc00 !important;
+}
   

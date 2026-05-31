@@ -1,7 +1,8 @@
 .co-root {
-  padding: 60px 20px;
+  padding: 40px 20px 60px 20px;
   text-align: center;
-  
+  background-color: #13111C !important;
+  min-height: 100vh;
 }
 
 .co-heading {
@@ -12,7 +13,7 @@
 }
 
 .co-subheading {
-  color: #1a1729 !important;
+  color: #A6A2BC !important;
   font-family: 'Urbanist', sans-serif !important;
   margin-top: 20px !important;
   margin-bottom: 40px !important;
@@ -42,8 +43,8 @@
   object-fit: contain;
   /* border-radius: 50%; */
   margin-right: 30px;
-  border: 5px solid transparent;
-  background-color: white; 
+  border: 5px solid #2D293E;
+  background-color: #1E1B2A; 
 }
 
 .co-profile-info {
@@ -53,7 +54,7 @@
 .co-name {
   font-size: 32px !important;
   font-weight: 700 !important;
-  color: #1a1729;
+  color: #E5E2F2 !important;
   font-family: 'Urbanist', sans-serif !important;
   margin-bottom: 10px !important;
 }
@@ -73,10 +74,10 @@
 }
 
 .co-description {
-  color: #444444;
+  color: #A6A2BC !important;
   font-size: 18px !important;
   margin-bottom: 15px;
-  margin-top:25px !important;
+  margin-top: 25px !important;
   font-family: 'Urbanist', sans-serif !important;
 
 }

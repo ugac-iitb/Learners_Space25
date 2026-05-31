@@ -2,7 +2,9 @@
     display: flex;
     /* gap: 40px; */
     /* padding: 40px; */
-    background-color: #fff;
+    background-color: #1E1B2A !important;
+    border: 1px solid #2D293E;
+    border-radius: 12px;
     max-width: 900px;
     /* margin: auto; */
     align-items: flex-start;
@@ -30,7 +32,7 @@
   
   .cd-name {
     font-family: 'Urbanist' !important;
-    color: #1a1729;
+    color: #E5E2F2 !important;
     font-size: 36px !important; 
     margin-bottom: 30px !important;
     font-weight: 600 !important;
@@ -39,12 +41,12 @@
   .cd-label{
     font-family: 'Urbanist' !important;
     font-size: 24px !important;
-    color:#8c8c8c;
+    color: #A6A2BC !important;
     margin-bottom: 15px !important;
   }
   
   .cd-profile-subhead{
-    color:#001635;
+    color: #E5E2F2 !important;
     font-size: 26px !important;
     margin-right: 5px;
     font-weight: 500 !important;

@@ -2,12 +2,11 @@
   max-width: 500px;
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
   font-family: 'Urbanist', sans-serif !important;
-  background-color: #fff;
-  /* margin: 1rem auto; center on small screens */
+  background-color: #1E1B2A !important;
 }
 
 .course-image {
@@ -61,19 +60,19 @@
 .author-name {
   font-weight: 600 !important;
   font-size: 18px   !important;
-  color:#1a1729 !important;
+  color:#E5E2F2 !important;
 }
 
 .course-title {
   font-size: 22px;
   font-weight: 700;
   margin: 10px 0;
-  color: #1a1729;
+  color: #E5E2F2 !important;
 }
 
 .course-description {
   font-size: 19px !important;
-  color: #282828;
+  color: #A6A2BC !important;
   overflow: hidden;
   max-height: 60px;
   transition: max-height 0.3s ease;
@@ -89,7 +88,7 @@
 .toggle-description-btn {
   background: none;
   border: none;
-  color: #221e31;
+  color: #f2bc00 !important;
   font-weight: 600;
   cursor: pointer;
   padding: 8px 0;
@@ -170,6 +169,10 @@
   gap: 8px;
 }
 
+.track-course-chip-row .MuiChip-root {
+  color: #F2BC00 !important;
+}
+
 .registered-course-card {
   min-height: 190px;
 }
@@ -228,6 +231,6 @@
   .author-name {
     font-weight: 600 !important;
     font-size: 15px   !important;
-    color:#1a1729 !important;
+    color:#E5E2F2 !important;
   }
 }

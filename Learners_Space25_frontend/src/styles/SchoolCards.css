@@ -1,10 +1,10 @@
 .design-card {
-    background-color: #ffffff !important;
+    background-color: #1E1B2A !important;
     padding: 30px 30px 30px 30px;
     border-radius: 20px;
     text-align: center;
     max-width: 358px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, opacity 0.4s ease, transform 0.4s ease;
     opacity: 1;
     transform: translateY(0);
@@ -46,12 +46,12 @@
     font-weight: 600 !important;
     font-family: 'Urbanist', sans-serif !important;
     font-size: 28px !important;
-    color: #1A1729 !important;
+    color: #F2BC00 !important;
     margin-bottom: 10px !important;
 }
 
 .design-desc {
-    color: #4e4c58 !important;
+    color: #A6A2BC !important;
     font-family: 'Urbanist', sans-serif !important;
     font-size: 19px !important;
     margin-bottom: 20px !important;
@@ -59,10 +59,13 @@
     font-weight: 500 !important;
 }
 
-.design-card:hover .design-title,
 .design-card:hover .design-desc,
 .design-card:hover .design-icon {
     color: white !important;
+}
+
+.design-card:hover .design-title {
+    color: #F2BC00 !important;
 }
 
 .design-card:hover .design-icon {

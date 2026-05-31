@@ -1,17 +1,17 @@
 .custom-accordion {
   box-shadow: none !important;
-  border: 1.5px solid #8a8989 !important;
+  border: 1.5px solid #2D293E !important;
   width: 100% !important;
   max-width: 800px; /* or 90% */
   margin: 30px auto 10px auto !important;
-  color: #625f78 !important;
+  color: #E5E2F2 !important;
   box-sizing: border-box;
   word-break: break-word;
   overflow-wrap: break-word;
 }
 
 .accordion-summary {
-  background-color: #ffff !important;
+  background-color: #1E1B2A !important;
   padding: 16px !important;
   display: flex !important;
   align-items: center !important;
@@ -19,8 +19,8 @@
 }
 
 .accordion-summary.expanded {
-  background-color: #1a1729 !important;
-  color: white !important;
+  background-color: #f2bc00 !important;
+  color: #13111C !important;
 }
 
 .accordion-title {
@@ -36,15 +36,23 @@
   white-space: normal !important;
 }
 
-.accordion-icon {
-  color: inherit !important;
+.accordion-icon,
+.accordion-icon svg,
+.accordion-icon .MuiSvgIcon-root {
+  color: #F2BC00 !important;
   background-color: transparent !important;
+}
+
+.accordion-summary.expanded .accordion-icon,
+.accordion-summary.expanded .accordion-icon svg,
+.accordion-summary.expanded .accordion-icon .MuiSvgIcon-root {
+  color: #13111C !important;
 }
 
 .accordion-details {
   padding: 16px !important;
-  background-color: white !important;
-  color: #555 !important;
+  background-color: #1E1B2A !important;
+  color: #A6A2BC !important;
   word-break: break-word !important;
   white-space: normal !important;
 }

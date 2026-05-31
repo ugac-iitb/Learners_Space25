@@ -63,8 +63,8 @@ const Navbar = () => {
             sx={{
                 width: 250,
                 height: '100%',
-                backgroundColor: "#f2bc00",
-                color: 'white',
+                backgroundColor: "#1E1B2A",
+                color: '#E5E2F2',
                 paddingTop: '20px',
             }}
             role="presentation"
