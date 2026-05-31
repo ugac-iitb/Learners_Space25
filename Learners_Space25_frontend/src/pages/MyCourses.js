@@ -16,12 +16,6 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 
-import CircleIcon from '@mui/icons-material/Circle';
-import LineAxisIcon from '@mui/icons-material/LineAxis';
-import BlurCircularIcon from '@mui/icons-material/BlurCircular';
-import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
-import GrainIcon from '@mui/icons-material/Grain';
-
 import RegisteredCourseCard from '../components/RegisteredCourseCard';
 import legacyCourses from '../data/Courses.json';
 import schoolData from '../data/SchoolInfo.json';
@@ -159,19 +153,10 @@ const MyCourses = () => {
 
   return (
     <div>
-      <Box className="cl-banner-root">
-        <CircleIcon className="cl-decor-icon cl-circle" />
-        <LineAxisIcon className="cl-decor-icon cl-zigzag" />
-        <BlurCircularIcon className="cl-decor-icon cl-blur" />
-        <ChangeHistoryIcon className="cl-decor-icon cl-triangle" />
-        <GrainIcon className="cl-decor-icon cl-dots" />
-
-        <Typography variant="h2" className="cl-banner-title">
+      <Box className="cl-course-list" sx={{ paddingTop: '40px' }}>
+        <Typography variant="h2" className="cl-course-list-title" sx={{ marginBottom: '30px' }}>
           My Courses
         </Typography>
-      </Box>
-
-      <Box className="cl-course-list" sx={{ paddingTop: '40px' }}>
         {loading && <CircularProgress color="warning" />}
 
         {!loading && error && (

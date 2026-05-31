@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CustomAccordion from '../components/FAQ_Accordians';
 import FAQ_data from '../data/FAQ.json';
-import { Box, Typography,Grid } from '@mui/material';
-import CircleIcon from '@mui/icons-material/Circle';
-import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
-import GrainIcon from '@mui/icons-material/Grain';
-import LineAxisIcon from '@mui/icons-material/LineAxis';
-import BlurCircularIcon from '@mui/icons-material/BlurCircular';
+import { Box, Typography } from '@mui/material';
 import '../styles/FAQ.css';
 
 const FAQ = () => {
@@ -21,19 +16,6 @@ const FAQ = () => {
 
     return (
         <div>
-            <Box className="banner-root">
-
-                <CircleIcon className="decor-icon circle" />
-                <LineAxisIcon className="decor-icon zigzag" />
-                <BlurCircularIcon className="decor-icon blur" />
-                <ChangeHistoryIcon className="decor-icon triangle" />
-                <GrainIcon className="decor-icon dots" />
-
-                <Typography variant="h2" className="banner-title">
-                    FAQ
-                </Typography>
-            </Box>
-
             <Box className="course-list">
                 <Typography variant="h2" className="course-list-title">Frequently Asked Questions</Typography>
 {/* 

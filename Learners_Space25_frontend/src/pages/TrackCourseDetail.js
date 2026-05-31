@@ -1,10 +1,5 @@
 import React, { useMemo } from "react";
 import { Box, Chip, Divider, Typography } from "@mui/material";
-import CircleIcon from "@mui/icons-material/Circle";
-import LineAxisIcon from "@mui/icons-material/LineAxis";
-import BlurCircularIcon from "@mui/icons-material/BlurCircular";
-import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
-import GrainIcon from "@mui/icons-material/Grain";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Link, useSearchParams } from "react-router-dom";
 import { getCourseById } from "../data/courseCatalog";
@@ -20,13 +15,7 @@ const TrackCourseDetail = () => {
 
   return (
     <div className="cd-course-page">
-      <Box className="cd-banner-root tcd-banner-root">
-        <CircleIcon className="cd-decor-icon cd-circle" />
-        <LineAxisIcon className="cd-decor-icon cd-zigzag" />
-        <BlurCircularIcon className="cd-decor-icon cd-blur" />
-        <ChangeHistoryIcon className="cd-decor-icon cd-triangle" />
-        <GrainIcon className="cd-decor-icon cd-dots" />
-
+      <Box className="tcd-header-root">
         <Box className="tcd-banner-content">
           <Link to={backPath} className="tcd-back-link">
             <ArrowBackIcon fontSize="small" />

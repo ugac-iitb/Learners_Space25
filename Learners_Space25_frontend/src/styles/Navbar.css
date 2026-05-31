@@ -56,6 +56,16 @@
     text-decoration: none !important;
 }
 
+.navbar-button.active {
+    color: #f2bc00 !important;
+    text-shadow: 0 0 10px rgba(242, 188, 0, 0.6), 0 0 18px rgba(242, 188, 0, 0.4);
+}
+
+.navbar-button.active::after {
+    width: 100% !important;
+    left: 50% !important;
+}
+
 .navbar-login{
     font-family: 'Urbanist' !important;
     font-size: 20px !important;
@@ -84,6 +94,11 @@
     color: #f2bc00 !important;
     cursor:pointer;
     text-transform: none !important;
+}
+
+.navbar-login.active {
+    color: #f2bc00 !important;
+    text-shadow: 0 0 10px rgba(242, 188, 0, 0.6), 0 0 18px rgba(242, 188, 0, 0.4);
 }
 
 .navbar-logo{
@@ -118,6 +133,14 @@
     background-color: #302c3d;
     color: #f2bc00;
     transform: translateX(4px);
+}
+
+.drawer-item.active {
+    background-color: #302c3d !important;
+    color: #f2bc00 !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 8px rgba(242, 188, 0, 0.4) !important;
+    box-shadow: 0 0 15px rgba(242, 188, 0, 0.2) !important;
 }
 
 

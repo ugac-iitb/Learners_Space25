@@ -5,12 +5,6 @@ import {
   Typography
 } from "@mui/material";
 
-import CircleIcon from '@mui/icons-material/Circle';
-import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
-import GrainIcon from '@mui/icons-material/Grain';
-import LineAxisIcon from '@mui/icons-material/LineAxis';
-import BlurCircularIcon from '@mui/icons-material/BlurCircular';
-
 import contactInfo from "../data/ContactData.json";
 
 const contactImageContext = require.context("../data/images/contact", false, /\.(png|jpe?g|webp)$/);
@@ -52,27 +46,14 @@ const Contact = () => {
   };
 
   return (
-    
+
     <div>
-      <Box className="banner-root">
-
-        <CircleIcon className="decor-icon circle" />
-        <LineAxisIcon className="decor-icon zigzag" />
-        <BlurCircularIcon className="decor-icon blur" />
-        <ChangeHistoryIcon className="decor-icon triangle" />
-        <GrainIcon className="decor-icon dots" />
-
-        <Typography variant="h2" className="banner-title">
-            Contact Us
-        </Typography>
-      </Box>
-
       <div className="co-root">
         <Typography variant="h3" className="co-heading">
           Our Team
         </Typography>
         <Typography variant="subtitle1" className="co-subheading">
-        Made with love by the UGAC Web Team in collaboration with the Career Cell
+          Made with ❤️ by the UGAC Web Team in collaboration with Career Cell
 
         </Typography>
 
@@ -90,16 +71,16 @@ const Contact = () => {
                 </Typography>
                 <Typography className="co-role">{renderParagraphs(person.position)}</Typography>
                 <Typography variant="body2" className="co-description">
-                  {person.contact && (<><span className="co-contact">Contact Number: </span> <span>{person.contact}</span></>  )} 
+                  {person.contact && (<><span className="co-contact">Contact Number: </span> <span>{person.contact}</span></>)}
                 </Typography>
-                
+
               </Box>
             </Box>
           ))}
         </Box>
       </div>
     </div>
-    
+
   );
 };
 

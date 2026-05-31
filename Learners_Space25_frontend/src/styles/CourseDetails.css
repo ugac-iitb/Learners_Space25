@@ -492,6 +492,21 @@
     padding-left: 0 !important;
 }
 
+.tcd-header-root {
+    max-width: 900px;
+    width: 100%;
+    margin: 40px auto 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.tcd-header-root + .cd-course-content {
+    padding-top: 40px !important;
+}
+
 @media (max-width: 768px) {
     .tcd-banner-root {
         min-height: 260px;
@@ -500,5 +515,9 @@
 
     .tcd-back-link {
         font-size: 14px;
+    }
+
+    .tcd-header-root {
+        margin: 20px auto 0 auto;
     }
 }

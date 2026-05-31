@@ -1,10 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Box, Typography, Chip } from "@mui/material";
-import CircleIcon from "@mui/icons-material/Circle";
-import LineAxisIcon from "@mui/icons-material/LineAxis";
-import BlurCircularIcon from "@mui/icons-material/BlurCircular";
-import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
-import GrainIcon from "@mui/icons-material/Grain";
 
 import TrackCourseCard from "../components/TrackCourseCard";
 import { getCanonicalCourses } from "../data/courseCatalog";
@@ -55,18 +50,6 @@ const TrackCourses = ({ type }) => {
 
   return (
     <div>
-      <Box className="cl-banner-root">
-        <CircleIcon className="cl-decor-icon cl-circle" />
-        <LineAxisIcon className="cl-decor-icon cl-zigzag" />
-        <BlurCircularIcon className="cl-decor-icon cl-blur" />
-        <ChangeHistoryIcon className="cl-decor-icon cl-triangle" />
-        <GrainIcon className="cl-decor-icon cl-dots" />
-
-        <Typography variant="h2" className="cl-banner-title">
-          Courses
-        </Typography>
-      </Box>
-
       <Box className="cl-course-list">
         <Typography className="cl-course-list-subtitle">Our Courses</Typography>
         <Typography variant="h2" className="cl-course-list-title">

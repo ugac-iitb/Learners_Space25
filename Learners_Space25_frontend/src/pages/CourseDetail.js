@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Typography, Divider } from '@mui/material';
-import CircleIcon from '@mui/icons-material/Circle';
-import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
-import GrainIcon from '@mui/icons-material/Grain';
-import LineAxisIcon from '@mui/icons-material/LineAxis';
-import BlurCircularIcon from '@mui/icons-material/BlurCircular';
 import '../styles/CourseDetails.css';
 import InsCourse from '../components/InsCourse';
 import { useSearchParams } from 'react-router-dom';
@@ -62,18 +57,6 @@ export default function CoursePage() {
 
     return (
         <div className="cd-course-page">
-            <Box className="cd-banner-root">
-                <CircleIcon className="cd-decor-icon cd-circle" />
-                <LineAxisIcon className="cd-decor-icon cd-zigzag" />
-                <BlurCircularIcon className="cd-decor-icon cd-blur" />
-                <ChangeHistoryIcon className="cd-decor-icon cd-triangle" />
-                <GrainIcon className="cd-decor-icon cd-dots" />
-
-                <Typography variant="h2" className="cd-banner-title">
-                    Course
-                </Typography>
-            </Box>
-
             {courseData && (
                 <div className="cd-course-content">
                     <div className="cd-course-left">
