@@ -9,27 +9,27 @@
     "weeks": [
       {
         "week": "Week 1",
-        "content": "An introduction to quadrotor flight, MATLAB basics and 1D control systems. Students explore system dynamics through simulations and tackle motor selection and thrust-to-weight ratio analysis."
+        "content": "An introduction to quadrotor flight, MATLAB basics & 1D control systems. Students familiar with PID controllers, explore system dynamics through simulations & tackle motor selection and thrust-to-weight ratio analysis."
       },
       {
         "week": "Week 2",
-        "content": "A deep dive into quadrotor kinematics and dynamics — covering Euler angles, rotation matrices, the 12-state state vector, equations of motion and the Newton-Euler formulation."
+        "content": "A deep dive into quadrotor kinematics and dynamics — covering Euler angles, rotation matrices, the 12-state state vector, equations of motion & the Newton-Euler formulation. Students simulate quadrotor agility and stopping distance using MATLAB."
       },
       {
         "week": "Week 3",
-        "content": "Development of 2D and 3D linear controllers for the quadrotor, including nested feedback loops, trajectory tracking, hover control, and PD/PID controller design."
+        "content": "Development of 2D and 3D linear controllers for the quadrotor. Topics include nested feedback loops, trajectory tracking, hover control, PD/PID controller design & MATLAB-based simulation of full 3D quadrotor control."
       },
       {
         "week": "Week 4",
-        "content": "Introduction to autonomous navigation — Pose Graph SLAM, loop closure, path planning algorithms (A* and RRT), and an overview of swarm robotics and multi-agent coordination."
+        "content": "Introduction to autonomous navigation — covering Pose Graph SLAM, loop closure, path planning algorithms (A* and RRT) & an overview of swarm robotics and multi-agent coordination."
       },
       {
         "week": "By the end of the course",
-        "content": "Students will have built a solid foundation in quadrotor dynamics, control theory and autonomous navigation, qualifying them for the hands-on hardware implementation phase."
+        "content": "Students will have built a solid foundation in quadrotor dynamics, control theory & autonomous navigation, backed by practical MATLAB simulations and assignments — qualifying them for the hands-on hardware implementation phase."
       }
     ],
-    "prerequisites": "None specified",
-    "evaluation": "75% attendance in sessions and weekly assignments",
+    "prerequisites": "None",
+    "evaluation": "Attendance in Speaker sessions (A%), Weekly Assignments (B%), Capstone Project (C%). Passing Criteria: 75% attendance in sessions and weekly assignments",
     "weeklyTime": "6 hours"
   },
   {
@@ -38,7 +38,7 @@
     "type": "TSS",
     "track": "non ITC",
     "school": "CS and DS School",
-    "intro": "Kickstart your data science journey with our beginner-friendly \"Data Science Fundamentals with Python\" course! Start from core Python skills, explore data handling and visualization, and transition to ML through supervised and unsupervised learning algorithms.",
+    "intro": "Kickstart your data science journey with our beginner-friendly \"Data Science Fundamentals with Python\" course! Start from core Python skills, explore data handling and data visualization with exciting libraries transitioning to ML through supervised and unsupervised learning algorithms with in-depth yet carefully curated easy-to-follow resources finishing off with a perfect real world project to reinforce key concepts while building your portfolio. This isn’t just a course; it’s your gateway to mastering the transformation of Basic raw data into Brilliant actionable intelligence!",
     "weeks": [
       {
         "week": "Week 1",
@@ -46,19 +46,19 @@
       },
       {
         "week": "Week 2",
-        "content": "Supervised Learning - Regression: Scikit-Learn, Linear Regression, Time Series Analysis, Forecasting, Anomaly detection, and Worksheet 2."
+        "content": "Supervised Learning - Regression: Domains of Analytics, Scikit-Learn Essentials, Linear Regression, Multiple Linear Regression, Time Series Analysis, Time Series Forecasting, Anomaly detection, and Worksheet 2."
       },
       {
         "week": "Week 3",
-        "content": "Supervised Learning - Classification: Logistic Regression, Decision Trees, Random Forests, Neural Networks, probability distributions, and Worksheet 3."
+        "content": "Supervised Learning - Classification: Regression vs Classification, Logistic Regression, Decision Trees & Random Forests, Optional Classification algorithms (SVM, KNN), Neural Networks, Probability distributions and Central Limit Theorem, and Worksheet 3."
       },
       {
         "week": "Week 4",
-        "content": "Unsupervised Learning: K-Means, Hierarchical Clustering, Gaussian Mixture Models, Dimensionality Reduction, Matrix Factorization, and Capstone Project."
+        "content": "Unsupervised Learning: Intro to Unsupervised Learning, K-Means Clustering, Hierarchical Clustering, Gaussian Mixture Models, Dimensionality Reduction (PCA, SVD, LDA), Matrix Factorization, and Capstone Project."
       }
     ],
     "prerequisites": "Just your Enthusiasm!",
-    "evaluation": "There will be 3 worksheets and 1 final capstone project. 1st Phase worksheet, at least one among the 2nd and 3rd Phase worksheets and Capstone project are necessary for certification.",
+    "evaluation": "There will be 3 worksheets and 1 final capstone project. 1st Phase worksheet, Atleast one among the 2nd and 3rd Phase worksheets and Capstone project are necessary for certification",
     "weeklyTime": "7-10 hours"
   },
   {
@@ -67,19 +67,19 @@
     "type": "TSS",
     "track": "non ITC",
     "school": "CS and DS School",
-    "intro": "Dive into the world of data analysis using the most accessible tools out there. This course takes you through Excel and SQL with bite-sized videos and practical assignments.",
+    "intro": "Dive into the world of data analysis using the most accessible tools out there. Whether you're a beginner or just looking to brush up your skills, this course takes you through Excel and SQL with bite-sized videos, practical assignments, designed to fit into your daily routine.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Excel: Introduction to spreadsheets, formatting, formulas, functions, referencing, data quality, importing, and data cleaning."
+        "content": "Excel: Introduction to spreadsheets, Basics of spreadsheets, Columns, row and cell formatting, Basics of formulas, Introduction to functions, Absolute and Relative referencing, Introduction to data quality & importing file data, Data cleaning techniques."
       },
       {
         "week": "Week 2",
-        "content": "Excel: Sorting, Filtering, VLOOKUP, HLOOKUP, Pivot Tables. SQL: Installation, queries, functions, and operators."
+        "content": "Excel: Sorting & Filtering, Some important functions, VLOOKUP & HLOOKUP functions, Pivot Tables. SQL: Installation and setup, Introduction, Queries in SQL, Functions in SQL, Operators in SQL."
       },
       {
         "week": "Week 3",
-        "content": "Excel: Charts and Dashboarding. SQL: Clauses, Joins, and Subqueries."
+        "content": "Excel: All about Charts, Dashboarding. SQL: All about clauses, SQL Joins, Subquery in SQL."
       },
       {
         "week": "Week 4",
@@ -87,85 +87,56 @@
       }
     ],
     "prerequisites": "Just your Enthusiasm!",
-    "evaluation": "Excel: 5 assignments, any 3 compulsory; final Excel project compulsory. SQL: 2 assignments, any 1 compulsory; final SQL project compulsory.",
+    "evaluation": "Excel: 5 assignments will be given, out of which any 3 are compulsory, final project is compulsory. SQL: 2 assignments will be given, any one of them is compulsory, final project is compulsory. Certification: Excel: 3/5 assignments and final project. SQL: 1/2 assignments and final project.",
     "weeklyTime": "5-7 hours"
   },
   {
-    "body": "Analytics Club",
-    "course": "Generative and Agentic AI",
-    "type": "TSS",
-    "track": "non ITC",
-    "school": "CS and DS School",
-    "intro": "In 4 weeks you will go from your first LLM API call to shipping a fully autonomous multi-agent workflow — prompt engineering, RAG, LangChain, LangGraph, and real projects.",
-    "weeks": [
-      {
-        "week": "Week 1",
-        "content": "Understanding LLMs: Prompting and APIs — moving from browser chat to controlling models through APIs."
-      },
-      {
-        "week": "Week 2",
-        "content": "Retrieval Augmented Generation (RAG) and Fine-Tuning — teaching your LLM to answer from your own documents."
-      },
-      {
-        "week": "Week 3",
-        "content": "Agentic AI (MCPs, LangChain, LangGraph) — build agents that use tools and execute multi-step tasks."
-      },
-      {
-        "week": "Week 4",
-        "content": "Multi-Agent Workflows and Capstone Project — specialised agents collaborating under an orchestration layer."
-      }
-    ],
-    "prerequisites": "Just your enthusiasm",
-    "evaluation": "2 out of 3 assignments and 1 capstone project are compulsory for certification",
-    "weeklyTime": "7-10 hours"
-  },
-  {
     "body": "ChemEca",
-    "course": "Introduction to Computational Chemistry",
+    "course": "Introduction to computational chemistry",
     "type": "TSS",
     "track": "ITC",
     "school": "Sciences School",
-    "intro": "Ever wondered what happens inside a chemical reaction at the level of atoms and electrons? Computational chemistry lets you simulate molecules on a computer and discover new materials without lifting a pipette.",
+    "intro": "Ever wondered what happens inside a chemical reaction — at the level of atoms and electrons — before it shows up in your test tube? Computational chemistry lets you simulate molecules on a computer, predict how they behave, and even discover new materials and drugs without lifting a pipette.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Energy, Geometry, and Your First Simulation — Potential Energy Surface, optimization algorithms, hands-on with WebMO."
+        "content": "Energy, Geometry, and students First Simulation: Potential Energy Surface (PES), coordinates (bond length, angle, dihedral), local and global minima, optimization algorithms conceptually (steepest descent, conjugate gradient), and hands-on WebMO activities."
       },
       {
         "week": "Week 2",
-        "content": "Molecular Mechanics — force fields (AMBER, CHARMM, OPLS, UFF), parameterization, butane torsional energy exercises."
+        "content": "Molecular Mechanics: Treating Atoms Like Balls and Springs — Hooke's law, angular springs, torsion periodic functions, Lennard-Jones/Coulomb potentials, force fields (AMBER, CHARMM, OPLS, UFF), parameterization, and butane torsional energy curve exercises."
       },
       {
         "week": "Week 3",
-        "content": "Molecular Dynamics — Verlet integration, ensembles (NVE, NVT, NPT), MD simulation of liquid water in LAMMPS."
+        "content": "Molecular Dynamics: Making Atoms Move — velocities, Newton's F = ma, Verlet integration algorithm, timesteps, ensembles (NVE, NVT, NPT), temperature and pressure control, and running liquid water simulations in LAMMPS."
       },
       {
         "week": "Week 4",
-        "content": "Quantum Leap and DFT Intuition — Schrödinger equation, Born-Oppenheimer, DFT basics, guided DFT calculation."
+        "content": "The Quantum Leap: Why Electrons Matter + DFT Intuition — Schrödinger equation, Born–Oppenheimer approximation, Density Functional Theory (DFT) basics, functionals (LDA, GGA, hybrid), and a guided DFT calculation on small molecules."
       },
       {
         "week": "Project",
-        "content": "Multi-method comparative study on a chosen molecule: force fields, MD, DFT geometry and vibrational frequencies, 4-5 page report and presentation."
+        "content": "Pick a small molecule of your choice (3–10 heavy atoms) and carry out a multi-method comparative study. Understand limitations, methods (MM vs MD vs QM), read research papers, and present compiled findings."
       }
     ],
     "prerequisites": "Enthusiasm and curiosity is enough",
-    "evaluation": "A=20%, B=40%, C=40%; passing criteria 60%",
-    "weeklyTime": "5-6 hours per week"
+    "evaluation": "A=20 B=40 C=40 passing criteria will be 60% overall score",
+    "weeklyTime": "5-6 Hours per week"
   },
   {
     "body": "Chemistry Club and ChemETL",
-    "course": "Techno Commercial Aspects of Chemical Industries",
+    "course": "Techno commercial aspects of chemical industries",
     "type": "TSS",
     "track": "ITC",
     "school": "Engineering School",
-    "intro": "This course offers a comprehensive introduction to the chemical industry, covering core chemical engineering concepts, industrial processes, and emerging technologies.",
+    "intro": "This course offers a comprehensive introduction to the chemical industry, covering core chemical engineering concepts, industrial processes, and emerging technologies. Participants will explore topics such as chemical products and markets, mass and energy balances, thermodynamics, reaction engineering, separation processes, petrochemicals, pharmaceuticals, and sustainable manufacturing practices.",
     "weeks": [
       {
         "week": "Course content",
         "content": "Detailed week-wise content to be announced."
       }
     ],
-    "prerequisites": "Just Enthusiasm",
+    "prerequisites": "Just高度Enthusiasm.",
     "evaluation": "To be announced",
     "weeklyTime": "5 hours"
   },
@@ -175,108 +146,76 @@
     "type": "TSS",
     "track": "ITC",
     "school": "Sciences School",
-    "intro": "This course explores the chemistry of space, from interstellar clouds and star-forming regions to protoplanetary disks and biosignatures of extraterrestrial life.",
+    "intro": "This course explores the fascinating chemistry of space, from interstellar clouds and star-forming regions to protoplanetary disks and biosignatures of extraterrestrial life. Blending chemistry, astronomy, and astrobiology, it uncovers how molecules shape the universe and how scientists search for the building blocks of life beyond Earth.",
     "weeks": [
       {
         "week": "Course content",
         "content": "Detailed week-wise content to be announced."
       }
     ],
-    "prerequisites": "Just Enthusiasm",
+    "prerequisites": "Just高度Enthusiasm",
     "evaluation": "To be announced",
     "weeklyTime": "5 hours"
-  },
-  {
-    "body": "Comedy Cons",
-    "course": "Standup-101",
-    "type": "NTSS",
-    "school": "Sports and Skills School",
-    "intro": "Transform your funny everyday thoughts into stage-ready stand-up comedy. Learn to build a clear stage persona, write high-laugh routines, and control live crowd energy.",
-    "weeks": [
-      {
-        "week": "Week 1",
-        "content": "Structural overview of comedy, joke writing building blocks, and discovering the comedic sub-genre that suits your voice."
-      },
-      {
-        "week": "Week 2",
-        "content": "From isolated joke mechanics to structural architecture — weaving jokes into extended bits and maximizing stage energy."
-      },
-      {
-        "week": "Week 3",
-        "content": "Advanced comedic theory — sophisticated joke structures, audience boundaries, and manipulating live room energy."
-      },
-      {
-        "week": "Week 4",
-        "content": "Character alignment, performance psychology, self-documentation, and professional career sustainability."
-      },
-      {
-        "week": "By the end of the course",
-        "content": "Transform spontaneous thoughts into structured routines using misdirection, Word Smuggling, and Seesaw Theory with confident stage presence."
-      }
-    ],
-    "prerequisites": "Just Enthusiasm",
-    "evaluation": "Assignments (100%); passing criteria 75%",
-    "weeklyTime": "2 hours"
   },
   {
     "body": "Consult Club",
     "course": "Consulting 101",
     "type": "NTSS",
     "school": "Management School",
-    "intro": "Consulting 101 is a beginner-friendly course designed to introduce students to the fundamentals of consulting through structured thinking, business frameworks, and case-solving skills.",
+    "intro": "Consulting 101 is a beginner-friendly, structured course designed to introduce students to the fundamentals of consulting. It focuses on developing structured thinking, business frameworks, and case-solving skills through practical concepts like guesstimates, market entry, profitability, and growth strategy, mirroring real consulting problem-solving.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Introduction to consulting and core problem-solving tools, including MECE, issue trees, and guesstimates."
+        "content": "Week 1 – Introduction to consulting and core problem-solving tools, including structured thinking (MECE, issue trees) and guesstimates to develop logical and analytical approaches."
       },
       {
         "week": "Week 2",
-        "content": "Market and industry analysis using market entry, Porter's Five Forces, PESTEL, SWOT, and market sizing (TAM/SAM/SOM)."
+        "content": "Week 2 – Market and industry analysis using frameworks like market entry, Porter’s Five Forces, PESTEL, SWOT, and market sizing (TAM/SAM/SOM) to understand businesses and competitive landscapes."
       },
       {
         "week": "Week 3",
-        "content": "Profitability analysis, value chains, growth strategies (4Ps, 3Cs, Ansoff), and pricing concepts."
+        "content": "Week 3 – Application of consulting frameworks to real business problems, covering profitability analysis, value chains, growth strategies (4Ps, 3Cs, Ansoff), and pricing concepts."
       },
       {
         "week": "By the end of the course",
-        "content": "Participants will break down business problems in a structured manner and approach case questions with clarity and confidence."
+        "content": "Participants will be able to break down business problems in a structured manner, apply key consulting frameworks, and approach case questions with clarity and confidence."
       }
     ],
     "prerequisites": "None",
-    "evaluation": "Attendance in Speaker sessions (50%), Weekly Assignments (50%). Passing: 2/3 Speaker Sessions and 2/3 Weekly Assignments.",
-    "weeklyTime": "Not specified"
+    "evaluation": "Attendance in Speaker sessions (50%) , Weekly Assignments (50%). Passing Criteria: 2/3 Speaker Sessions and 2/3 Weekly Assignments must be completed",
+    "weeklyTime": "4-6 hours"
   },
   {
     "body": "Consult Club",
     "course": "Product Management 101",
     "type": "NTSS",
     "school": "Management School",
-    "intro": "Product Management 101 is a 4-week beginner-to-intermediate course for students who want to explore PM as a career or build foundational product thinking.",
+    "intro": "Product Management 101 is a 4-week beginner-to-intermediate course designed for students who want to explore PM as a career or build the foundational thinking that makes great product builders. No prior experience needed, just curiosity and a bias for problem-solving.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "PM role, building products 0 to 1, user research, personas, Jobs-to-be-Done, and empathy mapping."
+        "content": "Week 1 — An introduction to the PM role, how products are built from 0 to 1, and how to think about users through research, personas, the Jobs-to-be-Done framework, and empathy mapping."
       },
       {
         "week": "Week 2",
-        "content": "User interviews, competitive analysis, PRDs, roadmaps, RICE/KANO/MoSCoW prioritization, and OKRs."
+        "content": "Week 2 — A deep dive into the PM craft: conducting user interviews, running competitive analysis, writing PRDs, building roadmaps, prioritizing ruthlessly using frameworks like RICE, KANO, and MoSCoW, and aligning stakeholders with OKRs."
       },
       {
         "week": "Week 3",
-        "content": "Metrics and experimentation — AARRR, HEART, funnels, retention, A/B tests, and product design interview answers."
+        "content": "Week 3 — The metrics and experimentation layer, how PMs measure success using frameworks like AARRR and HEART, analyze funnels and retention, run A/B tests, and structure product design answers for interviews end-to-end."
       },
       {
         "week": "Week 4",
-        "content": "Interview preparation: product improvement cases, app critiques, root cause analysis, GTM, pricing, Fermi estimation, and STAR framework."
+        "content": "Week 4 — Interview preparation and applied PM thinking, product improvement cases, app critiques, root cause analysis, GTM and pricing strategy, Fermi estimation, and behavioral questions using the STAR framework."
       },
       {
         "week": "By the end of the course",
-        "content": "Identify user problems, size opportunities, write a PRD, build a roadmap, define success metrics, and approach PM interviews confidently."
+        "content": "You'll be able to identify user problems, size opportunities, write a PRD, build a roadmap, define success metrics, and walk into a PM interview with a structured, confident approach to any product design or analytical question thrown at you."
       }
     ],
     "prerequisites": "None",
-    "evaluation": "Attendance in Speaker sessions (33.3%), Weekly Assignments (33.3%), Capstone Project (33.3%)",
-    "weeklyTime": "Not specified"
+    "evaluation": "Attendance in Speaker sessions (33.3%) Weekly Assignments (33.3%) Capstone Project (33.3%). Certification: Successful completion of assignments and capstone criteria.",
+    "weeklyTime": "4-6 hours"
   },
   {
     "body": "Energy & Sustainability Club",
@@ -284,31 +223,31 @@
     "type": "TSS",
     "track": "ITC",
     "school": "Sciences School",
-    "intro": "A practical introduction to modern energy systems with emphasis on renewable integration, simulation, optimisation, smart grids, IoT monitoring, and AI-based energy management.",
+    "intro": "A practical and technology-oriented introduction to modern energy systems with emphasis on renewable energy integration, computational simulation, optimisation techniques, smart grid technologies, IoT-enabled energy monitoring, and AI-based intelligent energy management systems.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Fundamentals of Modern Energy Systems — renewable integration, demand patterns, load profiles, and grid challenges."
+        "content": "Week 1 — Fundamentals of Modern Energy Systems. Students will be introduced to the evolution of conventional and smart energy systems, including the integration of renewable energy technologies such as solar and wind power. The week also covers energy demand patterns, load profiles, grid challenges, and the need for simulation and optimisation in modern energy infrastructure."
       },
       {
         "week": "Week 2",
-        "content": "Simulation and Computational Modelling — Python/Colab, solar and battery systems, SOC, Pandas and Matplotlib."
+        "content": "Week 2 — Simulation and Computational Modelling. This week focuses on computational modelling and simulation techniques used in energy systems. Students will learn the basics of Python and Google Colab, model solar and battery systems, understand battery State of Charge (SOC), and analyse energy datasets using Pandas and Matplotlib for visualisation and interpretation of simulation results."
       },
       {
         "week": "Week 3",
-        "content": "Optimisation of Energy Systems — objective functions, constraints, scheduling, SciPy Optimise and PuLP."
+        "content": "Week 3 — Optimisation of Energy Systems. Students will explore optimisation techniques used in energy management and sustainable power systems. Topics include optimisation fundamentals, objective functions, constraints, energy scheduling, peak demand reduction, battery management, and linear programming using tools such as SciPy Optimise and PuLP. A hands-on activity on battery scheduling optimisation will also be included."
       },
       {
         "week": "Week 4",
-        "content": "Smart Energy Technologies — smart grids, IoT monitoring, EV infrastructure, AI in energy, digital twins."
+        "content": "Week 4 — Smart Energy Technologies and Future Systems. The final week introduces emerging technologies transforming the energy sector, including smart grids, IoT-enabled monitoring systems, EV charging infrastructure, intelligent energy management, AI applications in energy systems, digital twins, and data-driven analytics for future sustainable energy solutions."
       },
       {
-        "week": "By the end of the course",
-        "content": "Foundational knowledge of energy systems, Python simulation skills, and exposure to IoT, EV, and AI-driven energy solutions."
+        "week": "By the End of the Course",
+        "content": "Students will gain foundational knowledge of modern energy systems, renewable energy integration, and smart grid technologies. They will develop hands-on skills in Python-based simulation, energy data analysis, and optimisation techniques, while also exploring emerging technologies such as IoT, EV infrastructure, and AI-driven energy systems."
       }
     ],
     "prerequisites": "No Pre-requisites",
-    "evaluation": "4 weekly quizzes (25% each). Passing: minimum 50% overall; attempt at least 3 of 4 quizzes.",
+    "evaluation": "Grading Format - 4 quizzes, each with 25% weightage. Passing Criteria: Minimum 50% overall score across all quizzes. Participants must attempt at least 3 out of 4 weekly quizzes to complete the course.",
     "weeklyTime": "3 hrs/week"
   },
   {
@@ -317,31 +256,31 @@
     "type": "TSS",
     "track": "ITC",
     "school": "Sciences School",
-    "intro": "The course bridges engineering and markets through logical optimization puzzles — from how free solar power crashes electricity prices to why energy efficiency can increase fuel consumption.",
+    "intro": "The course bridges engineering and markets through logical optimization puzzles. Over four weeks, you will dissect counterintuitive paradoxes. From how free solar power crashes electricity prices to why energy efficiency can increase fuel consumption.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Macro Energy Dynamics and Resource Horizons — Hotelling's Rule, Green Paradox, Jevon's Paradox."
+        "content": "Week 1 — Macro Energy Dynamics and Resource Horizons. Students will explore the economics of finite energy resources and consumer behaviour in energy markets. Topics include resource depletion strategies, Hotelling’s Rule, the Green Paradox, energy efficiency gaps, and Jevon’s Paradox, providing insight into how energy markets and human behaviour shape long-term energy consumption."
       },
       {
         "week": "Week 2",
-        "content": "Power Grid Operations and Market Regulations — merit order, auctions, locational marginal pricing."
+        "content": "Week 2 — Power Grid Operations and Market Regulations. This week focuses on electricity market structures and grid economics. Students will learn how grid auctions determine electricity prices, how transmission networks operate under physical constraints, and how concepts such as merit order curves, uniform price auctions, locational marginal pricing, and regulatory monopolies influence modern power systems."
       },
       {
         "week": "Week 3",
-        "content": "Clean Energy Economics and the Solar Paradox — duck curve, subsidies, renewable cannibalisation."
+        "content": "Week 3 — Clean Energy Economics and the Solar Paradox. Students will analyse the economic and operational challenges introduced by renewable energy integration. The course covers net load profiles, the duck curve, renewable energy subsidies, renewable cannibalisation, and the missing money problem, helping students understand the complexities of maintaining stable and profitable clean energy markets."
       },
       {
         "week": "Week 4",
-        "content": "Grid Flexibility, Storage, and Decarbonisation Policy — battery arbitrage and revenue stacking."
+        "content": "Week 4 — Grid Flexibility, Storage, and Decarbonisation Policy. The final week explores energy storage economics, battery arbitrage, grid flexibility, and long-term decarbonisation strategies. Students will study how future grid assets generate value through revenue stacking, manage capital risk, and support reliable low-carbon energy systems."
       },
       {
-        "week": "By the end of the course",
-        "content": "Understand energy market economics, power grid operations, renewable integration, and storage systems."
+        "week": "By the End of the Course",
+        "content": "Students will gain a strong understanding of energy market economics, power grid operations, renewable energy integration, and energy storage systems. They will develop the ability to analyse electricity markets, understand policy and pricing mechanisms, and evaluate the economic forces driving the global clean energy transition."
       }
     ],
     "prerequisites": "No Pre-requisites",
-    "evaluation": "Weekly quizzes (4×25%). Criteria: attempt at least 3 quizzes and score more than 40%.",
+    "evaluation": "Weekly quizzes 4× 25%. Evaluation criteria: 1) Attempted atleast 3 quizzes 2) more than 40% in quizzes",
     "weeklyTime": "3 hrs/week"
   },
   {
@@ -349,27 +288,27 @@
     "course": "The Art of Professional Communication",
     "type": "NTSS",
     "school": "Sports and Skills School",
-    "intro": "This course helps you communicate clearly and confidently in professional and academic settings through practical, hands-on sessions.",
+    "intro": "This course helps you communicate clearly and confidently in professional and academic settings. Over six sessions, you'll work on thinking on your feet, presenting yourself well, handling interviews, and building the kind of communication skills that matter in any career. It's practical, hands-on, and focused on skills you'll actually use.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Impromptu Thinking in Professional Environments; Temperament and Body Language."
+        "content": "Week 1- Impromptu Thinking in Professional Environments: Learn to organize your thoughts quickly and respond confidently when you're put on the spot — in meetings, discussions, or interviews. Temperament & Body Language: Understand how posture, gestures, and tone affect how others perceive you, and how to use body language to communicate more effectively."
       },
       {
         "week": "Week 2",
-        "content": "The Power of Professional Debating; Cracking English Proficiency Exams."
+        "content": "Week 2- The Power of Professional Debating: Explore how debating sharpens critical thinking, reasoning, and persuasion — and how those skills carry over into everyday communication. Cracking English Proficiency Exams: Practical strategies and tips for approaching major English proficiency exams, along with ways to improve your overall fluency."
       },
       {
         "week": "Week 3",
-        "content": "Pitching Yourself and Acing Interviews."
+        "content": "Week 3- Pitching Yourself & Acing Interviews: Learn to present your ideas and strengths with confidence, and get practical techniques for preparing for interviews, handling tough questions, managing nerves, and making a strong impression — whether to a recruiter, a client, or an interview panel."
       },
       {
         "week": "Week 4",
-        "content": "Assignment and project."
+        "content": "Week 4- Assignment and project"
       }
     ],
     "prerequisites": "None",
-    "evaluation": "Attendance (30%) — 4 of 5 sessions mandatory; Capstone project (50%); Assignment (20%).",
+    "evaluation": "Attendance (30%), Capstone project (50%), Compulsory Assignment (20%). Certification: 4 out of 5 sessions mandatory, Capstone project and Assignment are compulsory.",
     "weeklyTime": "2-3 hours"
   },
   {
@@ -377,15 +316,27 @@
     "course": "Journalistic Writing",
     "type": "NTSS",
     "school": "Sports and Skills School",
-    "intro": "This course helps you write with clarity, precision, and impact across diverse media formats through practical storytelling sessions.",
+    "intro": "This course helps you write with clarity, precision, and impact across diverse media formats. Over four sessions, you’ll work on crafting compelling articles, structuring engaging short stories, and mastering the core ethics of modern writing. It’s practical, hands-on, and focused on building real-world storytelling skills that captivate readers in print and digital spaces.",
     "weeks": [
       {
-        "week": "Sessions",
-        "content": "Four practical sessions on journalistic writing and storytelling (details in speaker sessions)."
+        "week": "Week 1",
+        "content": "Introduction to Journalism narratives"
+      },
+      {
+        "week": "Week 2",
+        "content": "Structuring short stories and layout"
+      },
+      {
+        "week": "Week 3",
+        "content": "Core ethics of modern writing"
+      },
+      {
+        "week": "Week 4",
+        "content": "Practical hands-on storytelling and submissions"
       }
     ],
     "prerequisites": "None",
-    "evaluation": "Attendance (30%) — 3 of 4 sessions compulsory; Assignment (70%); passing criteria 70%.",
+    "evaluation": "Attendance (30%), Assignment (70%). Certification: 3 out of 4 sessions compulsory. Passing criteria (70%)",
     "weeklyTime": "2-3 hours"
   },
   {
@@ -393,27 +344,31 @@
     "course": "How to Start a Startup",
     "type": "NTSS",
     "school": "Management School",
-    "intro": "Master the art of launching and scaling a startup in three weeks. Learn idea generation, growth strategies, and building a winning team.",
+    "intro": "Master the art of launching and scaling a startup in just three weeks. Learn from industry experts about idea generation, growth strategies, and building a winning team to achieve entrepreneurial success.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Startup foundation and Product-Market Fit — problem-solving, execution, pivoting, case studies (Airbnb, Tesla, Netflix)."
+        "content": "Week 1: Startup foundation and Understanding Product-Market Fit. The first week focuses on the essential building blocks of a startup. You'll learn how to transform a compelling idea into a robust product, assemble an exceptional team, and execute flawlessly. Key topics include problem-solving with passion, the importance of execution, strategic pivoting, evaluating long-term value, and future planning. Through case studies of companies like Airbnb, Tesla, and Netflix, you'll gain a deep understanding of how these principles apply in the real world."
       },
       {
         "week": "Week 2",
-        "content": "Growth Strategies and Marketing — SEO, email, SMS, push notifications, customer support, word-of-mouth."
+        "content": "Week 2: Growth Strategies and Marketing techniques. In the second week, the course shifts to various growth strategies crucial for a startup’s success. You'll explore SEO, email marketing, SMS, and push notifications, with an emphasis on deliverability and user engagement. Learn how to create products users love and the importance of exceptional customer support. Highlights include keyword research, link building, triggered marketing campaigns, and leveraging word-of-mouth for organic growth."
       },
       {
         "week": "Week 3",
-        "content": "Building Culture and Strategic Management — hiring, transparency, onboarding, contrarian thinking."
+        "content": "Week 3: Building Culture and Strategic Management. The final week focuses on building a strong company culture and effective team management. Insights from leaders like Ben Silberman and the Collison brothers will guide you in hiring individuals who align with your company’s values. Topics include transparency, onboarding, managing people and resources, and making strategic decisions. You'll also learn the significance of location, contrarian thinking, and intelligent risk-taking in the startup landscape."
+      },
+      {
+        "week": "Week 4",
+        "content": "Finalization and pitch evaluation processing."
       },
       {
         "week": "By the end of the course",
-        "content": "Strong understanding of the startup ecosystem, growth strategies, and team management for building successful ventures."
+        "content": "Participants will develop a strong understanding of the startup ecosystem, growth strategies, and effective team management practices required to build successful ventures."
       }
     ],
     "prerequisites": "Passionate about entrepreneurship and very basic understanding of business concepts. No prior experience required.",
-    "evaluation": "Attend all speaker sessions (3 total); minimum 60% overall; submit all weekly assignments and final project.",
+    "evaluation": "Lectures - 5-6 hours/ week + Assignment - 4-5 hours/ week. Minimum 60% overall score (assignments + final project). Certification: Attend all speaker sessions (1 session weekly, Total 3 sessions); Submission of all weekly assignments and final project",
     "weeklyTime": "10-12 hours a week"
   },
   {
@@ -421,131 +376,122 @@
     "course": "AI in Entrepreneurship - Innovate, Launch, Scale",
     "type": "NTSS",
     "school": "Management School",
-    "intro": "A 4-week course on the intersection of entrepreneurship and AI — ideate, validate, build, and scale a startup using practical AI tools.",
+    "intro": "This 4-week course introduces students to the intersection of entrepreneurship and artificial intelligence. You’ll learn how to ideate, validate, build, and scale a startup using practical AI tools. Each week focuses on a new stage of the entrepreneurial journey-from understanding the startup lifecycle and market research to building MVPs with no-code AI platforms and preparing AI-powered pitch decks.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Entrepreneurship foundations and AI — startup lifecycle, AI/ML overview, applications, hands-on with ChatGPT and Notion AI."
+        "content": "Week 1: Introduction to Entrepreneurship & Foundations of AI — Understanding the entrepreneurial mindset and the startup lifecycle; Overview of AI and machine learning (no technical background needed); Applications of AI in real-world businesses; AI in the startup landscape: opportunities and examples; Hands-on: Explore ChatGPT, Notion AI, and other beginner-friendly tools."
       },
       {
         "week": "Week 2",
-        "content": "AI for market research — personas, segmentation, competitive mapping with Browse AI, Perplexity, Similarweb."
+        "content": "Week 2: AI for Market Research & Opportunity Identification — Using AI tools for market research and trend analysis; Customer persona creation and segmentation with AI assistance; Competitive landscape mapping using AI scrapers and research assistants; Tools: Browse AI, ChatGPT, Perplexity AI, Similarweb."
       },
       {
         "week": "Week 3",
-        "content": "MVPs with no-code tools (Bubble, Glide, Canva, Figma, Tally) and integrating AI APIs."
+        "content": "Week 3: Building MVPs and Prototypes with AI & No-Code Tools — Understanding MVPs and product-market fit; Introduction to no-code tools (Bubble, Glide, Canva, Figma, Tally); Integrating AI APIs or models into your startup idea; Case studies: Jasper AI, Copy.ai, Looka, Synthesia."
       },
       {
         "week": "Week 4",
-        "content": "Scaling, pitching, ethical AI — sales/marketing automation, AI pitch decks, responsible AI practices."
+        "content": "Week 4: Scaling, Pitching & Ethical AI Use — Using AI in sales, marketing, and customer support automation; Creating AI-powered pitch decks and fundraising strategies; Tools: Beautiful.ai, ChatGPT for scripting, Decktopus, SlidesAI; Discussion: Responsible use of AI, ethics, bias, and data privacy."
       },
       {
         "week": "By the end of the course",
-        "content": "Complete AI-powered startup concept with hands-on experience in no-code and AI platforms."
+        "content": "Participants will have developed a complete AI-powered startup concept along with practical exposure to AI tools used for ideation, market research, prototyping and preparing AI-powered pitch decks."
       }
     ],
-    "prerequisites": "No coding experience required; curiosity to explore AI-driven platforms.",
-    "evaluation": "Attend all 4 speaker sessions; minimum 60% overall; submit all assignments and final project.",
-    "weeklyTime": "3-5 hours/week"
+    "prerequisites": "No coding experience required; Basic familiarity with startups, business ideas, or willingness to explore new tools; Curiosity to learn and experiment with AI-driven platforms",
+    "evaluation": "Assignments and project mapping. Minimum 60% overall score. Certification: Attend all speaker sessions (1 session weekly, Total 4 sessions); Submission of all weekly assignments and final project",
+    "weeklyTime": "3–5 hours/week"
   },
   {
     "body": "Finance Club",
     "course": "Fundamentals of Finance",
     "type": "NTSS",
     "school": "Management School",
-    "intro": "An introduction to personal finance, asset classes, fundamental analysis, and technical analysis for informed financial decision-making.",
+    "intro": "An introduction to the fundamentals of finance, covering personal finance, asset classes, fundamental analysis, and technical analysis, designed to equip students with practical tools for informed financial decision-making.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Personal Finance — budgeting, saving, and long-term financial security."
+        "content": "Week 1 Personal Finance: Practical frameworks for budgeting, saving, and building long-term financial security, equipping students with essential tools to manage their finances and make informed decisions early in their careers."
       },
       {
         "week": "Week 2",
-        "content": "Asset Classes — equity, debt, real estate, commodities, diversification and risk."
+        "content": "Week 2 Asset Classes: An introduction to key asset classes including equity, debt, real estate, and commodities, with a focus on their role in portfolio diversification, income generation, and risk management."
       },
       {
         "week": "Week 3",
-        "content": "Fundamental Analysis — financial statements, ratios, intrinsic value."
+        "content": "Week 3 Fundamental Analysis: Evaluating companies through financial statements and key ratios, helping students assess stocks and determine intrinsic value using the principles of fundamental analysis."
       },
       {
         "week": "Week 4",
-        "content": "Technical Analysis — price trends, chart patterns, and market indicators."
-      },
-      {
-        "week": "Capstone",
-        "content": "Apply learning across four weeks to a real-world financial scenario."
+        "content": "Week 4 Technical Analysis: Understanding price trends, chart patterns, and market indicators to analyse stock movements and develop data-driven trading and investment perspectives. The bootcamp culminates in a capstone project where students apply everything they have learned across the four weeks to a real-world financial scenario."
       }
     ],
     "prerequisites": "None",
-    "evaluation": "Minimum 3 of 4 speaker sessions; submit at least 3 of 4 assignments; complete capstone project.",
+    "evaluation": "Weekly Assignments + Capstone Project execution. Certification: Students must meet the minimum attendance requirement (3 out of 4 sessions), submit at least 3 out of 4 weekly assignments, and complete the capstone project to receive a certificate of completion.",
     "weeklyTime": "5-7 hours"
   },
   {
     "body": "ITC Web Team",
-    "course": "Agentic AI Integrated Website",
+    "course": "Agentic AI Integrated website",
     "type": "TSS",
     "track": "ITC",
     "school": "CS and DS School",
-    "intro": "Teaches users to create basic AI-integrated websites.",
+    "intro": "Teaches user to create basics AI integrated websites. By The end of course - you will learn how to deploy agentic AI integrated websites using frontend languages and APIs.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "HTML and CSS."
+        "content": "Week 1-HTML CSS"
       },
       {
         "week": "Week 2",
-        "content": "JavaScript."
+        "content": "Week 2- JavaScript"
       },
       {
         "week": "Week 3",
-        "content": "AI Integration using Gemini API."
+        "content": "Week 3- AI Integration using gemini api"
       },
       {
         "week": "Week 4",
-        "content": "Final project."
-      },
-      {
-        "week": "By the end of the course",
-        "content": "You will learn how to deploy agentic AI integrated websites."
+        "content": "Week 4- final project"
       }
     ],
     "prerequisites": "None",
-    "evaluation": "Assignments 0%, 40%, 60%; pass at 40%.",
+    "evaluation": "0%, 40%, 60%. Passing criteria is 40%",
     "weeklyTime": "7 hours"
   },
   {
-    "body": "Krittika",
-    "course": "Fundamentals of Astronomy (Computational and Theoretical)",
+    "body": "Web and Coding Club",
+    "course": "Introduction to Machine Learning and AI",
     "type": "TSS",
     "track": "ITC",
-    "school": "Option 1",
-    "intro": "Explore deep space phenomena with a simulation-based approach — simulate astronomical processes, process spacecraft data, and learn fundamentals of data science and numerical methods in astronomy.",
+    "school": "CS and DS School",
+    "intro": "This course provides a beginner-friendly introduction to Machine Learning, Deep Learning, and modern AI systems. Participants will learn the foundations of ML workflows, neural networks, transformers, and Large Language Models through a combination of theory, hands-on coding, and mini projects.",
     "weeks": [
       {
-        "week": "Course structure",
-        "content": "Simulation-based learning across astrophysics topics with hands-on data processing and numerical methods (week-wise schedule shared in sessions)."
-      }
-    ],
-    "prerequisites": "Not specified",
-    "evaluation": "Not specified",
-    "weeklyTime": "Not specified"
-  },
-  {
-    "body": "Krittika",
-    "course": "Fundamentals of Astrophotography",
-    "type": "TSS",
-    "track": "ITC",
-    "school": "Option 1",
-    "intro": "Learn capturing, processing, and creating astrophotographs with hands-on telescope data, image processing software, background extraction, plate-solving, and wavelet transforms.",
-    "weeks": [
+        "week": "Week 1",
+        "content": "Week 1 - Introduction to Machine Learning: Overview of ML and AI; Supervised vs Unsupervised Learning; Loss Functions and Gradient Descent; ML lifecycle; Learning prerequisites: Python, NumPy, Pandas, Matplotlib, Jupyter Notebook, and Google Colab; Data preprocessing techniques; Train/Validation/Test splits; Basic text cleaning; Tokenization concepts and Byte Pair Encoding (BPE)."
+      },
       {
-        "week": "Course structure",
-        "content": "Hands-on astrophotography pipeline from capture to processed images (week-wise schedule shared in sessions)."
+        "week": "Week 2",
+        "content": "Week 2 - Classical ML and Deep Learning Foundations: Classical NLP techniques: Bag-of-Words and TF-IDF; Logistic Regression for sentiment analysis; Limitations of classical ML methods; Evaluation metrics: accuracy, precision, recall, F1-score, confusion matrix, and loss; Introduction to Deep Learning; Neurons, Perceptrons, and Multi-Layer Perceptrons (MLPs); Hidden layers and activation functions (ReLU, tanh); Softmax and classification outputs; Embeddings and vector representations; One-hot encoding limitations; Word2Vec and semantic embeddings."
+      },
+      {
+        "week": "Week 3",
+        "content": "Week 3 - Transformers and Modern AI Systems: Introduction to Transformers and their applications; Overview of the Transformer architecture; Encoder vs Decoder models (BERT vs GPT-style models); Working with HuggingFace APIs and pipelines; Sentiment analysis, translation, and chatbot pipelines; Prompt engineering techniques; Few-shot prompting and Chain-of-Thought prompting; Introduction to RLHF and supervised fine-tuning concepts; Introduction to Retrieval-Augmented Generation (RAG) and vector databases."
+      },
+      {
+        "week": "Week 4",
+        "content": "Week 4 - Building AI Applications: Building an AI-powered assistant application; Prompting and customizing cloud-hosted LLMs; Introduction to RAG-based assistants; Creating interfaces using Streamlit or Gradio; Deploying and demonstrating AI applications; Overview of advanced AI topics like (Reinforcement Learning, Stable Diffusion, DPO/PPO, Agentic AI, SSMs)."
+      },
+      {
+        "week": "By the end of the course",
+        "content": "Participants will be able to understand the fundamentals of ML and AI, work with Python ML libraries, and deploy applications."
       }
     ],
-    "prerequisites": "Not specified",
-    "evaluation": "Not specified",
-    "weeklyTime": "Not specified"
+    "prerequisites": "No prior Machine Learning experience required. Basic programming familiarity is helpful but not mandatory.",
+    "evaluation": "Weekly Assignments (40%) Capstone Project (60%). Certification: Submission of at least 2 weekly assignments, Successful completion and submission of the capstone project",
+    "weeklyTime": "6-8 hours per week"
   },
   {
     "body": "Maths and Physics Club",
@@ -553,31 +499,31 @@
     "type": "TSS",
     "track": "ITC",
     "school": "Sciences School",
-    "intro": "Learn how quantum computers compute, build a decomposition algorithm for quantum logic gates, and simulate algorithms like Grover's.",
+    "intro": "The Quantum Circuits course breaks down the heart of quantum computers, shows how computation happens, and teaches you to build a decomposition algorithm which turns a matrix into a circuit of logic gates. This is extremely important today because every quantum computer from Google's to IBM's has a limited set of gates to work with, and this algorithm addresses that.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Intro to quantum computing, qubits, and circuits."
+        "content": "Week 1 - Intro to quantum computing, qubits, and circuits."
       },
       {
         "week": "Week 2",
-        "content": "Mathematics of a universal gate set and circuit synthesis."
+        "content": "Week 2 - Mathematics of a universal gate set & circuit synthesis."
       },
       {
         "week": "Week 3",
-        "content": "Implementing a quantum circuit compiler."
+        "content": "Week 3 - Implementing a quantum circuit compiler."
       },
       {
         "week": "Week 4",
-        "content": "Using the compiler to simulate Grover's Algorithm."
+        "content": "Week 4 - Using the compiler to simulate Grover’s Algorithm. Test how many qubits a laptop can simulate."
       },
       {
         "week": "By the end of the course",
-        "content": "Understand quantum logic gates, write a decomposition algorithm, and learn how libraries like Qiskit work internally."
+        "content": "You will have learnt the nitty-gritties of how quantum computers compute, worked with the intricate math behind quantum logic gates, and written an algorithm to decompose a circuit into logic gates."
       }
     ],
-    "prerequisites": "Some experience in Python is welcome, but not required.",
-    "evaluation": "Week 1-3 Assignments (50%); Week 4 Project (50%); passing 40%.",
+    "prerequisites": "Some experience in coding in Python is welcome, but not required.",
+    "evaluation": "Week 1-3: Assignments (50% = 10% + 10% + 30%), Week 4: Project (50%). Certification: Passing criteria: 40%. Subject to change depending on student performance.",
     "weeklyTime": "5-6 hours"
   },
   {
@@ -586,27 +532,27 @@
     "type": "TSS",
     "track": "ITC",
     "school": "Sciences School",
-    "intro": "Game Theory gives you mathematical tools to understand and predict strategic behaviour — from Nash Equilibria to mixed strategies and incomplete information.",
+    "intro": "Ever wondered why people make the choices they do, in negotiations, competitions, or even everyday decisions? Game Theory gives you the mathematical tools to actually understand and predict strategic behaviour. Over this course, you will learn what it even means to be \"rational\", and build your way up through some of the most elegant ideas in economics and mathematics.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Why game theory, chess, normal form games (Prisoner's Dilemma), rationality."
+        "content": "Week 1: Why game theory, the game of chess, introduction to normal form games (Prisoner's Dilemma), Idea of Rationality"
       },
       {
         "week": "Week 2",
-        "content": "Domination, WDSE, SDSE, Nash equilibrium, PSNE."
+        "content": "Week 2: Model of Normal form games, Concept of domination, WDSE, SDSE, Nash equilibrium, PSNE,"
       },
       {
         "week": "Week 3",
-        "content": "Mixed strategies, MSNE, Bayesian games."
+        "content": "Week 3: Concept of Mixed Strategy, Idea of MSNE, Existence and Computation of MSNEs, Bayesian games/games with imperfect info"
       },
       {
         "week": "Week 4",
-        "content": "Extensive form games, Kuhn's theorem, stochastic extensive form games."
+        "content": "Week 4: Extensive form games, behavioral strategies and kuhn's theorem, stochastic extensive form games"
       }
     ],
     "prerequisites": "None",
-    "evaluation": "B=100%; Passing Criteria=60%",
+    "evaluation": "B=100. Certification: Passing Criteria=60%",
     "weeklyTime": "6 hours"
   },
   {
@@ -615,27 +561,27 @@
     "type": "TSS",
     "track": "ITC",
     "school": "Sciences School",
-    "intro": "Introduce out-of-equilibrium phenomena like Brownian motion and diffusion through the statistical laws that govern them.",
+    "intro": "Several processes in nature are out of equilibrium, as such, they can not be modeled within the framework of regular thermodynamics/statistical physics. This course seeks to introduce the learner to interesting out of equilibrium phenomenon like brownian motion and diffusion by looking for the statistical laws that govern them.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Basics of probability and classical statistical mechanics (Kolmogorov axioms, ensembles)."
+        "content": "Week 1 : Basics of probability and classical statistical mechanics (Kolmogorovs axioms, PDFs, moments, cumulants, conditional probability, probability in classical stat mech, microcanonical and canonical ensemble, statistical mechanics from the feynman lectures)"
       },
       {
         "week": "Week 2",
-        "content": "Chapman-Kolmogorov equation, Master equation, diffusion and birth-death processes."
+        "content": "Week 2 : The Chapmann Kolmogorov equation, Master equation for jump processes, Diffusion and Birth-Death processes as examples, Transition rates from the hamiltonian, detailed balance, continuum limit of the master equation"
       },
       {
         "week": "Week 3",
-        "content": "Langevin dynamics, Gaussian white noise, OU process, fluctuation-dissipation, Fokker-Planck."
+        "content": "Week 3 : Langevin dynamics, gaussian white noise, OU process, fluctuation - dissipation relation, relation to Fokker-Planck equations"
       },
       {
         "week": "Week 4",
-        "content": "Basic simulations (Kinetic Monte Carlo and additive noise for Langevin)."
+        "content": "Week 4 : Basic simulations (Kinetic Monte Carlo for the master equation and additive noise for Langevin)"
       }
     ],
-    "prerequisites": "None",
-    "evaluation": "B=100%; Passing Criteria=TBD",
+    "prerequisites": "None!",
+    "evaluation": "B=100. Certification: Passing Criteria=TBD",
     "weeklyTime": "3-4 hours"
   },
   {
@@ -643,31 +589,31 @@
     "course": "Sustainable Policies 101",
     "type": "NTSS",
     "school": "Sustainability School",
-    "intro": "A beginner-friendly introduction to environmental governance — from global climate negotiations to how local municipalities manage waste.",
+    "intro": "Sustainable Policies 101 is a beginner-friendly course that introduces you to the world of environmental governance from global climate negotiations to how local municipalities manage waste. Across four weeks, you'll explore the institutions, policies, principles, and real-world case studies that shape environmental decision-making at every level.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Introduction to Environmental Policy and Governance."
+        "content": "Week 1: Introduction to Environmental Policy & Governance"
       },
       {
         "week": "Week 2",
-        "content": "Environmental Governance in India."
+        "content": "Week 2: Environmental Governance in India"
       },
       {
         "week": "Week 3",
-        "content": "Global Climate Policy and International Agreements."
+        "content": "Week 3: Global Climate Policy & International Agreements"
       },
       {
         "week": "Week 4",
-        "content": "Urban, Local, and Future-Ready Environmental Policy."
+        "content": "Week 4: Urban, Local, and Future-Ready Environmental Policy"
       },
       {
-        "week": "By the end of the course",
-        "content": "Understand how environmental policies are designed and implemented at local, national, and global levels."
+        "week": "By the end of this course",
+        "content": "You will be able to understand how environmental policies are designed and implemented at local, national, and global levels. You’ll gain the ability to analyze key climate agreements, interpret sustainability policies, evaluate real-world environmental challenges, and connect governance frameworks with practical climate action."
       }
     ],
     "prerequisites": "No prerequisites",
-    "evaluation": "Weekly Assignment 30%; Capstone Project 70%",
+    "evaluation": "Weekly Assignment - 30% Capstone Project - 70%. Certification: Completion of assignments and project benchmarks.",
     "weeklyTime": "6-7 hours"
   },
   {
@@ -676,60 +622,85 @@
     "type": "TSS",
     "track": "ITC",
     "school": "CS and DS School",
-    "intro": "A beginner-friendly introduction to full stack web development — frontend, backend, databases, deployment, and engineering practices through hands-on projects.",
+    "intro": "This course is a beginner-friendly introduction to full stack web development, designed to help students build modern web applications from scratch. Participants will learn the fundamentals of programming, frontend and backend development, databases, deployment, and software engineering practices through hands-on learning and practical assignments.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "Programming foundations, Python/JavaScript basics, Git/GitHub, command line."
+        "content": "Week 1 - Programming & Development Foundations: Introduction to web development and software workflows; Basics of programming using Python and JavaScript; Variables, loops, conditionals, functions, and problem-solving; Coding fundamentals and logic building; Introduction to Git and GitHub for version control and collaboration; Basic command line usage and development setup."
       },
       {
         "week": "Week 2",
-        "content": "Frontend — HTML, CSS, responsive design, JavaScript interactivity, UI/UX."
+        "content": "Week 2 - Frontend Development & UI Design: Structure of websites using HTML; Styling using CSS; Responsive web design principles; Introduction to JavaScript for frontend interactivity; UI/UX fundamentals and creating visually appealing interfaces; Building interactive and user-friendly frontend pages."
       },
       {
         "week": "Week 3",
-        "content": "Backend — APIs, routes, authentication, connecting frontend and backend."
+        "content": "Week 3 - Backend Development: Introduction to backend systems and APIs; Server-side development fundamentals; Handling routes, requests, and responses; Connecting frontend and backend; Authentication basics and user management; Building dynamic web applications."
       },
       {
         "week": "Week 4",
-        "content": "Databases, SQL, CRUD, system engineering basics, deployment overview."
-      },
-      {
-        "week": "Capstone",
-        "content": "Develop a complete web application evaluated on creativity, usability, and features."
+        "content": "Week 4 - Databases & System Engineering: Introduction to SQL and relational databases; Database design and CRUD operations; Connecting databases with backend applications; Basics of system engineering and scalable application structure; Understanding application architecture and workflows. Extra Content: Deployment of web applications; Introduction to hosting platforms and production environments; Basics of database security and secure coding practices."
       }
     ],
-    "prerequisites": "No prior web development experience required.",
-    "evaluation": "Weekly Assignments (40%), Capstone Project (60%). Pass: at least 2 weekly assignments and capstone submission.",
+    "prerequisites": "No prior web development experience required, just an enthusiasm to learn and build projects!",
+    "evaluation": "Weekly Assignments (40%) Capstone Project (60%). Certification: Timely submission of at least 2 weekly assignments, Successful completion and submission of the capstone project",
     "weeklyTime": "6-8 hours per week"
   },
   {
-    "body": "Web and Coding Club",
-    "course": "Introduction to Machine Learning and AI",
+    "body": "Analytics Club",
+    "course": "Big Data Handeling",
     "type": "TSS",
-    "track": "ITC",
+    "track": "non ITC",
     "school": "CS and DS School",
-    "intro": "A beginner-friendly introduction to Machine Learning, Deep Learning, transformers, and LLMs through theory, hands-on coding, and mini projects.",
+    "intro": "Every business runs on data, but most of it is locked inside websites, messy spreadsheets, and scattered systems. The people who can pull it out, clean it up, store it properly, and turn it into a dashboard are the ones companies actually pay for. This bootcamp will make you go from your first line of Python to shipping a complete data pipeline.",
     "weeks": [
       {
         "week": "Week 1",
-        "content": "ML/AI overview, supervised vs unsupervised learning, gradient descent, Python/NumPy/Pandas, preprocessing."
+        "content": "Week 1: Web Scraping & Data Retrieval Methods — Learn where data actually comes from. Understand how websites and APIs work, write your first Python scripts to pull real data from the web. By the end of the week you'll have scraped your own dataset that you'll keep building on for the rest of the bootcamp."
       },
       {
         "week": "Week 2",
-        "content": "Classical NLP, logistic regression, deep learning foundations, embeddings, Word2Vec."
+        "content": "Week 2: Excel Fundamentals — Everyone thinks they know Excel. Almost no one actually does. The difference between dragging cells around for hours and finishing the same work in ten minutes comes down to a handful of formulas most people have never touched."
       },
       {
         "week": "Week 3",
-        "content": "Transformers, HuggingFace, prompt engineering, RAG introduction."
+        "content": "Week 3: SQL & Querying Data — Excel breaks at a million rows. SQL doesn't. Learn the single most valuable skill in data work: querying databases. Filter, group, join, and aggregate data to answer real business questions, using SQLite."
       },
       {
         "week": "Week 4",
-        "content": "Building AI applications with Streamlit/Gradio and capstone assistant project."
+        "content": "Week 4: PostgreSQL & Power BI Dashboarding — Graduate from a learning database to a production one. Set up PostgreSQL, load your data properly, then connect it to Power BI to build interactive dashboards with filters, KPIs, and visuals stakeholders can actually use."
       }
     ],
-    "prerequisites": "No prior ML experience required. Basic programming familiarity helpful.",
-    "evaluation": "Weekly Assignments (40%), Capstone Project (60%). Pass: at least 2 assignments and capstone submission.",
-    "weeklyTime": "6-8 hours per week"
+    "prerequisites": "Just your enthusiasm!",
+    "evaluation": "Assignments + Capstone mapping. Certification: Passing Criteria 2 or 3 assignments and 1 capstone project",
+    "weeklyTime": "7 - 10 hours"
+  },
+  {
+    "body": "Analytics Club",
+    "course": "Generative and Agentic AI",
+    "type": "TSS",
+    "track": "non ITC",
+    "school": "CS and DS School",
+    "intro": "Every company is racing to automate with AI and the people who can build it are the most in-demand. In 4 weeks you will go from your first LLM API call to shipping a fully autonomous multi-agent workflow. The same architecture powering the most advanced AI products in production today.",
+    "weeks": [
+      {
+        "week": "Week 1",
+        "content": "Week 1: Understanding LLMs: Prompting & APIs — Learn how LLMs work, why prompt structure matters, and how to move from chatting in a browser to controlling a model through."
+      },
+      {
+        "week": "Week 2",
+        "content": "Week 2: Retrieval Augmented Generation (RAG) & Fine Tunning — Teach your LLM to answer from your own documents using RAG, and learn when fine-tuning makes more sense."
+      },
+      {
+        "week": "Week 3",
+        "content": "Week 3: Agentic AI (MCPs, LangChain, LangGraph) — Go from generating text to taking action. Build an agent that can use tools, make decisions, and execute multi-step tasks using LangChain, LangGraph, and MCP."
+      },
+      {
+        "week": "Week 4",
+        "content": "Week 4: Multi Agent Workflows and Capstone Project — Learn how to design autonomous systems where multiple specialised agents collaborate under an orchestration layer that routes tasks, manages state, and handles failures."
+      }
+    ],
+    "prerequisites": "Just your enthusiasm",
+    "evaluation": "Compulsory Assignments + Project metrics. Certification: 2 out of 3 assignments and 1 capstone project are compulsory for certification",
+    "weeklyTime": "7 - 10 hours"
   }
 ]
