@@ -1,0 +1,191 @@
+.lg-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #13111C !important;
+    padding: 20px;
+  }
+  
+  .lg-form {
+    background-color: #1E1B2A !important;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .lg-mode-toggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 20px;
+    background-color: #13111C !important;
+    border-radius: 8px;
+    padding: 6px;
+  }
+
+  .lg-mode-btn {
+    color: #A6A2BC !important;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: none !important;
+    border-radius: 6px !important;
+  }
+
+  .lg-mode-btn.active {
+    background-color: #f2bc00 !important;
+    color: #1A1729 !important;
+  }
+  
+  .lg-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 28px;
+    color: #E5E2F2 !important;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+  
+  .lg-subtitle {
+    text-align: center;
+    color: #A6A2BC !important;
+    margin-bottom: 24px !important;
+    font-size: 16px ;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+  
+  .lg-textfield {
+    margin-bottom: 16px !important;
+  }
+  
+  .lg-login-btn {
+    background-color: #ffc107 !important;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-size: 16px;
+    padding: 12px;
+    font-family: 'Urbanist', sans-serif !important;
+
+    margin-bottom: 10px !important;
+  }
+  
+  .lg-login-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  
+  .lg-signup-link {
+    color: #A6A2BC !important;
+    font-size: 14px !important;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+  
+  .lg-error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+
+  .lg-success {
+    color: #138a72;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+
+  .lg-inline-action {
+    background: none;
+    border: none;
+    color: #E5E2F2 !important;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  .lg-inline-action:hover {
+    color: #f2bc00;
+  }
+  
+  /* ========== RESPONSIVE STYLES ========== */
+  @media (max-width: 768px) {
+    .lg-form {
+      padding: 24px;
+      max-width: 90%;
+    }
+  
+    .lg-title {
+      font-size: 24px;
+    }
+  
+    .lg-subtitle {
+      font-size: 14px;
+    }
+  
+    .lg-login-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .lg-social-btn {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .lg-signup-link {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lg-social-login {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .lg-social-btn {
+      margin: 0;
+    }
+  }
+
+/* Custom MUI Textfield overrides for Dark Mode */
+.lg-textfield .MuiInputLabel-root {
+  color: #A6A2BC !important;
+}
+
+.lg-textfield .MuiInputLabel-root.Mui-focused {
+  color: #f2bc00 !important;
+}
+
+.lg-textfield .MuiInputBase-input {
+  color: #E5E2F2 !important;
+}
+
+.lg-textfield .MuiOutlinedInput-notchedOutline {
+  border-color: #2D293E !important;
+}
+
+.lg-textfield:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #A6A2BC !important;
+}
+
+.lg-textfield .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #f2bc00 !important;
+}
+
+/* Ensure disabled input text is clearly visible in white */
+.lg-textfield .MuiInputBase-root.Mui-disabled .MuiInputBase-input,
+.lg-textfield .MuiInputBase-input.Mui-disabled,
+.lg-textfield .MuiOutlinedInput-root.Mui-disabled .MuiInputBase-input {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+  

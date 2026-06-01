@@ -1,0 +1,59 @@
+.sg-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px !important;
+    background-color: #f8f9fa;
+  }
+  
+  .sg-form {
+    background-color: white;
+    padding: 24px !important;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px !important;
+    width: 100% !important;
+  }
+  
+  .sg-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 4px !important;
+    font-family: 'Urbanist', sans-serif !important; 
+  }
+  
+  .sg-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 24px !important;
+    font-family: 'Urbanist', sans-serif !important;
+  }
+  
+  .sg-textfield {
+    margin-bottom: 16px !important;
+  }
+  
+  .sg-radio-group {
+    margin-bottom: 16px !important;
+  }
+  
+  .sg-signup-btn {
+    background-color: #f2bc00 !important;
+    color: white;
+    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
+  }
+  
+  .sg-signup-btn:hover {
+    background-color: #f2bc00 !important;
+  }
+  
+  .sg-error {
+    color: red;
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+  }
+  

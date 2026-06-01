@@ -1,0 +1,42 @@
+[
+    {
+        "name":"Preisha Desai",
+        "position":"Institute Secretary, Academic Affairs\nHead, Career Cell",
+        "contact":"9769623937",
+        "img":"/data/images/contact/preisha.jpeg"
+    },
+    {
+        "name":"Harshia Goyal",
+        "position":"Academic Coordinator, Career Cell",
+        "contact":"74012 00003",
+        "img":"/data/images/contact/harshia.jpeg"
+    },
+    {
+        "name":"Arnav Purohit",
+        "position":"Academic Coordinator, Career Cell",
+        "contact":"9730924447",
+        "img":"/data/images/contact/arnav.jpeg"
+    },
+    {
+        "name":"Yash Rastogi",
+        "position":"Academic Coordinator, Career Cell",
+        "contact":"96860 55513",
+        "img":"/data/images/contact/yash.jpeg"
+    },
+    {
+        "name":"Yojit Saini",
+        "position":"Academic Coordinator, Career Cell",
+        "contact":"90246 54223",
+        "img":"/data/images/contact/yojit.jpeg"
+    },
+    {
+        "name":"Surhud Naik",
+        "position":"UGAC Web Head",
+        "img": "/data/images/contact/surhud.jpeg"
+    },
+    {
+        "name":"Ansh Oswal",
+        "position":"UGAC Web Head",
+        "img": "/data/images/contact/ansh.jpeg"
+    }
+]

@@ -1,0 +1,101 @@
+.cd-profile-container {
+    display: flex;
+    /* gap: 40px; */
+    /* padding: 40px; */
+    background-color: #1E1B2A !important;
+    border: 1px solid #2D293E;
+    border-radius: 12px;
+    max-width: 900px;
+    /* margin: auto; */
+    align-items: flex-start;
+    margin-top: 40px;
+    width: 100% !important;
+    /* border-radius: 12px; */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .cd-profile-avatar {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    /* border-radius: 8px; */
+  }
+  
+  .cd-profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 0px 30px !important;
+
+    margin-left: 20px !important;
+  }
+  
+  .cd-name {
+    font-family: 'Urbanist' !important;
+    color: #E5E2F2 !important;
+    font-size: 36px !important; 
+    margin-bottom: 30px !important;
+    font-weight: 600 !important;
+  }
+
+  .cd-label{
+    font-family: 'Urbanist' !important;
+    font-size: 24px !important;
+    color: #A6A2BC !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .cd-profile-subhead{
+    color: #E5E2F2 !important;
+    font-size: 26px !important;
+    margin-right: 5px;
+    font-weight: 500 !important;
+  }
+
+  @media (max-width: 768px) {
+    .cd-profile-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .cd-profile-avatar {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+    }
+  
+    .cd-profile-info {
+      padding: 20px 0 0 0 !important;
+    }
+  
+    .cd-name {
+      font-size: 32px !important;
+      margin-bottom: 20px !important;
+    }
+  
+    .cd-label {
+      font-size: 16px !important;
+      margin-bottom: 10px !important;
+    }
+  
+    .cd-profile-subhead {
+      font-size: 18px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cd-name {
+      font-size: 26px !important;
+    }
+  
+    .cd-label,
+    .cd-profile-subhead {
+      font-size: 20px !important;
+    }
+  
+    .cd-profile-container {
+      padding: 15px 10px;
+    }
+  }
+  

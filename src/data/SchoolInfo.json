@@ -1,0 +1,32 @@
+[
+    {
+        "School ID": "1",
+        "School Name": "Sciences",
+        "Description": "Unlock mysteries with hands-on interdisciplinary courses in maths, biology, astronomy, and physics\u2014where curiosity meets discovery!"
+    },
+    {
+        "School ID": "2",
+        "School Name": "Management",
+        "Description": "Sharpen your business acumen with courses in management, consulting, finance, and the future of AI-driven enterprise!"
+    },
+    {
+        "School ID": "3",
+        "School Name": "Engineering",
+        "Description": "Dive into the world of innovation across a mix of courses across electrical, mechanical, chemical, energy, and aerospace engineering."
+    },
+    {
+        "School ID": "4",
+        "School Name": "Sports and Skills",
+        "Description": "Explore the blend of sports science, analytics, journalism, music production and other creative skills\u2014where passion meets performance."
+    },
+    {
+        "School ID": "5",
+        "School Name": "Sustainability",
+        "Description": "Lead the change for a greener tomorrow with courses on sustainable technologies, policies, economics: all solutions for a better planet."
+    },
+    {
+        "School ID": "6",
+        "School Name": "CS and DS",
+        "Description": "Master the digital world with practical and immersive courses in computer science, cyber security, analytics, and web development."
+    }
+]

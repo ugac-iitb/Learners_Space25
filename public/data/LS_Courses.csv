@@ -1,0 +1,1121 @@
+"Which of the following schools would you think this course is most aligned to (the name of the school may be changed (and in fact I would like suggestions)). The idea is to provide each course emphasis, by clearly conveying it's interest domain to audience and hopefully get more registrations.",School ID,Course ID,Course Name,Club,Desc_short,Desc,Week_time,Evaluation,Certification,Pre-req,Contact info,Week 1,Week 2,Week 3,Week 4,Week Null
+The CS and DS Summer School,6,61,Intro to Machine Learning and NLP,Web and Coding Club ,"Learn how machines understand and generate human language. This hands-on learnerspace covers everything from NLP fundamentals to advanced deep learning models like BERT and GPT, using tools like Hugging Face and GANs. Perfect for developers, data scientists, and AI enthusiasts looking to build real-world NLP applications.","This comprehensive course blends the power of Machine Learning (ML) with the language understanding capabilities of Natural Language Processing (NLP). Designed for aspiring AI engineers, data scientists, and developers, the course begins with the core principles of ML and gradually transitions into the specialized world of NLP.
+
+You'll begin by learning python libraries and the core building blocks of NLP: tokenization, stemming, lemmatization, part-of-speech tagging, and named entity recognition. 
+
+As the course progresses, you'll dive into deep learning for NLP, understanding recurrent neural networks (RNNs), LSTMs. From there, we transition into the world of Transformers covering key models like BERT. 
+
+Using the Hugging Face ecosystem, you'll gain hands-on experience in fine-tuning pre-trained models for downstream tasks such as sentiment analysis, text classification, question answering, and summarization. The course also introduces Generative Adversarial Networks (GANs) applied to text generation—a challenging and emerging area in NLP.
+
+Throughout the course, you'll work on real-world projects that reinforce learning and prepare you for building production-ready NLP applications.",18-20 hours,You will be solving weekly exercises and a capstone project at the end of 4th week.,Minimum set level of accuracy in assignments and the Capstone project,Just your enthusiasm!,"Sarthak (9739348680) , Avnish (9167339950) , Mrigank (8802026300) , Utkarsh (8826799261)","Foundations of NLP & Data Processing
+
+-> Introduction to NLP
+NLP pipeline overview: tokenization, preprocessing, vectorization, modeling, evaluation.
+
+-> Python Libraries
+NumPy: Numerical operations (arrays, broadcasting, vectorized math).
+Pandas: Data handling (Series, DataFrames, handling text columns).
+Text preprocessing using sklearn.
+
+-> Regex (Regular Expressions)
+Basics: pattern matching, wildcards, quantifiers.
+Practice with Python’s re module.","Classical NLP Modeling
+
+-> Text Vectorization
+TF-IDF (Term Frequency-Inverse Document Frequency):
+Concept of bag-of-words vs TF-IDF.
+
+-> Logistic Regression for Text Classification
+Training and evaluating a classifier for sentiment analysis or spam detection.
+Metrics: Accuracy, Precision, Recall, F1-score.
+Hands-on: train a TF-IDF + Logistic Regression model.
+
+-> Word & Sentence Embeddings
+Limitations of one-hot and TF-IDF.
+Word2Vec, GloVe, and FastText.
+Sentence embeddings (e.g., Sentence-BERT).
+","Deep Learning & Modern NLP
+
+-> Transformers
+The transformer architecture (attention mechanism, encoder-decoder blocks).
+Key models: BERT, GPT, RoBERTa, etc.
+Pretraining vs fine-tuning.
+
+-> Hugging Face Library
+Using the transformers library.
+Tokenization, loading pretrained models, pipelines (e.g., pipeline('sentiment-analysis')).
+Fine-tuning on custom data using Trainer API.
+
+-> Overview of Generative Adversarial Networks
+
+-> Bonus: Diffusion in NLP
+Overview of Diffusion Models.
+How these are adapted for text generation.
+","Final Project
+
+-> Final NLP Project
+
+-> Wrap-Up & Beyond
+Recap of all topics.
+Where to go next? (e.g., LLMs, fine-tuning techniques, Reinforcement Learning for NLP)",
+The CS and DS Summer School,6,62,Full Stack Pro: Frontend to Backend,Web and Coding Club,"Dive into the world of full stack development with this hands-on learners' space course that teaches you how to build complete, production-ready web applications. You'll create stunning, responsive frontends using React, power your backend with Django and REST APIs, and integrate robust data storage with MongoDB or PostgreSQL. From dynamic UIs to secure user authentication and real-time data handling, this course equips you with everything you need to become a full stack developer.
+Perfect for beginners to go full stack.","The web powers everything around us—from simple blogs to large-scale social networks and enterprise apps. This immersive, hands-on course is your complete guide to becoming a professional full stack web developer. Whether you're starting from scratch or looking to sharpen your skills, this course will take you through the entire web development journey, step by step.
+
+You'll begin by learning the core building blocks of the web: HTML, CSS, and JavaScript. These technologies form the foundation of every website and web app. You’ll master how to structure content, style layouts, and add interactivity from the ground up, giving you a solid start before diving into complex tools and frameworks.
+
+From there, you'll move into building modern, interactive frontends using React, the most popular frontend library today. You'll learn to develop dynamic user interfaces, manage application state, and connect with APIs to bring your apps to life. You’ll also explore tools like React Router, Tailwind CSS, and best practices for component-based development.
+
+On the backend, you'll learn to build powerful web services using Django, a high-level Python web framework known for its speed and scalability. With Django and Django REST Framework (DRF), you'll learn how to create RESTful APIs, manage server-side logic, and handle authentication, security, and database operations.
+
+This course also includes deep dives into databases. You'll understand how to model data effectively, and how to integrate them with your full stack applications.",18-20 hours,You will be solving small weekly tasks and creating basic webpages. At the end you will be creating a full stack website.,Minimum set amount of tasks completed and final full stack website.,Just your enthusiasm!,"Mithra (8762070856) , Shivansh (7869735629)","Web Fundamentals + Intro to React
+Goal: Build a strong foundation in frontend development and get started with React.
+
+Topics:
+HTML: Structure, elements, forms, semantic tags
+
+CSS: Styling, Flexbox, Grid, responsive design basics
+
+JavaScript: Variables, functions, DOM manipulation, events
+
+Git & GitHub: Basics of version control
+
+Intro to React","Deep Dive into React + Django Setup
+Goal: Strengthen React skills and set up the backend using Django.
+
+React Router for navigation
+
+Event handling & conditional rendering
+
+Form handling and controlled components
+
+Fetching data with fetch / Axios
+
+Django Topics:
+Installing Python & Django
+
+Creating Django project & apps
+
+Django views, URLs, templates
+
+Static files & basic templates
+
+Setting up Django REST Framework (DRF)","Backend APIs with Django REST Framework
+Goal: Build a full-featured backend with REST APIs.
+
+Topics:
+Django Models and ORM
+
+Serializers and ViewSets
+
+CRUD operations with Django REST Framework
+
+Token-based authentication (JWT or Django auth)
+
+Connecting React to Django APIs
+
+Handling CORS & environment setup","Databases + Final Full Stack Project
+Goal: Connect everything together with a database and build a deployable full stack project.
+
+Topics:
+PostgreSQL or MongoDB basics (choose based on project)
+
+Integrating databases with Django
+
+Data migrations & relationships
+
+Finalizing API integration with frontend
+
+Project structuring & cleanup
+
+Final Full stack Project",
+The CS and DS Summer School,6,63,WebCraft : Open Source Fun ToolKit,ITC Web Team,"Start your coding journey: learn HTML, CSS & JavaScript, build a simple game or utility, then deploy it live on the ITC website","
+
+This course will introduce you to web development and open source contribution  both of which are crucial for any tech profile and in forums like GSoC ( Google Summer of Code)
+
+- Component Magic
+Break UIs into bite-sized HTML/CSS/JS pieces
+Hands-on: craft your own Application or mini game like unit converter or currency converter
+
+- Publish to the Web
+Push code to our repo & watch it go live
+Learn the simple steps to make your project viewable by all
+
+- Your Unique Mini-Project
+Pick from fun apps (Currency Converter, Quiz, Tip Calculator…)
+Build, refine & plug your component into the ITC site
+
+- Launch Day & Feedback
+Live demo of everyone’s mini-apps and will be publicized on the web team website 
+Celebrate your work & let your tech journey begin with an interesting project on your portfolio !!",12 - 15 hours,"Weekly update / assignment submissions
+Final mini-project demo & code quality ",Complete your final project by end of Week 4,Just your enthusiasm!,Riya Agrawal (7669697471),"HTML structure & semantic tags
+CSS basics: layout with Flexbox
+Build a Card Component (title, image placeholder, description)
+Style it responsively for mobile + desktop","JS variables, functions & events
+DOM selection & manipulation
+Create a Unit Converter Widget (e.g. cm ↔ in)
+Inputs + buttons to select conversion type","Handling forms & real-time calculations in JS
+Best practices for reusable components
+Pick one mini-app and build core functionality + basic styling","Submit your mini-app component PR
+Review code quality & styling tips
+How our automated deploy makes your app live (you just push!)",
+The CS and DS Summer School,6,64,Hardware security,EESA,Cache Me If You Can - Unveiling Cache based Microarchitectural Side-Channel Attacks,"Behind every fast computer is a tiny secret: CPU caches and they can spill more than just performance! In this project, we’ll tap into the stealthy world of microarchitectural side-channel attacks, where students become digital detectives, uncovering how attackers eavesdrop on cache behavior to steal secrets.
+
+Through hands-on implementation of attacks like Flush+Reload and Occupancy-based attacks, they’ll uncover how cache timing and contention can silently betray even the most secure systems. Welcome to the world where your cache talks behind your back, Let’s try to listen.",10-12 hours,"Bandwidth and accuracy in both parts of project 
+
+For Both parts of Project:- 
+Total Score (out of 50) = (Accuracy / 100)*25 + (Bandwidth / Highest Bandwidth achieved)*25
+
+Note:- Accuracy is in percentage and Bandwidth is in bits per second",Total score greater than 70,Either Linux or WSL(not preferred) installed,Praveen Prajapat (9785299880),"OS Memory Management (Virtual to Physical address translation, Concept of OS Pages), Cache Hierarchy, Cache Coherence, Replacement policies, Data flow during a Program run, Measuring Cache and Memory latencies, Special instructions - CLFLUSH, RDTSC, LSCPU and few others", Flush and Reload attack Implementation (Project - Part 1),Cache Occupancy based attack Implementation (Project - Part 2),"Mitigations of above two attacks - Randomized caches, Way partitioning, Set partitioning, Page coloring, Other microarchitectural attacks -  Spectre and Meltdow",Shouldn't be needed
+The CS and DS Summer School,6,65,Introduction to Cryptography,Cyber Security Community,"Join CSeC's ""Introduction to Cryptography"" course and dive into the fascinating world of codes, ciphers, and cybersecurity! Learn how encryption protects data, explore classic & modern cryptographic techniques, and discover the math behind secure communication. Perfect for beginners—no prior experience needed!","Introduction to Cryptography – Course Breakdown
+1. Classical Ciphers
+
+Explore the roots of cryptography with historical encryption methods like the Caesar cipher, Vigenère cipher, and substitution techniques. Learn how these early systems worked, why they were eventually broken, and their influence on modern security.
+
+2. Modern Cryptography (The Math Behind It)
+
+Dive into the core mathematical concepts powering today’s encryption—XOR operations, modular arithmetic, and public-key cryptography (RSA). Understand the difference between symmetric and asymmetric encryption and how they protect data.
+3. Advanced Topics (AES, Diffie-Hellman & More)
+
+Take a deep dive into industry-standard algorithms like AES and key exchange protocols like Diffie-Hellman (DHKE). Learn about hashing, digital signatures, and real-world cryptographic applications.
+4. Project – Putting It All Together
+
+Combine everything you’ve learned into a project that makes (or perhaps even breaks) a complex encryption scheme using the tools of cryptography.",2-3 hours,"30%: Solutions to challenges in each section
+70%: Project Submission",Based on the project,Just your enthusiasm!,Niral Charan (6369057961),"Classical Ciphers such as Caesar Cipher, Vigenère cipher, etc and how to break them.","
+Modern Cryptography: The math behind it, public  key cryptography and RSA
+","Advanced Topics: AES, Diffie-Hellman & More",Project and some advanced topics if enough interest,
+The CS and DS Summer School,6,66,Tools For Cyber Security,Cyber Security Community,"""Level up your cyber skills with the hacker's ultimate toolkit!
+
+In this hands-on course, you'll master the Linux command line, Python Scripting, Coding in C , and peek inside binaries with Assembly. 
+
+Perfect for those who want to get into cyber security, or anyone who wants to understand how cyber tools really work under the hood. No prior experience required - just bring your curiosity!","This course is intended to familiarize you with the major tools are needed to learn cyber security. It'll be an amazing starting point for diving deeper into the topics you enjoy
+
+We will cover the Linux command line, bash scripting, python scripting, basic C programming and x86 assembly.
+
+You'll reinforce your learning through solving engaging challenges
+and then put it all together in a project to really put your skills to the test!
+",2-3 hours,"30% Challenges: There will be short challenges for you to solve in each section
+70%  Final Project: A somewhat longer form project to really help you apply what you have learned",Final Project,Just your enthusiasm!,Niral Charan (6369057961),The Linux Command line and Bash Scripting,"Python Scripting, alongside Cyber Security related libraries",Basic C programming and x86 Assembly,A long form project allowing for a detailed application of the topics covered,
+The CS and DS Summer School,6,67,Handwritten Digit Recognition using Convoluted Neural Networks,AI Community,"Ever wondered how machines learn to read? Dive into the world of Artificial Intelligence and master the art of teaching computers to recognize handwritten digits ! 
+
+This hands-on course unlocks the power of Convolutional Neural Networks (CNNs), guiding you from pixels to predictions. 
+
+Get ready to code, create, and conquer one of AI's foundational challenges !","Join us as we delve deep into the architecture and application of Convolutional Neural Networks (CNNs), the workhorse behind many of today's image recognition breakthroughs. You'll start with the fundamentals of neural networks and progressively build your expertise to design, train, and deploy sophisticated CNN models capable of accurately identifying handwritten characters.
+
+What You Will Learn:
+
+Fundamentals of Machine Learning & Neural Networks: Grasp the core concepts that underpin AI and deep learning.
+
+Image Data Preprocessing: Learn essential techniques to prepare and augment image datasets (like the famous MNIST dataset) for optimal model performance.
+
+The Power of Convolutional Neural Networks (CNNs): Understand the architecture of CNNs, including convolutional layers, pooling layers, and fully connected layers, and why they excel at image-based tasks.
+
+Building & Training CNN Models: Gain hands-on experience in constructing CNNs using popular deep learning frameworks (e.g., TensorFlow/Keras or PyTorch).
+
+Real-World Applications: Explore how the principles learned in handwritten digit recognition extend to other computer vision tasks like object detection and image classification.",7 hours,Weekly Assignments alongwith MCQ's to be completed and a final Project-Based Evaluation.,Project-Based,None,"Manish Shaw (6291445696), Devansh Yadav (8178443601)",Fundamentals of Machine Learning & Neural Networks.,Learn essential techniques to prepare and augment image datasets (like the famous MNIST dataset) for optimal model performance.,"Understand the architecture of CNNs, including convolutional layers, pooling layers, and fully connected layers, and why they excel at image-based tasks.",Gain hands-on experience in constructing CNNs using popular deep learning framework - PyTorch.,
+The Engineering Summer School,3,31,Carbon Capture,Energy and Sustainability Club,"Carbon Capture & Storage is a game changing solution to decarbonize heavy industries and power systems. In this 4 week's course discover how engineers, scientists, and startups are reshaping the carbon equation by capturing carbon from industrial sources and then safely storing it underground.","This course will be conducted in the span of 4 weeks. In the 1st week, we will introduce what is carbon capture and in how many ways CO2 is produced and how it is adversely affecting our environment. In the 2nd week, we will introduce different types of carbon capture technologies and also the materials used. In the 3rd week, we will introduce different ways to store and utilize captured CO2. In the 4th week, we will cover the policies, economics related to carbon capture and storage also what the future holds for this.",4-5 hours,1) Weekly quizzes - 40% 2) Bi-Weekly case studies - 40% 3) Final quiz and Essay type on what you learnt - 20% ,For certificate at-least 60% course should be completed.,Just your enthusiasm!,Tejas Jadhav (8767417734),Introduction to carbon capture and storage and why it is important like how carbon is affecting climate and health of peoples. ,"Introduction to technology used for carbon capture including post combustion, pre combustion and oxy-fuel combustion and Direct air capture and bioenergy with CCS also materials used. ","How we can store carbon capture like geological storage, carbon mineralization and enhanced oil recovery and co2 utilization in concrete curing and synthetic fuels.",Overall policies related to carbon capture and how much it will cost us for this and what the future holds for this like future technologies.,
+The Engineering Summer School,3,32,Tinker Tetris,Tinkerers' Laboratory,"Build your own mini game console—retro style with a modern twist!
+In this hands-on course, you'll craft a portable LED-based arcade machine from scratch using an ESP32, design your own case with 3D printing, and code classics like Snake and Tetris. Wireless controllers, pixelated fun, and endless game customizations await. It's engineering, design, and gaming—all in one epic project.","Step into the world of DIY game consoles with this immersive, project-based course where hardware meets creativity.
+
+You’ll build a fully functional ESP32-powered mini arcade console with a vibrant 8×8 WS2812B RGB LED matrix display. But this isn’t just a circuit—it’s a complete product you’ll design and build from the ground up.
+
+Here’s what you’ll do:
+
+Design and 3D print a retro-style handheld console case using CAD tools
+
+Wire up an ESP32 microcontroller to control LED graphics and game logic
+
+Program games like Snake, Chase, and Tetris using Arduino or MicroPython
+
+Build detachable wireless controllers for multiplayer or modular play (just like a mini Nintendo Switch!)
+
+Learn about Bluetooth or ESP-NOW protocols for wireless communication
+
+Customize gameplay, animations, and control schemes to make it truly your own
+
+Whether you're a student, hobbyist, or aspiring game dev, this course combines coding, electronics, 3D modeling, and game design into one powerful learning experience. You'll not only learn how things work—you’ll build something you can actually play.
+
+By the end, you’ll walk away with your own custom console, a deeper understanding of embedded systems, and a solid foundation in rapid prototyping and interactive tech.",7 hrs,"Grading Breakdown
+- Assignments (combined): 40%
+  Hands-on tasks given throughout the course to reinforce learning.
+
+- Attendance: 20%
+  Presence in sessions is crucial.
+
+ - Final Project: 40%
+   Your fully functioning game console will be the culmination of all skills learned.
+
+
+To be eligible to work on and submit the final project, students must:
+
+ - Maintain at least 80% attendance
+
+ - Submit all assignments
+
+ - Achieve a minimum of 60% total score combined from assignments.
+
+Project completion will be evaluated based on functionality, creativity, and completeness.","To receive the course completion certificate, students must:  1) Successfully complete the final project – A fully functional ESP32-based game console with working controls, LED display, and at least one playable game. 2) Submit complete documentation of learnings and code – A brief report covering the project build process, key learnings, challenges faced, and annotated code.",Just your enthusiasm!,"Prathamesh Bende (9423149159), Dhruv Chaturvedi (9171981824)","Theme: Getting Started with the ESP32 & WS2812B
+Objectives:
+
+- Understand ESP32 architecture and development environment
+
+- Learn basic programming using Arduino or MicroPython
+
+- Get familiar with the WS2812B RGB LED matrix
+
+Topics Covered:
+
+- Introduction to the course and final project scope
+
+- ESP32: Features, pinouts, setup (Arduino IDE / Thonny for MicroPython)
+
+- Digital I/O, PWM, serial communication basics
+
+- RGB color theory and WS2812B protocols
+
+- Using Adafruit NeoPixel / FastLED libraries
+
+- Controlling a single LED and lighting patterns
+
+- Rendering basic shapes/pixels on 8×8 matrix
+
+- Matrix mapping and addressing pixels","Theme: Game Logic & Pixel-Based Rendering
+Objectives:
+
+- Build understanding of game loops, logic, and rendering with limited resources
+
+- Design and simulate basic games like Snake or Chase
+
+Topics Covered:
+
+- Game loop architecture (setup, update, render)
+
+- Input handling (initially via serial / hardcoded logic)
+
+- Graphics on 8×8: pixel mapping, movement, collision detection
+
+- Frame buffering and optimization for LED matrix
+
+- Snake Game: Design, logic flow, implementation","Theme: Controller Design and Communication Protocols
+Objectives:
+
+- Teach wireless communication between ESP32 modules
+
+- Lay groundwork for modular console design with detachable controllers
+
+Topics Covered:
+
+- Bluetooth Low Energy (BLE) vs ESP-NOW overview
+
+- Setting up ESP-NOW for low-latency communication
+
+- Making one ESP32 act as game controller (input device)
+
+- Sending directional/button inputs to main ESP32
+
+- Protocol design: packets, encoding inputs
+
+- Designing a modular system: magnetic/detachable ideas, battery power, casing considerations","Theme: Project Implementation & Showcase
+Objectives:
+
+- Assemble the game console
+
+- Implement at least one full game with controllers
+
+- Showcase modular and portable features
+
+Activities:
+
+- Distribution of kits to eligible participants
+
+- Build station setup (soldering, wiring, casing)
+
+Step-by-step assembly:
+
+- ESP32 core + Matrix display
+
+- Controller units + ESP-NOW link
+
+- Power supply integration (Li-ion + charging circuit)
+
+- Final game installation & testing
+
+
+Final Project Deliverables:
+
+- Working portable console
+
+- At least 1 game implemented with wireless controller support","The Project submission deadline might be extended due to the students coming to campus late, so the resume verification criteria in that case would be the same as the final project eligibility criteria"
+The Engineering Summer School,3,33,Aerial Robotics Course,Aeromodelling Club,"Take flight with Aerial Robotics – learn MATLAB fundamentals, build and control quadcopters, fine-tune with PID, and chart intelligent paths using A*","The Aeromodelling Club is back again with its flagship Aerial Robotics course! From mastering MATLAB basics and exploring quadcopter dynamics to implementing precise PID control and diving into autonomous path planning : we covered it all. And this year, we took things up a notch by integrating the powerful A* algorithm, enabling smarter, faster, and more efficient autonomous navigation.
+
+Why just fly, when you can think and fly?",5-6 hours,"The course assessment is designed to encourage consistent learning and hands-on application, with a combination of weekly assignments and a final hardware project. 
+
+Note:
+
+Completion of all weekly assignments with satisfactory performance is mandatory to qualify for the final hardware project.
+
+Regular participation in interactive doubt sessions is encouraged to clarify concepts and enhance learning outcomes.
+
+","To successfully complete the Aerial Robotics course and receive certification, participants must:  1. Complete all weekly assignments Submit each week's assignment by the deadline.  2. Achieve above-threshold scores Score above the minimum required marks in all weekly assessments to demonstrate consistent understanding.  Only participants who fulfill both criteria will be eligible for the final project and certification.",Just your enthusiasm!,"Arya Patil (8879354729), Siddhesh Mane (8793419105), Anamika Garg (7999781698)","Kickstart with the basics of MATLAB, understand drone sizing, and dive into quadrotor kinematics through thrust sizing techniques.
+","Explore the physics of flight with quadrotor dynamics and implement your first 1D PID controller for stability and precision.
+","Week 3: Move to the next dimension : grasp 2D control fundamentals and implement a working 2D quadcopter controller.
+","Week 4: Take on the skies with 3D quadrotor control, delve into autonomous navigation, and bring it all together in hands-on implementation.
+
+","Week 5: Wrap up with intelligence! Learn the basics of path planning through the A* algorithm for smarter autonomous flight.
+
+
+"
+The Engineering Summer School,3,34,Circuits That Solve,EESA,"Learn how circuits can do math! This course blends core analog electronics 
+with dynamic system modeling, guiding you from circuit basics to building and simulating an analog solver for the famous Predator-Prey equations—all using op-amps, and LTSpice","Worried that analog circuits are too complicated? This course is made for you! We start from the basics—learning simple rules like Kirchhoff’s laws and how to analyze circuits step-by-step. You’ll get introduced to diodes and op-amps, the building blocks of analog electronics, and see how these tiny components can actually solve real problems. 
+
+Together, we’ll simulate and build circuits that mimic math in action — including a cool project where you’ll create an analog circuit that models a predator-prey system (think foxes and rabbits interacting). Using easy-to-learn tools like LTSpice, you’ll watch equations come to life as circuits. 
+
+Don't know LT Spice? Worry not, we have got your back. You will get full exposure to how you 
+can simulate basic to complex circuits. 
+
+No heavy math or confusing theory upfront—just simple ideas, fun experiments. By the end, 
+you’ll understand how analog electronics can do much more than you thought, and you’ll have designed a circuit that actually solves problems.", 5-7 hours,"Assignment Plan –  
+Week 1: Basic Circuit Solving and Simulation (10%) - Simulate basic circuits in LTSpice. 
+
+Week 2: Op-Amp-Based Circuit (10%) - Design and simulate a basic op-amp configuration (e.g., inverter or summing amplifier). - Focus on understanding op-amp behavior and signal processing. 
+
+Week 3: Analog Multiplier (30%) - Build and simulate an analog multiplier using op-amps and diodes. - Learn how circuits can implement non-linear operations. 
+
+Week 4: Final Project – Analog Differential Equation Solver (50%) - Design and simulate a complete analog circuit that solves the predator-prey model. - Combine concepts from all weeks to build and explain a real analog computing application.",Project Completion & minimum 70/100 marks ,Just your enthusiasm!,"Apoorv Goyal (8107166993), Stavan Mehta (6353885069), Shreya Nigam (8904495520)","Getting Started with Circuits - Topics Covered: - Introduction to analog circuits and what they can do - Kirchhoff’s Current Law (KCL) and Voltage Law (KVL), basic resistor networks - Thevenin and Norton equivalents (intuitively, with examples) - LTSpice Basics – how to draw, simulate, and read circuit outputs - Goal: Build comfort with analyzing and simulating simple resistor-based circuits.","Diodes and Op-Amps – Your Circuit Superpowers - Topics Covered: - Understanding Diodes – characteristics, clipping/clamping circuits - Introduction to Op-Amps: - Inverting, non-inverting, buffer configurations - Op-Amp assumptions (ideal behavior).","Applications: adder, subtractor, comparator etc. - Analog Math with Op-Amps: - Op-Amps as summing amplifiers and differential amplifiers - How circuits can ""do math"" - Goal: Learn how op-amps and diodes help us perform basic analog computation. This can also include a Transistor 101 segment if really needed and the students seem to like it.",Circuits That Solve – The Final Project Phase - Topics Covered: - Op-Amp Integrators – key building block of analog computers - Connecting math to circuits: solving differential equations using integration and summation - Understanding the Predator-Prey Model: - What it models (basic explanation of the two coupled differential equations) - How population dynamics can be simulated with op-amps - Step-by-step guide to building the circuit: - Mapping the equations - Choosing op-amp blocks - Goal: Use everything learned to build and simulate an analog computer that solves the predator-prey differential equations. ,"Should not be needed, but if in case needs to slow down the pace, we can think of assignment evaluations for the first few weeks as a criteria for the resume verifcation."
+The Engineering Summer School,3,35,Physics of Semiconductor Devices,EESA,"Curious how we turned a rock into a thinking machine? This course dives into the fundamental physics behind semiconductor devices—the building blocks of all electronics. Using basic principles of electromagnetism and quantum mechanics, we’ll explore how transistors work, culminating in a hands-on simulation project.","This course is an introduction to the fascinating world of semiconductor device physics—the science that powers modern electronics. Starting from a JEE level understanding of physics and math, the course walks you through the fundamental principles that explain how electronic devices like transistors actually work.
+
+We’ll begin with the basics: energy bands in solids, carrier types (electrons and holes), and how electric fields affect charge transport in materials. As we progress, we’ll build up tools like carrier statistics, drift and diffusion models, and energy band diagrams to understand how current flows through a semiconductor. These concepts will come together as we develop a physics-based model for one of the most important devices in electronics: the MOSFET.
+
+The course will be spread over four weeks and will consist of interactive online sessions, weekly assignments to reinforce key ideas, and a final project where you’ll simulate the basic device physics of a MOSFET using the concepts you’ve learned. No prior knowledge of electronics is expected—just curiosity and a willingness to learn!", 4-6 hours,"20% Assignments * 3=60%
+(make a video explaining your understanding of the week in 5 mins)
+
+Project- 40%",A total of 50% out of 100%,Just your enthusiasm!,Aryamman Bhatia (7977994553),"Semiconductor Fundamentals
+- Energy bands: conduction, valence, and bandgap
+- Electrons and holes; effective mass and mobility
+- Intrinsic and extrinsic semiconductors
+- Doping and Fermi level
+- Density of states
+- Carrier concentration and temperature dependence","Carrier Transport and Band Diagrams
+- Drift and diffusion current
+- Einstein relation and mobility
+- Built-in electric fields and potential
+- Energy band diagrams: equilibrium and under bias
+- Quasi-Fermi levels (conceptual)","The PN Junction Diode
+- PN junction formation and depletion region
+- Built-in potential and space charge
+- Forward and reverse bias behavior
+- Ideal diode equation and I–V characteristics
+- Reverse breakdown (brief)","The MOSFET and Project
+- MOS structure and MOS capacitor basics
+- Threshold voltage and channel formation
+- Modes of operation: cutoff, linear, saturation
+- Basic MOSFET I–V characteristics
+- Final project: make a simulation model of a MOSFET using fundamental physics",Won't be needed
+The Engineering Summer School,3,36,Control Theory Bootcamp,Electronics & Robotics Club,"This course is your gateway into the world of control systems — the brains behind every smart, stable machine. We’ll break down the core math, then take a deep dive into MATLAB Simulink, the gold standard for simulating and designing real-world systems.
+
+You’ll start by crafting a rock-solid PID controller, then level up with the smooth precision of an LQR controller. To tie it all together, you’ll build your own self-balancing bot — because what’s the point of theory if you can’t show it off?","This course offers a structured journey through the fundamentals of control systems, culminating in the design and implementation of a self-balancing robot. It begins with a deep dive into core control theory, covering system modeling, stability, and feedback — essential tools for understanding how dynamic systems behave and can be controlled.
+
+Building on this foundation, students will explore MATLAB Simulink, the industry-standard platform for control system simulation and design. Through hands-on projects, participants will implement both PID and Linear Quadratic Regulator (LQR) controllers, learning how to tune and analyze their performance in simulated environments.
+
+The course then transitions from simulation to physical systems, where students will model and stabilize a self-balancing bot using the controllers they've designed. In the final phase, the focus shifts to achieving smooth maneuvering and responsive control, integrating all prior knowledge into a fully functional robotic system. By the end, students will have both a strong theoretical grounding and tangible experience in modern control system implementation.",4-5 hours,"The course shall consist of 2 assignments and 1 project. 
+Attendance : 5% * 4 sessions
+Assignment 1: 15% 
+Assignment 2: 25%
+Project Phase 1: 25%
+Project Phase 2: 30%
+
+Weightages are subject to minor changes, if required during the camp. The project will be provided well in advance.",80% or above performance in the course.,Elementary proficiency in Class XI & XII Physics and Mathematics,"Kunal Gandvane (9510190597), Radhika Agarwal (7007582491), Daksh Makwana (9660852364), Dhruv Singla (8059593359)","This week lays the theoretical groundwork for control systems. You'll learn how to model dynamic systems using differential equations and transfer functions, analyze system stability, and understand the role of feedback in control. Core concepts such as open-loop vs. closed-loop systems, time and frequency domain analysis, and performance metrics like rise time, settling time, and overshoot will be covered. This week ensures you have a strong analytical base before moving into simulation and design.","This week marks the transition to practical implementation using MATLAB Simulink. You'll learn to simulate control systems and implement classical PID controllers, understanding how to tune them using methods like Ziegler-Nichols and trial-and-error in a visual modeling environment. The week also introduces the Linear Quadratic Regulator (LQR) — a state-space-based optimal controller — giving you a deeper perspective on modern control techniques. You'll compare PID and LQR in terms of design philosophy, performance, and application.","Here, theory meets application. Using the simulated model of a self-balancing bot (inverted pendulum on wheels), you'll apply the controllers designed in Week 2 to stabilize the system. This involves identifying system dynamics, designing appropriate feedback loops, and fine-tuning controller parameters to keep the bot upright. You'll gain hands-on experience tackling real-world challenges like noise, disturbance rejection, and control signal saturation.","In the final week, you'll extend the functionality of the stabilized bot to include movement and steering. This includes designing control logic for smooth forward, backward, and turning motions while maintaining balance. You'll also work on refining your system’s response to varying setpoints and potentially integrating higher-level command inputs. By the end of the week, you'll have a fully simulated, controllable self-balancing robot built from the ground up.",N/A
+The Engineering Summer School,3,37,Build Your Own Plant - A Blueprint to Start Manufacturing,Team ChemEca,"Unlock the secrets of everyday products by designing your own manufacturing plant! This hands-on course takes you from performing a market study for a FMCG product like chocolate or frooti to creating detailed process flow diagrams and even advanced plant designs along with basics of emission analysis. Learn industry tools, master process engineering basics, and earn a valuable certification to boost your career—all while building a real-world project step-by-step.","Week-wise Project Details 
+
+Week 1: Market Study on a Product Genre
+1. Learn how to conduct a market analysis for FMCG products, exploring industry trends, consumer demand, and leading brands.
+2. Understand how to evaluate the feasibility of manufacturing different product genres (e.g., chocolates, fruit juices).
+3.  Design a deck summarizing market study findings and rationale for narrowing down to a specific product genre.
+4. Gain experience in synthesizing research and justifying product selection.
+Deliverable:
+Assignment 1 – FMCG Market Study Presentation Deck
+
+Week 2: Basic Block Diagram of Manufacturing Process
+1. Study the fundamental steps involved in the manufacturing process for the selected FMCG product.
+2. Learn to perform a literature review to identify key process stages.
+3. Practice translating process understanding into a clear, simple block diagram.
+4. Develop concise process descriptions to accompany diagrams.
+Deliverable:
+Assignment 2 – Basic Block Diagram with Brief Process Description
+
+Week 3: Basic Process Flow Diagram (PFD)
+1. Get introduced to digital diagramming tools like Visual Paradigm.
+2. Learn to convert block diagrams into process flow diagrams, identifying main equipment and process streams.
+3. Understand the basics of process engineering documentation.
+4. (Optional) Begin exploring advanced topics: basics of P&ID and AutoCAD Plant 3D.
+Deliverable:
+Assignment 3 – Basic PFD (compulsory); Optional: Begin P&ID
+
+Week 4: Refined and Detailed PFD with Emission Assessment 
+1. Refine and finalize the digital PFD, incorporating feedback for clarity and accuracy.
+2. Learn to represent all process streams, equipment, and connections in detail.
+3. Conduct an emission assessment for the designed plant, identifying potential emissions and their sources.
+4. (Optional) For advanced learners: Expand the PFD into a basic P&ID, adding instrumentation, control, and safety features, and explain one such feature.
+Deliverable:
+Assignment 4 – Final, Refined Digital PFD (compulsory), Emission Assessment Deck(compulsory), Basic P&ID with Explanation(Optional) ",4-6 hours,"Attendance:
+Mandatory participation in 2 out of 2 briefing sessions.
+
+Assignments:
+Submit at least 2 out of the first 3 weekly assignments.
+Submission of the final 2 compulsory sub-parts of  Assignment 4 will be required.
+
+No Weighted Grading:
+All requirements must be fulfilled for successful completion and certification.
+There will be an optional capstone P&ID design project
+
+Reach out to : Param Aghera- 9428989809  *AND*  Ojas Pathak - 7058448506 in case of any issues.",Attendance: Mandatory participation in 2 out of 2 briefing sessions. Assignments: Submit at least 2 out of the first 3 weekly assignments. Submission of the final 2 compulsory sub-parts of  Assignment 4 will be required. No Weighted Grading: All requirements must be fulfilled for successful completion and certification. There will be an optional capstone P&ID design project,Just your enthusiasm!,"Ojas Pathak (7058448506), Param Aghera (9428989809)","1. Learn how to conduct a market analysis for FMCG products, exploring industry trends, consumer demand, and leading brands.
+2. Understand how to evaluate the feasibility of manufacturing different product genres (e.g., chocolates, fruit juices).
+3.  Design a deck summarizing market study findings and rationale for narrowing down to a specific product genre.
+4. Gain experience in synthesizing research and justifying product selection.
+
+Assignment 1 – FMCG Market Study Presentation Deck","1. Study the fundamental steps involved in the manufacturing process for the selected FMCG product.
+2. Learn to perform a literature review to identify key process stages.
+3. Practice translating process understanding into a clear, simple block diagram.
+4. Develop concise process descriptions to accompany diagrams.
+
+Assignment 2 – Basic Block Diagram with Brief Process Description","1. Get introduced to digital diagramming tools like Visual Paradigm.
+2. Learn to convert block diagrams into process flow diagrams, identifying main equipment and process streams.
+3. Understand the basics of process engineering documentation.
+4. (Optional) Begin exploring advanced topics: basics of P&ID and AutoCAD Plant 3D.
+
+Assignment 3 – Basic PFD (compulsory); Optional: Begin P&ID","1. Refine and finalize the digital PFD, incorporating feedback for clarity and accuracy.
+2. Learn to represent all process streams, equipment, and connections in detail.
+3. Conduct an emission assessment for the designed plant, identifying potential emissions and their sources.
+4. (Optional) For advanced learners: Expand the PFD into a basic P&ID, adding instrumentation, control, and safety features, and explain one such feature.
+
+Assignment 4 – Final, Refined Digital PFD (compulsory), Emission Analysis Deck(compulsory), Basic P&ID with Explanation(Optional) ","Won't be extending the course beyond 4 weeks, it is very trivial and doable. In case it still extends, the assignments submitted until now shall be verified in the resume, Team Leads of Team ChemEca will handle resume verification points."
+"The Management Summer School (Courses in Consult, Finance, Entrepreneurship, Economics*)",2,21,How to Start your Startup,EnB Club,"Master the art of launching and scaling a startup in just three weeks. Learn from industry experts about idea generation, growth strategies, and building a winning team to achieve entrepreneurial success.","This comprehensive three-week course provides aspiring entrepreneurs with essential insights and strategies for starting and scaling a successful startup. Week 1 covers foundational elements such as idea generation, product development, and strategic pivoting, enriched with real-world case studies. Week 2 delves into growth strategies including SEO, email marketing, and user engagement, while emphasizing customer support and press coverage. Week 3 focuses on building a strong company culture, effective team management, and strategic decision-making. Through lectures by industry experts, this course equips participants with the knowledge and skills to navigate the complexities of entrepreneurship.",7-8 hours,Assignment - 1/week,It is suggested to watch all weekly videos and achieve a minimum 50% score on assignments for certification.,Passionate about entrepreneurship and basic understanding of business concepts. No prior experience required.,Amit Bhartiya (7878469798),"Foundational Elements
+1. Passion and Problem-Solving(Understanding the core of startup success)
+   - Importance of founder's passion
+   - Identifying and solving specific problems
+   - Case study: Airbnb
+2. The Importance of Execution(Turning ideas into reality)
+   - Execution over ideation
+   - Case study: Facebook
+3. Strategic Pivoting (Adapting to find market fit)
+   - Importance of pivoting towards a goal
+   - Case study: Twitter
+4. Evaluating Long-Term Value (Ensuring sustainability)
+   - Sustainability through long-term value
+   - Case study: Amazon
+5. Future Planning (Anticipating future challenges)
+   - Strategic foresight and adaptability
+   - Case study: Slack","Growth Strategies
+1. SEO Strategies (Driving organic traffic)
+   - Keyword research
+   - Link building
+2. Email Marketing (Engaging users effectively)
+   - Personalized notifications vs. newsletters
+   - Deliverability and engagement
+3. Triggered Marketing Campaigns(Boosting engagement)
+   - User action-based campaigns
+   - Boosting click-through rates
+4. Virality Factors (Achieving rapid growth)
+   - Payload, frequency, and conversion rates
+5. Creating Products Users Love (Fostering user loyalty)
+   - Conversion rates and churn indicators
+   - Case study: Apple","Building Culture and Strategic Management
+1. Hiring and Team Building (Creating a strong foundation)
+   - Values: hard work, integrity, creativity, transparency
+   - Hiring the first 10 employees
+2. Transparency and Onboarding(Fostering open communication)
+   - Tooling for transparency
+   - Evolving onboarding processes
+3. Managing People and Resources(Maximizing organizational output)
+   - Effective leadership and decision-making
+   - Regular one-on-one meetings
+4. Metrics and Outputs (Measuring performance accurately)
+   - Focusing on outputs
+5. Fairness and Cultural Implications(Ensuring equitable practices)
+   - Considering all stakeholders
+   - Structured processes for raises",Project - At the end of the course the participant is expected to have a basic understanding on the workings and analysis of startups. The course will conclude with a submission of BMC i.e. a Business Model Canvas. The BMC should be on the startup idea the participant has developed through the course or otherwise on an alum startup.,
+"The Management Summer School (Courses in Consult, Finance, Entrepreneurship, Economics*)",2,22,Ai in Entrepreneurship,EnB Club,"Unlock the power of AI to launch your startup idea, no coding, just creativity, tools, and strategy!","This 4-week course introduces students to the intersection of entrepreneurship and artificial intelligence. You’ll learn how to ideate, validate, build, and scale a startup using practical AI tools. Each week focuses on a new stage of the entrepreneurial journey—from understanding the startup lifecycle and market research to building MVPs with no-code AI platforms and preparing AI-powered pitch decks. Through engaging lectures, hands-on assignments, and real-world case studies, you'll walk away with a complete startup concept powered by AI.",3–5 hours,"Total: 100%
+
+Weekly Assignments (4) — 50%
+Short tasks where students apply weekly concepts using AI tools (e.g., market research using ChatGPT, MVP design using no-code platforms).
+
+Final Project — 50%
+Students submit a complete AI-powered startup pitch deck, including idea validation, product concept, GTM strategy, and ethical use of AI.","Minimum 60% overall score (assignments + final project), Submission of all weekly assignments and final project","Basic familiarity with startups, business ideas, or willingness to explore new tools",Ishant (8512094092),"Introduction to Entrepreneurship & Foundations of AI
+
+Understanding the entrepreneurial mindset and the startup lifecycle
+
+Overview of AI and machine learning (no technical background needed)
+
+Applications of AI in real-world businesses
+
+AI in the startup landscape: opportunities and examples
+
+Hands-on: Explore ChatGPT, Notion AI, and other beginner-friendly tools
+
+Assignment: Identify a problem, propose an AI-based solution, and validate the idea using AI tools (e.g., ChatGPT, Google Trends)","AI for Market Research & Opportunity Identification
+
+Using AI tools for market research and trend analysis
+
+Customer persona creation and segmentation with AI assistance
+
+Competitive landscape mapping using AI scrapers and research assistants
+
+Tools: Browse AI, ChatGPT, Perplexity AI, Similarweb
+
+Assignment: Submit a 1-page market research report and customer persona using at least two AI tools","Building MVPs and Prototypes with AI & No-Code Tools
+
+Understanding MVPs and product-market fit
+
+Introduction to no-code tools (Bubble, Glide, Canva, Figma, Tally)
+
+Integrating AI APIs or models into your startup idea
+
+Case studies: Jasper AI, Copy.ai, Looka, Synthesia
+
+Assignment: Build a prototype or visual MVP of your idea using AI/no-code platform","Scaling, Pitching & Ethical AI Use
+
+Using AI in sales, marketing, and customer support automation
+
+Creating AI-powered pitch decks and fundraising strategies
+
+Tools: Beautiful.ai, ChatGPT for scripting, Decktopus, SlidesAI
+
+Discussion: Responsible use of AI, ethics, bias, and data privacy
+
+Assignment: Submit a complete AI-powered startup pitch deck including MVP, GTM strategy, AI use case, and ethical considerations",
+"The Management Summer School (Courses in Consult, Finance, Entrepreneurship, Economics*)",2,23,Consulting 101,Consult Club,"Discover the power of consulting with our Consulting 101 course! Are you ready to unlock your potential and dive into this exciting field? Whether you're a beginner or completely new to consulting, our course equips you with essential skills and knowledge to excel. Learn problem-solving, master strategic thinking, and develop communication skills that set you apart as a trusted advisor. Plus, delve into guesstimates—a critical skill for any consultant—enabling you to break down complex problems and provide quick, insightful estimates on the spot. Join us and transform your consulting journey!","Consulting 101 encompasses a comprehensive introduction to the world of consulting providing students a great exposure to what consulting really is about. This program would help to develop essential skills such as structuring thoughts, generating ideas, and making guesstimates, which are the tools that consultants use on a daily basis, without which they wouldn't be who they are. Through interactive sessions, shared content and a project-based assignment, participants shall gain practical exposure to consulting concepts and real-life case studies covering profitability analysis, market entry strategies, and mergers and acquisitions. The course would serve as an excellent way for anyone looking for exposure to consulting to achieve that.
+",4-6 hours,"Originality – Work must be AI-free and authentically written by the student. (This is must to follow otherwise your assignment will not be considered for evaluation)
+
+Relevance (40%) – Content must directly reflect the concepts taught in that week's syllabus.
+
+Structure (40%) – Clear, logical organization with proper flow and formatting.
+
+Creativity (20%) – Demonstrates critical thinking, originality, and insightful perspectives.",Attend at least 2/3 live sessions. Submit at least 2/3 assignments/ projects before the resume deadline. Obtain more than 50% in the assignments given till now.,Just your enthusiasm!,"Karan (9833729353), Parv (7304921051)","What is Consulting, Types of Consulting
+Introduction to Guesstimates, guesstimate examples
+Issue trees: what are issue trees, how to make an issue tree, examples
+","What is critical thinking? it’s importance in consulting, resources to improve your critical thinking
+SWOT analysis and Pestel analysis
+What is problem identification and framing? Problem solving frameworks, MECE principle
+Creative and Innovative thinking
+","Introduction to profitability, solving case interviews on profitability
+Introduction to Competitive Analysis and analyzing business through unpredictable market forces
+Growth Strategy and Management, solved cases
+Mergers and Acquisitions, examples
+",NA,
+"The Science Summer School (Pure Sciences like Maths, Biology, Physics, Chemistry, Economics*)",1,11,SYN-BIO 101,iGEM,"Step into the revolutionary field of Synthetic Biology where DNA becomes your code and cells your canvas. In just 4 weeks, learn how to engineer life, create biological circuits, and reimagine the future of medicine, energy, and more.","This Introduction to Synthetic Biology course is your gateway to understanding how we can program living systems like machines. You'll explore how DNA, RNA, and proteins work together and how we can manipulate this flow of information to engineer biological circuits and solve real-world problems. Through this course, you'll learn how to differentiate synthetic biology from traditional genetic engineering, design and analyze gene expression systems, understand tools like CRISPR, and explore applications in medicine, sustainability, and biomaterials. You'll also get hands-on exposure to bioinformatics tools like the RCSB PDB Viewer, develop an understanding of biotechnology techniques such as recombinant DNA and PCR, and think critically about ethics, biosafety, and innovation in this fast-growing field. Whether you're passionate about biology, tech, or innovation — this course will help you explore the future of life sciences.",3-4 hours,"Each week, you will complete an assignment comprising:
+Objective Questions: Multiple-choice, True/False, and short-answer questions to test your conceptual clarity.
+Subjective Questions: Logic-based, open-ended questions where you’ll apply what you’ve learned to solve synthetic biology problems.
+In the final week, you will complete a mandatory project using the RCSB PDB Viewer to analyze protein structures. You'll be expected to interpret structural features, identify functional insights, and derive meaningful conclusions from your analysis. Completion of this project is compulsory for certification",60% in the weekly assignment & completion of the final project.,Just your enthusiasm!,"Gaurish (9766206523), Hitesh (7977016916)"," Foundations of Synthetic Biology-what syn bio and how its differernt from geneticengineering,historical lmilestones and breakthoughs, designing principles in biological circuits, and real world applications","The Genetic Toolkit- understanding the central dogma, deep dive into replication, transcription, and translation.Post-transcriptional and post-translational modifications.
+Introduction to gene expression control & synthetic varients.","Biotechnology Essentials- Core techniques: Recombinant DNA, cloning vectors, plasmids, and gel electrophoresis.gene delivery methodsPCR, gene amplification, and identifying recombinant colonies, vector systems, bioreactors, and downstream processing.","Advanced Applications & Bioethics- Genetic circuit design: Build logic into cells. CRISPR: The genome editing revolution.biosafety, biosecurity, and intellectual property in synbio.
+",
+"The Science Summer School (Pure Sciences like Maths, Biology, Physics, Chemistry, Economics*)",1,12,Computational Soft and Active Matter: Modeling Self-Organisation and Collective Behavior,Students' Association of Physics Department,"From particles to patterns—simulate how flocks form, clusters jam, and agents organise in motion! Build your own soft and active matter simulations from scratch","This course offers an  introduction to computational modeling of soft and active matter systems, where students explore how complex collective behaviors emerge from simple rules. Over four weeks, learners will build interactive simulations using Python to investigate phenomena like clustering, jamming, and flocking.
+
+Week 1 introduces particle dynamics and repulsive forces in soft matter systems.
+
+Week 2 explores inter-particle potentials and self-organization, modeling systems like foams and colloids.
+
+Week 3 dives into active matter, implementing the Vicsek model to simulate flocking and noise-driven phase transitions.
+
+Week 4 brings it all together in a capstone-style project, modeling flocking agents navigating through obstacles using alignment, repulsion, and self-propulsion.
+
+Students will use Python and libraries like numpy and matplotlib to visualize behaviours in real time. 
+
+By the end of the course, learners will have built their own simulation engines, developed insights into self-organization, and created a final project showcasing their understanding of soft and active matter systems.",6-7 hours,"Attendance: 75% required
+Weekly Assignments (60%)
+Capstone Project (40%)
+Passing Criteria: Minimum 50% overall to pass","75% attendance, out of 3 assignments one can be left, capstone project is must and 50% grades in assignments depending on code quality ",Some experience with Python (especially numpy and matplotlib),Ananya Priyaroop (9835045678),"Course Content:
+Integration methods: Euler, Velocity Verlet
+Soft repulsion using Lennard-Jones-like potential
+Boundary handling: reflective and periodic
+Energy conservation basics
+
+Assignment 1:
+Simulate 100 particles in 2D with soft repulsion
+Implement both Euler and Velocity Verlet methods
+Plot total kinetic + potential energy over time
+
+Submit:
+Python code
+20s animation
+Energy vs time plot","Course Content:
+Clustering, aggregation, jamming phenomena
+Attractive-repulsive potentials (modified Lennard-Jones)
+Spatial metrics: pairwise distances, cluster sizes
+Concepts of equilibrium vs non-equilibrium systems
+
+Assignment 2:
+Simulate for 3 interaction strengths and 3 densities
+Calculate:
+Cluster size distribution
+Radial distribution function 
+Submit:
+Plots of clustering metrics
+Snapshot comparisons pre/post clustering
+
+Brief report on clustering behavior vs parameters","Course Content:
+
+Vicsek model: self-propulsion + local alignment + noise
+Ordered vs disordered states
+Order parameter 
+Influence of noise and density
+
+Assignment 3:
+Simulate 50 agents at low, medium, and high noise
+Track:
+Order parameter over time
+Particle trajectories
+
+Submit:
+Animation showing flocking transition
+Plot of ϕ vs time for each noise level
+Report on noise thresholds and order-disorder behavior","Course Content:
+Coupling Vicsek model with soft repulsion
+Adding static obstacles as repelling objects
+Measuring density, energy, order",
+"The Science Summer School (Pure Sciences like Maths, Biology, Physics, Chemistry, Economics*)",1,13,Foundations of Astronomy and Astrophysics,Krittika,"One might wonder why, when and how we and the objects around us came into being. We might have found answers to some of these questions, but our understanding of the cosmos is still quite limited. One might be curious and want to explore this branch of Science. This Learners' Space course will provide a foundation in Astronomy and Astrophysics with a wide range of modules covering the basic workings of Celestial objects and their phenomena, Telescopes and also methods of studying as well as detecting these objects.","The course intends to build a basic understanding of the fundamentals of Astronomy and Astrophysics like Celestial Mechanics, Working of telescopes, Radiation & its Use in Astrophysics and Telescopes. Once the fundamentals are all set, we take a step further and dive deeper into the advanced modules. The advanced modules offer a variety of topics like Cosmology, Distance Ladder, Exoplanet Detection, Multi-messenger Astronomy, Radio Astronomy, Solar Physics and Stellar Structure and Evolution, which one can take up according to their interest. If you love Astronomy and want to learn but don't know how; this is a great opportunity!   ",4-5 hours,"Certificate Assignment 
+attendance in lectures
+mini-quizzes",Certificate Assignment should be completed at least 50% lectures attended at least 25% mini quizzes attempted,None,"Vihaang (9527958679), Durva (9009911322)","Celestial Mechanics and Gravity
+Coordinate Systems and Time","Radiation & its use in Astrophysics
+Telescopes","(Any 2 out of the 7 advanced modules to be done in week3 as well as week4)
+Cosmology
+Distance Ladder
+Exoplanet Detection","Multi-messenger Astronomy
+Radio Astronomy
+Solar Physics
+Stellar Structure and Evolution",
+"The Science Summer School (Pure Sciences like Maths, Biology, Physics, Chemistry, Economics*)",1,14,Introduction to Quantum Computing,Maths and Physics Club,"Quantum computing is a field that harnesses the principles of quantum mechanics to process information. This course introduces the foundational concepts of quantum mechanics relevant to computing, explores the specialized hardware and algorithms used in quantum systems, and highlights how scalable quantum computers can solve certain problems exponentially faster than their classical counterparts. Join this course to learn more about it!","Quantum computing is a field that harnesses the principles of quantum mechanics to process information. Unlike classical computers that use bits represented by transistors, quantum computers use quantum bits (qubits), which can be realized even by single atoms under specific constraints. At the quantum scale, matter behaves both like particles and waves, enabling powerful new ways to perform computation. This course introduces the foundational concepts of quantum mechanics relevant to computing, explores the specialized hardware and algorithms used in quantum systems, and highlights how scalable quantum computers can solve certain problems exponentially faster than their classical counterparts.",6 hours,"3 Assignments, one per week: Each has 20% Weightage
+Mini Project on Implementation of Algorithms: 40% Weightage",Assignments and Mini Project,Just your enthusiasm!,Soham (8602586808),"1. Linear Algebra: Dirac Notation, Duals, Inner products and Hilbert Spaces, Outer product, Operators and States, Adjoint of an operator, Hermitian, Unitary and Positive Operators, Unitary Diagonalization, Tensor Product, Partial Trace.
+2. Postulates of QM: State Space, Evolution, Measurement (Protective and POVM), Composite systems.
+3. Qiskit - Setup and Basics, Bloch sphere visualization.","1. Gates: Pauli X,Y,Z, Hadamard, S, T, General Rotation, Multi-qubit gates (CNOT, General Controlled Unitary, Swap, Toffoli) 
+2. Circuits: Basic operational circuits, Superdense Coding, Teleportation circuits
+3. Primitives: Phase Kickback, Pre-image States.","1. Primitives(Contd.): Quantum Fourier Transform
+2. Algorithms: Grover's, Shor's, Simon's, Deutsch-Josza","1. Implementing Algorithms in Qiskit: Grover's, Shor's, Simon's, Deutsch-Josza in Qiskit.
+2. Introduction to Quantum Information",
+"The Science Summer School (Pure Sciences like Maths, Biology, Physics, Chemistry, Economics*)",1,15,Information and Coding Theory,Maths and Physics Club,"Ever wondered what is the science behind efficient and reliable communication!? Answer lies in Information & Coding Theory. This course is catered to cover the essentials of information and coding theory; from entropy and data compression to error-correcting codes. Join in this course to learn, how modern systems transmit data accurately, even in noisy environments.","From bits to error-proof messages, the course covers the fundamentals of information and coding theory. In the first half, study about probability, entropy, and the ideas of Claude Shannon that revolutionized how we understand information. In the second half, explore the art of communication—learn how to compress data efficiently and correct errors with powerful coding techniques like Huffman, Hamming, and Reed–Solomon codes. Blending theory with systems like QR codes and ISBNs, the course act as a introduction to source and channel coding, equipping you with the tools to understand modern digital communication.",7-9 hours,"Week 1: One assignment, worth 20%
+Week 2: One assignment, worth 30%
+Week 3: One assignment, worth 20%
+Week 4: One assignment, worth 30%",Score of 70% is required across all assignments,Just your enthusiasm!,Nirav (9511896571),"Basic probability (random variables, distributions and densities, expectations), some statistical results (inequalities of Markov and Chebyshev (with proof), weak and strong law of large numbers (without proof)), basics of entropy (Shannon information content, decomposability, bounds, asymptotic equipartition, typical sets) ","More on entropy (joint, conditional, and relative entropies, mutual information, Gibbs' inequality, chain rules, data processing inequality), Shannon's source coding theorem (with proof), basics of channels and channel capacities, Shannon's noisy channel coding theorem (without proof)","Introduction to Coding Theory (Source and Channel Coding)
+
+Historical motivation: Need for efficient and error-free communication
+
+Source Coding:
+Morse Code, ASCII encoding
+Huffman encoding (construction, optimality proof)
+
+Channel Coding:
+Introduction to encoding and decoding processes
+ISBN numbers and check-digit schemes
+QR code structure and encoding principles
+Basic concepts of error detection and correction
+
+Discussion on the distinction and interplay between source coding and channel coding","Linear Codes:
+Definitions (block codes, linearity, generator and parity-check matrices)
+Encoding and syndrome decoding
+
+Hamming Codes:
+Construction, minimum distance, error detection and correction capability
+
+Reed–Solomon Codes:
+Basics of finite fields and polynomial interpolation
+Encoding and decoding overview
+
+Reed–Muller Codes:
+Boolean functions, recursive construction
+Applications and decoding idea
+
+Geometric and algebraic perspectives in modern coding",
+"The Science Summer School (Pure Sciences like Maths, Biology, Physics, Chemistry, Economics*)",1,16,Game Theory,Maths and Physics Club,"Step into the world of rational decision-making by learning the fundamentals of Game Theory in this wonderful course! Take your first steps toward this deeply strategic field that shapes economics, politics, biology, and everyday life and uncover the principles behind how rational individuals make decisions.","Step into the world of strategic thinking with this introductory course on Game Theory. Across four weeks, you'll explore rational decision-making through iconic games like the Prisoner’s Dilemma, delve into Nash equilibria in both pure and mixed strategies, and understand how fairness and efficiency play into group decisions. The course wraps up with Arrow’s Impossibility Theorem, revealing the mathematical limits of democratic systems. By the end of this course, you’ll have taken strong leap into the strategic mindset that shapes economics, equipping yourself with essential tools to make rational decisions in complex scenarios",3 hours,25% Each for 4 weeks,Should score above 70% across the course,Just your enthusiasm!,"Soham (8602586808), Nirav (9511896571)",We begin with the motivation behind game theory by exploring classic examples like chess. Know the classic Prisoner’s Dilemma through normal form games and discover the fundamental idea of rationality.,"Go deeper into the structure of normal form games. Learn about domination, Nash equilibrium, focusing on Pure Strategy Nash Equilibria (PSNE) and what it mean.","Learn the concept of Mixed Strategies, The fundamental idea behind Mixed Strategy Nash Equilibria (MSNE), Prove the existence of MSNE, Start exploring the idea of Social Welfare Functions (SWF)","Wrap up by exploring Arrow's Social Welfare Setup, introduce fairness notions such as Pareto Efficiency (PE) and Independence of Irrelevant Alternatives (IIA), Conclude with proving how democracy is mathematically impossible (Arrow's Impossibility Theorem)",
+"The Science Summer School (Pure Sciences like Maths, Biology, Physics, Chemistry, Economics*)",1,17,Introduction to Astronomical Image Processing,Krittika,"Even though the Universe appears to be beyond our reach, it communicates with us, giving us information through electromagnetic radiation. Astronomical Imaging teaches us how to gather and interpret this information. This learner’s space course will explain its workings and teach you how to process those famous images from Hubble and the JWST.","The course covers the principles of imaging systems while providing an overview of astronomical imaging techniques. You’ll learn more about multiwavelength imaging and work with data from ground-based telescopes, Hubble, JWST, and more, while doing comparative analysis. The main focus will be on learning image processing and the science behind it.
+If you are an astrophile like the people in Krittika but haven’t had the opportunity to learn how to process raw data and delve deep into its workings, this is the perfect opportunity for you!",6-7 hours,"Small weekly quizzes - module wise
+Final Processing assignment with a quiz",Completion of processing assignment and attendance of more than 50% in the live processing sessions,Just your enthusiasm!,Ruhaan (8805375670),"Module 1: Introduction to imaging Systems
+Module 2: containing topics about thermal and non-thermal emission,Reading data from various telescopes like JWST, Hubble etc. ","Image processing session 1(Planets or Moon)-Live online session
+Module 3: Light detection, photon noise,flux magnitude and basics of CCDs(Charge coupled devices)","Deep Sky Image processing session 1-Live online session
+Module 4: Basics of Image processing techniques, Seeing and Scintillation","Deep Sky Image processing session 2-Live online session
+Module 5 : Spectroscopy and photometry ",
+"The Science Summer School (Pure Sciences like Maths, Biology, Physics, Chemistry, Economics*)",1,18,Evolution 101,BioX Club ,"Explore how life began, how species change, and how humans fit into the grand evolutionary puzzle. This course blends ancient Earth history with cutting-edge genetics, real-world examples like antibiotic resistance, and powerful tools like Python and BLAST to decode life’s story. Whether you're into fossils, DNA, or digital biology — EvoQuest offers a thrilling dive into the science that connects us all.","EvoQuest is an immersive journey through the science of evolution — from life’s earliest molecular origins to the genetic and cultural evolution of humans. This course blends classical evolutionary theory with cutting-edge molecular biology, computational tools, and real-world applications to give you a comprehensive and hands-on understanding of life’s dynamic history.
+
+You’ll explore how life may have first emerged from non-living chemistry, uncover the evolutionary milestones revealed by fossils and comparative anatomy, and examine the genetic mechanisms that drive diversity and change over time. Core topics include natural selection, mutation theory, speciation, adaptive radiation, and coevolution, all backed by real-world case studies such as antibiotic resistance, pesticide adaptation, and the evolutionary success of Darwin’s finches.
+
+But EvoQuest goes far beyond theory — you'll also gain practical skills in bioinformatics, learning the basics of Python and Biopython, exploring sequence databases, and using tools like BLAST to analyze genetic data. You’ll learn how scientists build and interpret phylogenetic trees, estimate evolutionary divergence times, and assess the reliability of evolutionary hypotheses using techniques like bootstrapping.
+
+We’ll also dive into groundbreaking fields such as epigenetics, where inheritance is not just about DNA, and evolutionary medicine, which reveals how evolutionary principles apply directly to human health and disease.
+
+Whether you're passionate about the origins of life, fascinated by genetics, or looking to apply computational tools in biology, EvoQuest equips you with the knowledge and skills to explore evolution from every angle.
+
+tools used are:
+
+Python Programming (Basics)
+Biopython
+NCBI Databases
+BLAST (Basic Local Alignment Search Tool)
+Sequence Alignment Tools 
+ Phylogenetic Tree Construction & Analysis",5 hours,"Each week will conclude with an assignment based on that week’s topics to reinforce learning and track progress.project overview:Build a simple evolutionary tree using DNA data to explore how species are related. You'll use tools like NCBI, BLAST, ClustalW, MEGA X, and Biopython.
+refine it",70% in assignments and project completion,Just your enthusiasm!,"Adwai (8019831015), Reet (8087038860), Jovita (8657467118)","Foundations of Evolution
+1) Origin of Life
+•        Abiogenesis
+•        Oparin-Haldane Theory
+•        Miller-Urey Experiment
+2) Chemical Evolution
+•        Prebiotic Chemistry
+•        RNA World Hypothesis
+3) Geological Time Scale
+•        Eons, Eras, and Key Events in Earth’s History
+4) Evidences of Evolution
+•        Fossils
+•        Comparative Anatomy
+•        Embryology
+•        Molecular Biology
+5) Darwinism
+•        Natural Selection
+•        Peppered Moth Case
+6) Mutation Theory
+•        Role of Mutations
+•        Causes
+•        Effects
+•        Examples
+Additional Topics:
+1.        Extremophiles & Early Life
+•        How Extremophiles Inform About Early Life?
+2.        Fossil Record Analysis
+","Mechanisms of Evolution
+1) Modern Synthetic Theory
+•        Combining Genetics + Darwinism
+2) Hardy-Weinberg Principle
+•        Equilibrium
+•        Allele Frequencies
+3) Speciation
+•        Allopatric Speciation
+•        Sympatric Speciation
+•        Polyploidy
+4) Adaptive Radiation
+•        Darwin’s Finches
+•        Hawaiian Silverswords
+5) Mechanisms of Organic Evolution
+•        Gene Flow
+•        Genetic Drift
+•        Population Bottlenecks
+Additional Topic:
+1.        Neutral Theory of Evolution
+","Speciation and Adaptation
+1) Coevolution
+•        Mutualism
+•        Predator-Prey Arms Races
+2) Python Basics
+3) Biopython Introduction
+4) Sequence Databases & BLAST
+5) Sequence Alignment Concepts
+Additional Topic:
+1.        Epigenetics & Evolution
+•        Non-Genetic Inheritance Mechanisms
+","Human Evolution & Applied Evolution
+1) Human Evolution
+•        Hominin Lineage
+•        Genetic and Cultural Evolution
+2) Applied Evolution
+•        Antibiotic Resistance
+•        Pesticide Resistance
+•        Conservation Genetics
+3) Evolutionary Medicine
+4) Constructing Phylogenetic Trees
+5) Divergence Time Estimation
+6) Tree Reliability: Bootstrapping
+",
+The Sports and Skills Summer School,4,41,Analyzing the Impact of IPL Player Performance on Salaries using Machine Learning,Institute Sports Council,"Ever wondered how to avoid a ₹27 Crore mistake like LSG did?
+Want to make sure your future IPL team doesn’t end up burning crores on underperformers, here’s your chance to crack the code of predicting player salaries based on performance – and learn how to bid smart at the auction table!
+Don't miss out – this is where data meets cricket, and crores are either made or lost.","Course Overview:
+The IPL auction is a high-stakes battlefield where crores are spent in minutes. But what separates a smart bid from a ₹27 crore mistake (yes, we’re looking at you, LSG)? This course is designed to help you decode the science behind auction dynamics, understand performance metrics, and build predictive models to estimate player salaries — so you can bid like a pro, not just a fan.
+
+#What You'll Learn:
+1) Fundamentals of Performance Analytics: Learn what stats truly matter – batting averages, strike rates, economy, consistency metrics, match context, and more.
+2) Building Predictive Models: Dive into machine learning and regression techniques to forecast a player’s value using historical data.
+3) Decoding Auction Strategy: Understand team compositions, auction behavior, role scarcity, and how hype impacts pricing.
+4) Case Study: The ₹27 Crore Gamble: Deep-dive into Lucknow Super Giants’ investment in Rishabh Pant – analyzing the expectations, performance, and data behind the debate.
+5) Market Value vs. Intrinsic Value: Learn how to spot undervalued gems and avoid overpriced traps.
+
+# Tools You’ll Use:
+Python (Pandas, NumPy, Scikit-learn)
+Excel / Google Sheets for quick analysis
+IPL and T20 player datasets
+Visualization tools (Matplotlib / Seaborn / Tableau optional)",20-25 hours,"4-week course having 4 assignments, the first 3 assignments are of 60% weight and the final assignment is for 40% weight. The assignments would be basics of data science, python and machine learning. The final project would compromise of combining all the learnings and making the model to predict the salaries for auction-2026.",Minimum 2 of 3 assignment submission and final project is mandatory,Basic Python is recommended ,Aryansh Kukreja (9992888093),"Data Collection & Preprocessing
+Goal: Build a clean dataset of IPL player statistics and salaries ready for modeling.","Model Building
+Goal: Train regression models to predict salary using player performance data.","Feature Importance & Insights
+Goal: Understand and explain what features most influence predicted salary.","Deployment & Final Report
+Goal: Wrap up, optionally deploy, and write a professional project report.",
+The Sports and Skills Summer School,4,42,VisionAthlete: AI-Powered Sports Biomechanics,Institute Sports Council,"Use computer vision to analyze the biomechanics of specific sports movements—such as a snatch in weightlifting, a spike in volleyball, a tennis serve, a golf swing, or a baseball pitch—by extracting pose data from videos. Generate an efficiency or accuracy rating by comparing the technique to expert models or ideal biomechanical patterns.","This project focuses on using computer vision to perform biomechanical analysis of specific, well-defined sports movements in order to assess the efficiency and accuracy of an athlete’s technique. By targeting actions such as a snatch in weightlifting, a volleyball spike, a tennis serve, a golf swing, or a baseball pitch, the system analyzes video footage to extract body pose data using pose estimation tools like OpenPose, MediaPipe, or DeepLabCut. From this data, it calculates key biomechanical metrics such as joint angles, body alignment, timing, and symmetry. These features are then compared to expert performance models or biomechanical standards to generate an efficiency or accuracy rating. The goal is to provide athletes and coaches with objective, data-driven feedback that can be used to improve performance, reduce injury risk, and monitor technique over time. With potential applications in coaching, rehabilitation, and athlete development, the system can be extended to support real-time feedback, multi-angle video analysis, or integration with wearable sensors for even deeper insights.",3-4 hours,"Project-  Build a mini “AI Sports Coach” that analyzes a short video of a sports movement (e.g., a tennis serve, volleyball spike, or squat) using pose estimation and compares it to an expert model to generate a basic performance score and improvement tips.",Completion of the project,Just your enthusiasm!,Nehal Gupta (8291025201),"Understand basic sports biomechanics
+Introduction to computer vision
+Learn about pose estimation
+
+","Understand keypoints and pose data
+Extract biomechanical features: joint angles, symmetry, body alignment","Compare athlete pose data with expert reference
+Create scoring metrics for accuracy or efficiency
+Generate visual & textual feedback","Integrate all components into a final working system
+Polish and present the project
+",
+The Sports and Skills Summer School,4,43,Automatic Chess Bot design,Institute Sports Council,"Want to code like a pro and outplay your friends at chess? This short, engaging course teaches you how to build your own chess-playing bot from scratch! Learn the basics of Python, chess logic, game engines, and AI decision-making all while having fun. The necessary theory, and lots of hands-on coding, strategy, and real results on the board.","This Chess Bot Coding Course takes you from beginner to builder as you create your own fully functional chess-playing AI. The course starts with a simple setup process: installing Python, VS Code, and the python-chess library, while introducing you to what a chess bot is and where it's used in the real world. Next, you'll dive into the basics of chess from a programmer's perspective: understanding the board, piece movements, legal moves, and how they're represented in code using notations like FEN and PGN.
+
+Once the foundations are set, you’ll build a command-line based chess engine where a human can play against the bot. You'll begin with a basic random-move bot, then gradually enhance it using evaluation functions that count material and favor stronger positions. The course then dives into real AI logic, implementing the Minimax algorithm and optimizing it with Alpha Beta Pruning to make your bot smarter and more competitive.
+
+For those interested in visual interfaces, the course includes an optional GUI section using pygame or tkinter, allowing you to add drag and drop functionality and display the chessboard visually. You'll also learn how to connect your bot to online platforms like Lichess using their API, enabling it to play games in real time on the internet.
+
+The course concludes with a final project where you'll customize your bot’s strategy and personality, whether defensive, aggressive, or balanced, and test it against both human players and other bots. Throughout the course, you’ll gain practical experience in Python, game logic, AI decision-making, and real-world software development, all while having fun building something meaningful.",8 hours,"Week 1: Implement chessboard representation and legal move generation for basic pieces (pawns, knights). (20%)
+
+Week 2: Develop move execution, update board states, and detect game-ending conditions like check and checkmate. (20%)
+
+Week 3: Build a Minimax search algorithm with a simple board evaluation function to enable basic AI decision-making. (20%)
+
+Week 4: Integrate all components into a full chess bot, test gameplay, debug edge cases, and reflect on improvements. (40%)",A grade of atleast 60%,Just your enthusiasm!,Prateek (6297957507),"Introduction to chess bots and course overview
+
+Installing Python, VS Code, and the python-chess library
+
+Basic Python programming essentials: variables, functions, loops
+
+Understanding the chessboard, pieces, and moves programmatically
+
+Learning chess notation (FEN and PGN) and legal move generation
+
+Writing simple scripts to create and display a chessboard with moves","Developing a command-line chess game where a human can play moves
+
+Implementing move validation and turn management
+
+Creating a simple bot that makes random valid moves
+
+Introduction to evaluation functions: material count basics
+
+Enhancing the bot to pick moves based on material advantage
+
+Testing and debugging game flow","Understanding the Minimax algorithm and decision trees
+
+Coding Minimax to evaluate moves several steps ahead
+
+Learning and applying Alpha-Beta pruning to optimize Minimax
+
+Improving the bot’s move quality and response time
+
+Introducing adjustable difficulty levels based on search depth
+
+Testing bot strength and behavior with different settings
+
+","(Optional) Building a simple GUI with pygame or tkinter to visualize the board
+
+Adding user interaction: drag-and-drop or click-to-move
+
+Integrating the AI bot logic with the GUI for smooth gameplay
+
+Connecting your bot to online platforms like Lichess via API (overview)
+
+Final project: customize your bot’s strategy and test against players or bots
+
+Tips for further learning and improvement",
+The Sports and Skills Summer School,4,44,Journalistic Writing,English Learning Program,"Explore Journalism: Learn to Write News, Engaging Stories, and Opinion Pieces. Discover the Power of Your Words!","In this Journalism course, students will cover a lot of ground across four sections. First, they'll learn the basics like how to write news, conduct interviews, make surveys, and understand bias in reporting. Then, they'll move on to feature writing, where they'll see how to write engaging stories on serious, educational, and sensitive topics. After that, they'll dive into long-form journalism, studying great examples and learning how to dig deep into a story. Finally, they'll wrap up with op-eds, focusing on writing persuasive pieces about social issues without getting too political. Throughout the course, we'll highlight the importance of telling stories in a captivating way and using different media tools effectively. 
+This course in journalism offers essential skills for effective communication across various fields. From news writing and conducting interviews to understanding bias and crafting engaging narratives, it equips you with tools applicable in journalism, content creation, public relations, and more. With a focus on research, critical thinking, and ethical considerations, it prepares you to navigate and contribute to media landscapes responsibly. Whether you're pursuing a career in journalism or seeking to enhance your communication abilities, this course provides valuable knowledge and practical tools for success.",3-4 hours,"Assignment at the end of week 1: 
+-News/article analysis
+-Interview questionnaire making/modification of previously made questionnaire
+-Relevant survey design
+2nd week: Based on the survey results, they will write a feature report explaining the outcomes, they can mention any similarities or causes for the outcomes.
+3rd and 4th week: Assignments add up to the final project i.e. writing an article. ","Completing all the assignments and the final project, as well as attending at least 3 out of 4 webinars.",Just your enthusiasm!,"Aarya Gaikwad (9322729792), Aditya Rana (9692894061), Ayush Jaiswal (7974399532), Gouri Namdeo (7977028289), Goutam Singh (9340703592), Rishit Kesharwani (9799158677)","Introduction to Journalism:
+ Basic lesson on news writing (how to approach/write news)
+How to take interviews?
+ Survey design
+ Journalism bias and ethics
+Documentary analysis","Will be  presenting  2 or 3 examples of how feature writing can be used to explain a serious topic, educational topic and sensitive topic and anything else as well. Will guide on how to write an engaging narrative  and how they can possibly include in their final project.",What is long-form journalism? What kind of topics are covered in long-form journalism? Analysis of examples - best long-form journalism pieces since 2011. How to research such pieces.,"Give initial reading of how to approach research and writing, assignment: focused on some social or non-political policy issue, how to write a coherent article.","Multimedia: Evolution of journalism
+Traditional Vs Digital Storytelling
+Impact of technology and News reporting 
+Photojournalism and infographics( data journalism)
+Visual storytelling, documentary and impact of audio
+How to create a podcast"
+The Sports and Skills Summer School,4,45,Advanced Music Production,Symphony,Advanced Level Music Production to refine your skillset,"This intensive course is designed for music producers who already possess foundational knowledge and seek to master advanced production techniques, sound design, mixing, and creative direction. Through hands-on projects, deep technical analysis, and exposure to professional workflows, students will refine their skills to a professional standard. The course bridges the gap between competent production and industry-ready music creation, tailored across genres such as electronic, hip-hop, metal and fusion.",4 hours,"Attendance of classes, Weekly assignments (Worksheet), And mixing/production deliverables","above 80% attendance, Assignment submissions",IMLP Production completed/ instructor approval,Siddharth Kumar Khanda (7568267949),"Session 1: Deep Dive into Session Management
+
+Advanced DAW templates, routing, session prep for genres
+
+Gain staging, reference tracks, CPU/latency optimization
+
+
+Session 2: Critical Listening & Ear Training
+
+Frequency identification drills, stereo imaging exercises","Advanced EQ & Compression
+
+Session 1: Surgical vs Musical EQ Techniques
+
+Dynamic EQ, mid-side EQ, tonal shaping across busses
+
+
+Session 2: Compression Mastery
+
+Parallel, multiband, and serial compression
+
+Shaping transients, glueing mixes, compressor types","Sound Design & Creative Processing
+
+Session 1: Synthesis and Sampling
+
+Advanced subtractive/FM/wavetable synthesis, resampling
+
+Layering synths, textures, cinematic sound design basics
+
+
+Session 2: FX Chains & Creative Processing
+
+Reverb tricks, delay throws, vocal FX, modulation FX chains","Mixing Advanced Elements
+
+Session 1: Mixing Vocals Deep Dive
+
+De-essing, tuning, doubling, saturation, FX automation
+
+
+Session 2: Drum and Bass Integration
+
+Kick/bass glue, transient shaping, rhythmic pocket",
+The Sports and Skills Summer School,4,46,An Introduction to Writing and Performing Stand-Up Comedy,ComedyCons ,"This course will teach you can take any funny idea and extract the maximum out of it. It teaches you how stand-up comedians write their material, from the basic terms to complex principles. And it teaches you how to perform on stage with the genuine energy that makes it work every time.","This course provides you everything you need to start writing your jokes and perform stand-up comedy. It begins from the basics, and takes you to the advanced principles of joke-writing. It tells you how to come up with a joke and then modify it so that it reaches it's full potential to generate the maximum amount of laughter. The course ends with a part on performance, about how you can be genuine and confident on stage. After finishing this course, you only need to practice all that you will learn, and no one can stop you from becoming a stand-up comedian.",3 hours ," 10 % completing the study material , 90% assignments and quizzes",Completion of quizzes and assignments,Just your enthusiasm!,Viraj Pondkule : +91 77559 02716,"Types of stand up comedy, premise, set up, punchline, attitude of a joke","Writing a joke: Taking a funny idea and converting it into a joke. Principles of joke writing 1: Seesaw Theory, Balloon Pops, Boom mic moments.","
+Writing a joke: Principles of joke writing 2: Victim of a joke, Triple Punches, Tension, Misdirection, Status, Persona","Performing Stand-up: Building likability using self-deprecating humor, Genuine energy, Making the audience comfortable, being confident on stage",
+The Sustainability Summer School,5,51,"Sustainable Economics: Markets, Policies, and the Planet",Economics Association,"Can markets save the planet? 
+Sustainable Economics: Markets, Policies, and the Planet is a bold, engaging course that explores how economic thinking can fight climate change and shape a fairer, greener future. You'll uncover the hidden costs of pollution, learn how carbon pricing works, explore how green finance and ESG investing are reshaping global markets, and understand how cities and jobs can transition to a low-carbon economy without leaving people behind. No prior economics background needed, just curiosity, critical thinking, and the drive to make a difference.","Can markets really save the planet? Join Sustainable Economics: Markets, Policies, and the Planet — an exciting, action-packed course where climate meets capitalism, and students become changemakers. Explore how economic tools can tackle the climate crisis through four power-packed modules:
+Module 1: Climate by the Numbers – Understand market failures, public goods, and the true cost of carbon.
+Module 2: Pricing Carbon – Learn how taxes, cap-and-trade, and smart policies can drive change.
+Module 3: Green Finance – Discover ESG, green bonds, and how investing can build a sustainable future.
+Module 4: Just Green Transition – Dive into green jobs, urban sustainability, and equity in the energy shift.
+No heavy economics background needed — just curiosity and the will to change the world. Ready to rethink the future?
+
+
+",6-8 hours,weekly conceptual quizzing and a project on the basis of your understanding of the concept,Submit a final project (basic effort and relevance expected),Just your enthusiasm!,Eshani Mailk (9952999987),"Module 1: Economics Meets Climate – The Crisis in Numbers
+Why the market fails when it comes to the environment
+
+What externalities and public goods have to do with rising sea levels
+
+How to see climate change in numbers
+
+Watch: The Climate Casino + Eye-opening videos on global warming’s real economic cost","Module 2: Pricing Carbon – Can Markets Save the Planet?
+What exactly is a carbon tax?
+
+Is cap-and-trade just jargon or a real solution?
+
+Can markets fix themselves?
+
+Dive into resources from the IMF, CEPR, and the World Bank + gripping explainer videos","Module 3: Green Finance & Investing in a Sustainable Future
+What is ESG and why are top companies racing to prove theirs?
+
+What makes a green bond green?
+
+Can finance be a force for good?
+
+Explore how Wall Street and Main Street are aligning with the Earth’s needs
+
+","Module 4: Cities, Jobs & the Just Green Transition
+What does a just transition look like for workers and cities?
+
+What are green jobs, and how can YOU get one?
+
+How do we make cities smart and sustainable?
+
+From climate equity to urban innovation, this module is all about real change and future careers",Work on project
+The Sustainability Summer School,5,52,Zero Waste Vision - OpenCV: For when you want Vision but aren’t Wanda,Team Zero Waste,"Welcome to Zero Waste Vision: a chill, 4-week self-paced intro to computer vision. We’ll start from square one (literally, pixels) and show you how images are just numbers in disguise. From reading and tweaking images to playing with webcam feeds and deploying YOLOv8 for object detection, you’ll teach your code to see the world.
+","Wanda rewrote reality with her mind. You? You’ll do it with code. This summer, ditch the drama and embrace the pixels because we’re teaching you how to make machines see using OpenCV, Python, and YOLOv8. It’s 4 weeks of no-pressure, slightly magical computer vision, minus the emotional breakdowns (we hope).
+
+Here’s  what you’ll learn:
+
+1.What is actually an image?
+2.How computers look at images and say “huh, that’s a cat”
+3.OpenCV basics: filters, contours, webcam chaos
+4.YOLOv8 for object detection—because “You Only Look Once” 
+5.A final project where you bend reality (or at least a video feed) to your will
+
+We’ll give you curated resources, mini-assignments, and exactly zero lectures
+",6-7 hours,"We won't grade you with a red pen, but here's how we’ll know you’re killin’ it:
+
+Mini Assignments (40%)
+Short, hands-on tasks each week like:
+  Grayscale and filter effects
+  Webcam capture + live filters
+  Detecting basic objects with YOLOv8
+
+Final Project (50%)
+Pick a fun problem and solve it using YOLOv8
+Example: detect plastic bottles in the trash, find snacks in your room, etc.
+Submit code + short report (or demo video)
+
+Meme / Reflection (10%)
+
+One-paragraph takeaway OR one solid meme about your journey.
+Extra points for GIFs. We have no shame.
+","To earn your certification Submit at least 3/4 mini assignments,  Complete final project,   Send a meme/reflection that proves you survived.","Know a bit of Python (loops, functions, lists), Can install libraries using pip (or are willing to try 37 times), are curious enough to Google stuff, Basically, bring enthusiasm. We’ll bring the rest.",Astha Sahu (8144151551),"Intro to Computer Vision & OpenCV
+
+What is computer vision? Use cases & real-world magic- Set up OpenCV in Python- Read, write, display, and modify images","Videos, Filters & Webcam Magic
+
+Access webcam & video streams- Draw shapes, overlay text on frames- Apply filters (blur, grayscale, edge detection)","YOLOv8 Basics & Object Detection
+
+Install YOLOv8 (Ultralytics)- Run object detection on images/videos- Understand bounding boxes, class labels, and confidence scores","Custom Project Week
+
+Pick an object/topic of interest- Use YOLOv8 on custom or real-time data- Submit final project + bonus meme or reflection
+",
+The Sustainability Summer School,5,53,"The Carbon Code: Trading, Tracking & Transforming Emissions",Energy and Sustainability Club ,Carbon as Currency: Trading the Future of the Climate,"Over four immersive weeks, you’ll gain a deep understanding of how carbon credits work, who uses them, how they’re traded, and what impact they really have. You'll calculate your own carbon footprint, examine how major companies offset emissions, and explore creative ways to drive meaningful climate action. Whether you're interested in clean-tech or shaping the future of carbon markets or just want an idea of how carbon problems are being tackled today, this course will give you the tools and vision to innovate at the heart of the sustainability movement.",3-4 hours,"3 activities - 10% each
+3 quizzes - 10% each
+end project - 40%",Minimum 60 % marks in the course and mandatory project submission,Just your enthusiasm!,"Ojas Dangi (8448877871), Shrestha Jain (9491715670)","Detailed insights about Carbon Footprints and Carbon Credits
+","Credit Crafting: Behind the Scenes of Carbon Projects
+","Trading and Pricing of Carbon Credits, Foundations of Carbon Markets 
+","Ethics and Future Trends, Career Opportunities",
+The Sustainability Summer School,5,54,Solar Energy & The Global Shift,Energy and Sustainability Club ,"Watt's Next? Solar
+Explore the science of photovoltaics: World’s fastest-growing energy source","- Explore the role of solar energy in the global transition to clean and sustainable future.
+- Understand the science behind solar cells, including semiconductor physics and how sunlight is converted into electricity.
+- Learn light management techniques to enhance solar cell efficiency through smart optical design.
+- Real world solar applications, business models, and career pathways in the Indian and global context. Gain practical knowledge through case studies and solar tools.",3-4 hours,"15% weightage Week 1 quiz 
+25% weightage Week 2 quiz
+25% weightage Week 3 quiz
+35% weightage of final presentation",Attempt all 3 quizzes and make the final presentation,Just your enthusiasm!,"Samay Dora: (8847603399), Sushat Kumar Kashyap(6391275528)","Understand the global energy transition, solar basics and India’s solar growth.","Learn how solar cells work, the role of semiconductors, solar cell types, and how light is managed in PV technology.","Learn about solar module design, system layout, performance factors, inverters, and grid vs off-grid systems.","Explore real world solar use cases, business models, career paths and final presentation from the students.",-
+The Sustainability Summer School,5,55,Sustainability Research & Policy: Understanding Campus Waste and Policy Design,Team Zero Waste,"This course empowers students to explore and address campus waste management issues by conducting audits, designing evidence-based policies, and proposing infrastructure solutions. It integrates hands-on learning with research and policy formulation for real-world impact.","This four-week course introduces students to the systemic challenges and solutions surrounding waste management on campus. Through a blend of live sessions, practical audits, policy drafting, and infrastructure planning, learners engage deeply with different types of waste: wet, dry, e-waste, and biomedical. Each week builds upon the previous one, encouraging students to focus on a specific waste type and propose actionable policy and design solutions tailored to their campus. The course also emphasizes stakeholder engagement, real data analysis, and sustainability-centered thinking. 
+
+Final Deliverables
+1. Waste Audit Report: A detailed report on the data collected during their audit, including
+insights and recommendations for improvement.
+2. Policy Proposal: A policy document that includes the waste type chosen, the identified
+problem, and the proposed policy solution.
+3. Waste Management Infrastructure Design: A visual model of their proposed waste
+segregation system, with an evaluation of its potential impact.
+4. Reflection: A personal reflection (1 page) on the course, what they learned, and how
+they would apply this knowledge to improve sustainability on campus
+
+● Live Sessions: These are common for all students during Weeks 1 to 4. After Week 1,
+students will focus on their chosen waste type, with tailored tasks to deepen their
+understanding and policy design in that area.
+● Personal Choice: In Week 2 and beyond, students select which waste type they want to
+focus on (wet, dry, e-waste, biomedical). This allows for a personalized learning
+experience, while still maintaining a cohesive course structure.",5 Hours,"10% attendance 
+20% Group Discussions
+50% Homework tasks
+30% Project
+",more than 75% attendance  Compulsory presence in GDs and submission of final project ,Just your enthusiasm!,Astha Sahu (8144151551),"○ Introduction to different types of waste on campus (wet, dry, sanitary, e-waste,
+biomedical).
+○ The importance of waste management and its environmental impact.
+○ Overview of IITB's waste management system and general waste flow
+(generation, collection, disposal, impact).","○ Introduction to waste audits: What they are, why they matter, and how to conduct
+one.
+○ Explaining key audit metrics like waste volume, contamination rate, and
+segregation efficiency.
+○ Students choose the type of waste they’d like to focus on: Wet Waste, Dry
+Waste, E-Waste, or Biomedical Waste.
+","○ Introduction to policy instruments and their role in waste management.
+○ Types of policy tools: Mandates, Nudges, Bans, Incentives, and Voluntary
+Agreements.
+○ Case study of successful policy implementations (e.g., plastic bans, incentivized
+recycling programs).","○ Introduction to designing waste management infrastructure (e.g., 3-bin systems,
+composting units, collection methods).
+○ Overview of how to engage vendors (recyclers, composters, etc.) and evaluate
+them.
+○ How to analyze cost-benefit in implementing different infrastructure models
+(e.g., on-campus composting vs. outsourcing).
+",
+The Sustainability Summer School,5,56,Sustainable Policies 101,Sustainability Cell,"In a world facing a climate crisis, understanding how environmental change is governed is just as important as knowing why it matters. This course is your gateway to the policy side of sustainability — no prior background needed. Whether you want to work in policy, start a green initiative, or simply make sense of headlines around COP and carbon credits, Sustainable Policies 101 will give you the vocabulary and vision to start making an impact.","Sustainable Policies 101 is a beginner-friendly course that introduces you to the world of environmental governance — from global climate negotiations to how local municipalities manage waste. Across four weeks, you'll explore the institutions, policies, principles, and real-world case studies that shape environmental decision-making at every level. Whether you're curious about COPs, carbon markets, or how your city plans for sustainability, this course connects the dots between climate science and climate action — in a language you can relate to.",6-7 hours,"70% Project / Assignments
+30% Compulsory Attendance 
+",Attend at least 2/3 live sessions. Complete the capstone project before the deadline,Just your enthusiasm!,"Arth Trivedy (8368009080), Siddhant Gupta (9167095841), Vinayak Jalan (7043772478)","What is Environmental Policy? Evolution, Purpose, and Scope
+Key Actors: Government, Market, Civil Society, Judiciary
+Global Environmental Governance Frameworks (UNEP, IPCC, UNFCCC)
+Principles of Environmental Governance (PPP, precautionary, intergenerational equity)
+","Indian Constitutional Provisions & Key Environmental Laws
+Institutions: MoEFCC, CPCB, NGT, State Agencies
+The NAPCC, SAPCCs & India’s Climate Commitments
+Environmental Impact Assessment (EIA) – Process & Critique
+","Global Agreements: Kyoto Protocol, Paris Agreement, Montreal Protocol
+The COP Process: How Climate Negotiations Work
+Climate Finance: Loss & Damage, Green Climate Fund, Carbon Markets
+Climate Justice & Equity: Developed vs Developing Nations
+","Urban Sustainability: Smart Cities, Green Buildings, Transit Policy
+Local Governance: Municipal Policy, Solid Waste Management, Decentralization
+Market Instruments: Carbon Pricing, EPR, Green Bonds
+Policy Careers, Youth Action & The Future of Environmental Governance
+",Project Week

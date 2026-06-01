@@ -1,0 +1,232 @@
+
+.navbar {
+    background-color: #1E1B2A !important;
+    height: 100px; /* Adjust the height as needed */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important; /* Premium dark shadow */
+    color:#E5E2F2 !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.navbar-title{
+    font-family: 'Urbanist' !important;
+    font-size: 34px !important;
+    color:#E5E2F2 !important;
+    font-weight: 700 !important;
+    margin-left: 10px !important;
+}
+
+.nv-buttons{
+    padding-left: 0px !important;
+}
+
+.navbar-button {
+    font-family: 'Urbanist' !important;
+    font-size: 22px !important;
+    color:#A6A2BC !important;
+    padding: 30px 6px 30px 6px !important;
+    margin: 5px 30px 5px 15px !important;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+}
+.navbar-button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #f2bc00;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-button:hover::after {
+    width: 100%;
+    left: 50%;
+}
+
+.navbar-button:hover {
+    color: #f2bc00 !important;
+    transform: translateY(-2px); /* Visual lift */
+    cursor:pointer;
+    text-decoration: none !important;
+}
+
+.navbar-button.active {
+    color: #f2bc00 !important;
+    text-shadow: 0 0 10px rgba(242, 188, 0, 0.6), 0 0 18px rgba(242, 188, 0, 0.4);
+}
+
+.navbar-button.active::after {
+    width: 100% !important;
+    left: 50% !important;
+}
+
+.navbar-login{
+    font-family: 'Urbanist' !important;
+    font-size: 20px !important;
+    color:#E5E2F2 !important;
+    text-transform: none !important;
+}
+
+.navbar-profile {
+    font-family: 'Urbanist' !important;
+    font-size: 15px !important;
+    color:#625F71 !important;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 8px !important;
+}
+
+.navbar-profile-mobile {
+    text-transform: none !important;
+    font-weight: 700 !important;
+}
+
+
+.navbar-login:hover{
+    color: #f2bc00 !important;
+    cursor:pointer;
+    text-transform: none !important;
+}
+
+.navbar-login.active {
+    color: #f2bc00 !important;
+    text-shadow: 0 0 10px rgba(242, 188, 0, 0.6), 0 0 18px rgba(242, 188, 0, 0.4);
+}
+
+.navbar-logo{
+    height: 160px !important;
+}
+
+.ugac-logo{
+    height: 100px !important;
+}
+
+.drawer-list {
+    width: 250px;
+    background-color: #1E1B2A;
+    height: 100%;
+    padding-top: 20px;
+    color: #E5E2F2;
+}
+
+.drawer-item {
+    font-family: 'Urbanist' !important;
+    font-size: 20px;
+    color: #A6A2BC;
+    padding: 12px 20px;
+    margin: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.drawer-item:hover {
+    background-color: #302c3d;
+    color: #f2bc00;
+    transform: translateX(4px);
+}
+
+.drawer-item.active {
+    background-color: #302c3d !important;
+    color: #f2bc00 !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 8px rgba(242, 188, 0, 0.4) !important;
+    box-shadow: 0 0 15px rgba(242, 188, 0, 0.2) !important;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+    .navbar-title {
+        font-size: 26px !important;
+        margin-left: 6px !important;
+    }
+
+    .navbar-button {
+        font-size: 18px !important;
+        margin: 5px 8px 5px 0px !important;
+        padding: 20px 4px !important;
+    }
+
+    .navbar-logo {
+        height: 120px !important;
+    }
+
+    .navbar-login {
+        font-size: 16px !important;
+    }
+
+    .navbar-profile {
+        max-width: 120px;
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .navbar-title {
+        font-size: 22px !important;
+        margin-left: 6px !important;
+    }
+
+    .navbar-button {
+        font-size: 16px !important;
+        margin: 5px 4px !important;
+        padding: 20px 4px !important;
+    }
+
+    .navbar-logo {
+        height: 120px !important;
+    }
+
+    .navbar-login {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-title {
+        font-size: 18px !important;
+        margin-left: 6px !important;
+    }
+
+    .navbar-button {
+        font-size: 15px !important;
+        margin: 5px 3px 5px 0px !important;
+        padding: 20px 3px !important;
+    }
+
+    .navbar-logo {
+        height: 60px !important;
+    }
+
+    .navbar-login {
+        font-size: 16px !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar-title {
+        font-size: 22px !important;
+        margin-left: 4px !important;
+    }
+
+    .navbar-logo {
+        height: 90px !important;
+    }
+
+    .navbar-toolbar {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "schools": [
+        {   
+            "school_id": 1,
+            "name": "Sciences ",
+            "details": "Courses in pure sciences: Maths, Biology, Astronomy, Physics Being run by department councils and science clubs of ITC"
+        },
+        {   
+            "school_id":2,
+            "name": "Engineering ",
+            "details": "Courses in engineering related to Electrical, Mechanical, Chemical. Being run by relevant Tech Teams, engineering clubs of ITC and department councils"
+        },
+        {   
+            "school_id": 3,
+            "name": "CS and DS",
+            "details": "Courses being run by the Analytics Club, WNCC, ITC Web, CSec Comm, AI Comm*"
+        },
+        {   
+            "school_id":4,
+            "name": "Sustainability ",
+            "details": "Courses in Sustainability Being offered by the Sustainability Cell, Team Zero Waste, Team Shunya"
+        },
+        {   
+            "school_id": 5,
+            "name": "Management ",
+            "details": "Courses in management, consulting, entrepreneurship, finance, Economics Being run by relevant clubs of UGAC and E-Cell"
+        },
+        {   
+            "school_id":6,
+            "name": "Sports and Skills ",
+            "details": "Courses being run by the ISC, ELP and ICC*"
+        }
+
+    ]
+}

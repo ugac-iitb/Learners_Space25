@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Shrey",
+        "course": "JavaScript Basics"
+    },
+    {
+        "name": "Alex",
+        "course": "Python for Beginners"
+    },
+    {
+        "name": "Jordan",
+        "course": "Web Development Fundamentals"
+    },
+    {
+        "name": "Taylor",
+        "course": "Data Science Essentials"
+    },
+    {
+        "name": "Morgan",
+        "course": "Machine Learning Introduction"
+    }
+]

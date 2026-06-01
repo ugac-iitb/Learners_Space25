@@ -1,0 +1,165 @@
+import React, { useEffect } from "react";
+import "../styles/HomePage.css";
+
+// import homeImg from "../data/images/HomePage.png"
+import homeImg from "../data/images/homeimg.webp";
+import AboutIng from "../data/images/about-home.webp";
+import AboutImgBg from "../data/images/aboutImgBg.png"
+import homeCardData from "../data/HomeCards.json";
+import HomeCards from "../components/HomeCards";
+import { useNavigate, useSearchParams } from "react-router-dom";
+
+import itcLogo from "../data/images/ITC.png";
+import iccLogo from "../data/images/ICC.png";
+import iscLogo from "../data/images/ISC.png";
+import ugacLogo from "../data/images/ugac.png";
+import susLogo from "../data/images/sus_logo.png"
+import enbLogo from "../data/images/enb_club_logo.png"
+import penLogo from "../data/images/pen.png"
+import elpLogo from "../data/images/elp.png"
+import { Grid } from "@mui/material";
+import axios from "axios";
+
+const HomePage = () => {
+    const aboutText = "Learners' Space is an online platform with a set of diverse courses for you to start exploring various topics propagated by student bodies across the institute. We bring to you a plethora of courses, all made with utmost attention to help serve you the best! In this 9th edition of Learners' Space, we are back bigger and better, with 40+ courses spread across 6 schools, being offered by 25+ student bodies. The courses will be spread out over a few weeks, each week building your skills even more. Go through the courses section of the website to explore the topics in detail. We have received an enormous amount of participation in the past few years and this time, we hope to see you too!";
+
+    const navigate = useNavigate();
+
+    const sso_code = new URLSearchParams(window.location.search).get("code");
+
+    const handleClick = () => {
+        navigate("/Schools");
+    }
+
+    const AUTHENTICATION_TOKEN = '17xaGhlTwmxMJcbmkYp6xNojsmDpYJLuQoK144DhgueqCUwrFw2SZQgTZLbQrzFwYE6sv74I1NLtuIiwAPyzu5ssNTQarKwMQ4QGQByOdOSCPH67WAFPsNeGL1gLajDC';
+
+    useEffect(()=>{
+        const generateSSOToken = async(code) =>{
+            try {
+                    const response = await axios.post(
+                        "https://gymkhana.iitb.ac.in/profiles/oauth/token/",
+                        new URLSearchParams({
+                            code: code,
+                            grant_type: 'authorization_code',
+                            redirect_uri: 'http://localhost:3000/ls25_test',
+                        }),
+                        {
+                            headers: {
+                            'Authorization': `Basic ${AUTHENTICATION_TOKEN}`,
+                            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                            }
+                        }
+                    )
+                    console.log("SSO Token Response: ", response.data);
+                    
+            } catch (error) {
+                console.error("Error generating SSO token: ", error);
+                alert("Error generating SSO token. Please try again later.");   
+            }
+        }
+
+        if(sso_code){
+            generateSSOToken(sso_code);
+        }
+    },[]);
+
+
+    return ( 
+        <div>
+            <section className="hero-section">
+                {/* Text Content */}
+                <div className="hero-text">
+                    <h1 className="hero-heading">
+                        Igniting Curiosity, Inspiring Excellence
+                        
+                    </h1>
+
+                    <p className="hero-subtext">
+                    This edition of Learners' Space brings to you carefully curated courses and the chance to upskill and learn various topics catering to the taste of students today!
+                    </p>
+
+                    <div className="hero-buttons">
+                        <button onClick={()=>handleClick()} className="btn-primary">Get Started</button>
+                    </div>
+                </div>
+
+                {/* Image */}
+                <div className="hero-image">
+                    <img
+                    src={homeImg}
+                    alt="Education Illustration"
+                    />
+                </div>
+            </section>
+
+            <section className="home-collab-section">
+                <h1 className="collab-heading">
+                    In Collaboration With
+                </h1>
+
+                <p className="collab-subtext">
+                Brought to you by the Career Cell in collaboration with the clubs and communities of the Undergraduate Academic Council (UGAC), Institute Technical Council (ITC), Institute Cultural Council (ICC), Sustainability Cell, English Learning Program (ELP), Insight and Entrepreneurship & Business Club (EnB). We are delighted to present the 10th edition of Learners’ Space: Igniting Curiosity, Inspiring Excellence.
+                </p>
+                <Grid container className="collab-grid">
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={ugacLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" style={{height:"140px"}} src={itcLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={iccLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={enbLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={penLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={elpLogo} alt="" />
+                    </Grid>
+                    <Grid item className="collab-grid-item" md={3} sm={6} xs={12}>
+                        <img className="collab-logo" src={susLogo} alt="" />
+                    </Grid>
+                </Grid>
+            </section>
+
+            <section className="home-cards-section">
+                {homeCardData.map((data, index) => (
+                    <HomeCards key={index} title={data.title} description={data.desc} index={index} />
+                ))}
+            </section>
+
+            <section className="about-section">
+
+                <div className="about-image">
+                    <img
+                        className="about-main"
+                        src={AboutIng}
+                        alt="Education Illustration"
+                    />
+                    <img
+                        className="about-bg"
+                        src={AboutImgBg}
+                        alt="Bg Image"
+                    />
+                </div>
+                {/* Text Content */}
+                <div className="about-text">
+                    <h6 className="about-subheading">About Learners' Space</h6>
+                    <h1 className="about-heading">
+                    Explore. Evolve. Excel.
+                        {/* <span className="highlight">Experience</span> with <span className="bold">Eduko.</span> */}
+                    </h1>
+
+                    <p className="about-subtext">
+                        {aboutText}
+                    </p>
+                </div>
+            </section>
+        </div>
+    );
+}
+ 
+export default HomePage;

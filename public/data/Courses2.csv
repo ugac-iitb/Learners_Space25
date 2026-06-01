@@ -1,0 +1,133 @@
+"Which of the following schools would you think this course is most aligned to (the name of the school may be changed (and in fact I would like suggestions)). The idea is to provide each course emphasis, by clearly conveying it's interest domain to audience and hopefully get more registrations.",School ID,Course ID,Course Name,Club,Desc_short,Desc,Week_time,Evaluation,Certification,Pre-req,Contact info,Week 1,Week 2,Week 3,Week 4,Week Null
+The CS and DS Summer School,6,68,Big Data Handling with Excel & SQL,Analytics Club ,"Dive into the world of data analysis using the most accessible tools out there. Whether you're a beginner or just looking to brush up your skills, this course takes you through Excel and SQL with bite-sized videos, practical assignments, designed to fit into your daily routine.","This course is designed to give students hands-on exposure to Excel and SQL, focusing on practical data analysis and real-world business use-cases. Through a curated set of short, beginner-friendly videos, you'll learn everything from spreadsheet fundamentals to pivot tables and conditional logic functions.
+
+We emphasize clarity, simplicity, and accessibility. No prior experience is needed. Each video covers a specific feature, allowing you to steadily build your skills.
+
+The course also includes assignments to reinforce your learning and help you develop fluency in tools that are widely used across industries today. You’ll also gain insight into how these tools compare with other modern alternatives and understand where they stand amidst today’s AI and automation wave.",5 - 7  hours,"Evaluative metric & Certification criteria [Excel] : 
+5 assignments will be given, out of which any 3 are compulsory
+The final project for Excel is compulsory
+
+Evaluative metric & Certification criteria [SQL]
+2 assignments will be given, any one of of them is compulsory
+Final project is compulsory
+","3/5 assignments of Excel, 1/2 assignments of SQL and Final project",Just your enthusiasm!,"Anviksha (7974346380), Anshuman (9880182957)","Excel:
+- Introduction to spreadsheets
+- Basics of spreadsheets
+- Columns, row and cell formatting
+- Basics of formulas
+- Introduction to functions
+- Absolute and Relative referencing
+- Introduction to data quality & importing file data
+- Data cleaning techniques","Excel:
+- Sorting & Filtering
+- Some important functions
+- VLOOKUP & HLOOKUP functions
+- Pivot Tables
+SQL:
+- Installation and setup
+- Introduction
+- Queries in SQL
+- Functions in SQL
+- Operators in SQL","Excel:
+- All about Charts
+- Dashboarding
+SQL:
+- All about clauses
+- SQL Joins
+- Subquery in SQL","
+1 project each for Excel and SQL",,,,
+The CS and DS Summer School,6,69,Data Science Fundamentals with Python,Analytics Club,"Kickstart your data science journey with our beginner-friendly ""Data Science Fundamentals with Python"" course! Start from core Python skills, explore data handling and data visualization with exciting libraries transitioning to ML through supervised and unsupervised learning algorithms with in-depth yet carefully curated easy-to-follow resources finishing off with a perfect real world project to reinforce key concepts while building your portfolio. This isn’t just a course; it’s your gateway to mastering the transformation of Basic raw data into Brilliant actionable intelligence!","Step into one of the hottest career paths of the 21st century with this comprehensive four week course by the Analytics Club in Python for Data Science and Machine Learning as a part of Learner’s Space. Whether you're a curious student or a tech explorer leveling up your skill set, this course is your launchpad. We’ve packed it with in-depth yet carefully curated resources. From writing your first line of Python to building models that can actually think, you’ll learn to clean, analyze, and predict like a pro.
+
+The course ends with a perfect bridge between theory and practical expertise. The Capstone Project is the culmination of your learning journey, where you apply supervised and unsupervised techniques to a real-world dataset-just like a professional data scientist. This hands-on experience reinforces key concepts, builds your portfolio, and boosts confidence in solving complex problems.
+
+No prior experience is needed - just curiosity and commitment. Start from scratch, finish with real skills.",7 - 8 hours,There will be 3 worksheets and 1 final capstone project,"1st Phase worksheet, Atleast one among the 2nd and 3rd Phase worksheets and Capstone project are necessary for certification",Just your enthusiasm!,"Tanya Menghani (6264592527), Pranav Mylarassu (9789952490)","Python Modules
+
+
+Python Basics: Learn the building blocks of Python: variables, control flow, functions, and more.
+Jupyter Notebooks: Explore the interactive coding environment used by data scientists.
+Numpy: Learn about dealing with arrays and vectorized computations in python.
+Pandas: Dive into data manipulation with powerful tools for cleaning, filtering, and transforming datasets.
+Matplotlib: Create basic plots and visualizations to understand data trends and patterns.
+Seaborn: Build beautiful, statistical visualizations of data.
+Worksheet 1 – Apply your skills through hands-on coding exercises.
+","Supervised Learning - Regression
+
+Domains of Analytics: Understand how data science, data analytics, and machine learning differ - and where they overlap.
+Scikit-Learn Essentials: Get hands-on with the most popular ML library for Python.
+Linear Regression: Explore the fundamentals of modeling straight-line relationships in data.
+Multiple Linear Regression: Go beyond one feature and learn how to model with multiple predictors.
+Time Series Analysis: Understand time-dependent data and recognize temporal patterns.
+Time Series Forecasting: Explore statistical models such as ARMA to predict future trends.
+Anomaly detection: Discover how to spot unusual or unexpected behavior in time series data.
+Worksheet 2: Apply your learned skills through coding exercises and problems.","Supervised Learning - Classification
+Regression vs Classification: Learn the key differences between predicting numbers and predicting categories.
+Logistic Regression: Model binary probabilities using this basic classification algorithm.
+Decision Trees & Random Forests: Learn about tree-based models that mimic human decision making.
+Optional Classification algorithms: Understand additional classification algorithms such as Support Vector Machines and K-Nearest Neighbors.
+Neural Networks – Delve into deep learning with one of the most powerful ML tools.
+Probability distributions and Central Limit Theorem: Learn about statistics and data behavior through Gaussian, Bernoulli, and Exponential distributions.
+Worksheet 3: Get hands-on experience with code implementation of ML algorithms.
+"," Unsupervised Learning
+
+Intro to Unsupervised Learning: Discover how machines find hidden patterns without labeled data or guidance.
+K-Means Clustering: Group similar data points into clusters based on distance.
+Hierarchical Clustering: Build tree-like cluster structures to explore nested relationships in data.
+Gaussian Mixture Models: Use probability-based clustering to model data that doesn’t fit into neat boundaries.
+Dimensionality Reduction: Simplify complex datasets using techniques such as Principal Component Analysis, Singular Value Decomposition and Linear Discriminant Analysis.
+Matrix Factorization: Learn about the core technique behind recommendation systems.
+Capstone Project: Test your skills with a hands-on project encompassing the entire course content.
+",,,,
+The Sustainability Summer School,5,57,Sustainable Buildings,Team SHUNYA ,"This lecture series by Team SHUNYA introduces students to the fundamentals of sustainable building design. Through interactive sessions, real-world case studies, and expert insights, participants will explore energy-efficient strategies, eco-friendly materials, and climate-responsive architecture. Whether you're an aspiring architect, engineer, or sustainability enthusiast, this series will equip you with the knowledge and inspiration to design for a greener future.
+","This lecture series offers a comprehensive introduction to the principles and practices of sustainable building design, tailored for students from diverse academic backgrounds. 
+
+Participants will gain insights into:
+
+-Sustainable architecture and climate-responsive design
+-Energy-efficient systems (passive and active strategies)
+-Green building materials and construction techniques
+-Net-zero energy and carbon-neutral buildings
+-Simulation tools and performance evaluation
+-Policy, certification, and global sustainability standards (e.g., GRIHA, LEED)
+
+The series will also highlight key innovations and learnings from Team SHUNYA’s real-world project Vivaan, standing on the campus opposite hostel 6 including their Solar Decathlon-winning projects.
+
+By the end of the course, students will be equipped with foundational knowledge to approach building design from an environmental, economic, and human-centric perspective—empowering them to contribute meaningfully to a sustainable built environment.
+
+",2 hours ,Assignment and quiz ,Attendence and quiz ,Just your enthusiasm!,Mudrika (9257498799) ,"Foundations of Sustainable Design
+
+Objectives:
+Learn the basics of sustainable building design.
+Understand how buildings impact the environment.
+Discover the importance of energy efficiency and passive design.
+
+Activities:
+Introductory lecture
+Case studies of green buildings
+Interactive quiz or discussion","Materials, Technologies & Real-World Examples
+
+Objectives:
+Explore eco-friendly materials and technologies.
+See real-world examples of sustainable buildings.
+Discover smart design strategies for energy savings.
+
+Activities:
+Case studies of green buildings
+Group activity: Design a basic sustainable layout","Life Cycle Assessment (LCA)
+
+Objectives:
+ Understand the concept of Life Cycle Assessment in buildings.
+ Learn to evaluate environmental impact from material to demolition.
+ Explore tools and techniques used in LCA.
+
+Activities:
+Lecture on LCA basics
+Software or manual LCA walkthrough
+Group activity: Conduct a simplified LCA on a sample building component",-,,,,--
+"The Management Summer School (Courses in Consult, Finance, Entrepreneurship, Economics*)",2,25,Fundamentals of Finance,Finance Club,"Unlock the secrets of smart money management and investment strategies. Build confidence in navigating personal finance, market dynamics and stock valuation. Gain practical tools to make informed financial decisions and take control of your financial future.","Fundamentals of Finance will introduce you to the essential concepts of financial literacy in a clear and practical manner. You will begin with personal money management topics such as budgeting, saving, and investing, before progressing to the effects of macroeconomic factors like GDP, inflation, and interest rates on markets.
+Delve into various asset classes like equities, debt, real estate, and commodities while learning how to create a diversified investment portfolio tailored to your financial goals and risk tolerance. You'll also enhance your ability to perform fundamental analysis, equipping you with the tools to read financial statements and spot investment prospects.
+Through interactive speaker sessions and hands-on assignments, you will acquire real-world insights and practical strategies to confidently manage your finances and investments. Join us to take control of your financial future!","3 hours of work per week, plus 1 additional hour for speaker sessions","There will be 4 assignments, one assignment per week, based on the content covered.
+Each assignment contributes equally to the overall assessment.","Successful completion of 3/4 assignments without any plagiarism or use of AI tools like ChatGPT, Gemini etc. and attendance in 3/4 speaker sessions",Just your enthusiasm!,"Deepti (9310453152), Karthik (8977243111), Kunal (7020922818), Rajdeep (9958009329), Shashwat (9548765669), Shreya (9810465318)","Personal Finance:
+Learn the essentials of managing money, including budgeting, saving, investing, and building an emergency fund. Understand stock market basics, the importance of diversification, and how to avoid common mistakes. Develop a mindset for long-term financial growth with simple, actionable steps.","Macroeconomics and Market Functioning:
+Understand key economic indicators like GDP, inflation, interest rates, and unemployment, and how they impact markets and investments. Learn the basics of fiscal policy and government spending, and explore market cycles and economic trends affecting stocks, bonds, and personal finance.","Asset Classes:
+Get an overview of key asset types—equity, debt, real estate, and commodities. Learn about their risk, liquidity, and role in income generation and portfolio diversification. Understand how investors allocate assets based on risk tolerance and financial goals.","Fundamental Analysis:
+Learn to read financial statements and key ratios. Understand how to interpret earnings reports and connect financial data to stock valuation, helping you identify undervalued or overvalued stocks.",,,,
