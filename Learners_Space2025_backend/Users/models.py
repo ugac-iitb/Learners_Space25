@@ -27,6 +27,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     year_of_study = models.CharField(max_length=10, blank=True, default='')
     contact_number = models.CharField(max_length=15, blank=True, default='')
     degree_type = models.CharField(max_length=50, blank=True, default='')
+    programme = models.CharField(max_length=50, blank=True, default='')
+    department = models.CharField(max_length=150, blank=True, default='')
     ldap_id = models.CharField(max_length=100, blank=True, default='')
 
     # Course registrations stored as a list of course ID strings

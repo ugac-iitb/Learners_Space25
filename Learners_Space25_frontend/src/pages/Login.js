@@ -11,6 +11,7 @@ import baseURL from '../config/api';
 import {
   Box,
   Button,
+  MenuItem,
   TextField,
   Typography,
 } from '@mui/material';
@@ -26,6 +27,25 @@ const Login = ({ initialMode = 'signin' }) => {
   const [pendingEmail, setPendingEmail] = useState('');
 
   const redirectTo = location.state?.from || '/Schools';
+
+  const programmeOptions = ['B.Tech', 'B.S.', 'Dual Degree'];
+  const departmentOptions = {
+    'B.Tech': [
+      'Computer Science and Engineering',
+      'Electrical Engineering',
+      'Mechanical Engineering',
+      'Industrial Engineering and Operations Research',
+      'Aerospace Engineering',
+      'Chemical Engineering',
+      'Civil Engineering',
+      'Engineering Physics',
+      'Environmental Science and Engineering',
+      'Metallurgical Engineering and Materials Science',
+      'Energy Science and Engineering',
+    ],
+    'B.S.': ['Chemistry', 'Mathematics', 'Applied Geophysics'],
+    'Dual Degree': ['Electrical Engineering'],
+  };
 
   const finishAuth = (data, fallbackEmail) => {
     dispatch(authSlice.actions.setAuthTokens({
@@ -49,6 +69,8 @@ const Login = ({ initialMode = 'signin' }) => {
             full_name: values.full_name,
             email,
             contact_number: values.contact_number,
+            programme: values.programme,
+            department: values.department,
             password: values.password,
             confirm_password: values.confirm_password,
           });
@@ -110,6 +132,8 @@ const Login = ({ initialMode = 'signin' }) => {
       password: '',
       confirm_password: '',
       contact_number: '',
+      programme: '',
+      department: '',
       otp: '',
     },
     validationSchema: Yup.object(
@@ -129,6 +153,15 @@ const Login = ({ initialMode = 'signin' }) => {
             contact_number: Yup.string()
               .matches(/^[0-9]{10}$/, 'Contact number must be 10 digits')
               .required('Contact number is required'),
+            programme: Yup.string()
+              .oneOf(programmeOptions, 'Select a valid programme')
+              .required('Programme is required'),
+            department: Yup.string()
+              .required('Department is required')
+              .test('valid-department', 'Select a valid department', function validateDepartment(value) {
+                const options = departmentOptions[this.parent.programme] || [];
+                return options.includes(value);
+              }),
             password: Yup.string().min(8, 'Password must be at least 8 characters').required('Password is required'),
             confirm_password: Yup.string()
               .oneOf([Yup.ref('password'), null], 'Passwords must match')
@@ -150,6 +183,19 @@ const Login = ({ initialMode = 'signin' }) => {
     setPendingEmail('');
     formik.resetForm();
   };
+
+  const handleProgrammeChange = (event) => {
+    const programme = event.target.value;
+    const options = departmentOptions[programme] || [];
+    formik.setFieldValue('programme', programme);
+    formik.setFieldTouched('programme', true, false);
+    formik.setFieldValue('department', programme === 'Dual Degree' ? 'Electrical Engineering' : '');
+    if (options.length === 1) {
+      formik.setFieldValue('department', options[0]);
+    }
+  };
+
+  const availableDepartments = departmentOptions[formik.values.programme] || [];
 
   return (
     <Box className="lg-form-container">
@@ -190,6 +236,49 @@ const Login = ({ initialMode = 'signin' }) => {
             helperText={formik.touched.full_name && formik.errors.full_name}
             className="lg-textfield"
           />
+        )}
+
+        {mode === 'signup' && !otpStep && (
+          <TextField
+            select
+            fullWidth
+            label="Select Programme"
+            name="programme"
+            onChange={handleProgrammeChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.programme}
+            error={formik.touched.programme && Boolean(formik.errors.programme)}
+            helperText={formik.touched.programme && formik.errors.programme}
+            className="lg-textfield"
+          >
+            {programmeOptions.map((programme) => (
+              <MenuItem key={programme} value={programme}>
+                {programme}
+              </MenuItem>
+            ))}
+          </TextField>
+        )}
+
+        {mode === 'signup' && !otpStep && (
+          <TextField
+            select
+            fullWidth
+            label="Department"
+            name="department"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.department}
+            disabled={!formik.values.programme || formik.values.programme === 'Dual Degree'}
+            error={formik.touched.department && Boolean(formik.errors.department)}
+            helperText={formik.touched.department && formik.errors.department}
+            className="lg-textfield"
+          >
+            {availableDepartments.map((department) => (
+              <MenuItem key={department} value={department}>
+                {department}
+              </MenuItem>
+            ))}
+          </TextField>
         )}
 
         {!otpStep && (

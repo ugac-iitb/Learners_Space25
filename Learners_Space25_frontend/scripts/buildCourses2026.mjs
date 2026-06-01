@@ -794,6 +794,64 @@ const courses = [
       "Weekly Assignments (40%), Capstone Project (60%). Pass: at least 2 assignments and capstone submission.",
     weeklyTime: "6-8 hours per week",
   },
+  {
+    body: "ITC",
+    course: "AI in Chemical Engineering: From Reactor to Refinery",
+    type: "TSS",
+    track: "ITC",
+    school: "Engineering School",
+    intro: "AI is reshaping the future of Chemical Engineering. Explore how Artificial Intelligence is transforming industries through smarter reactors, optimized processes, advanced control systems, and data-driven refinery operations. Learn how AI is driving the next era of chemical manufacturing and smart industrial systems.",
+    weeks: [
+      {
+        week: "Week 1",
+        content: "Week 1: Introduction to AI in Chemical Engineering — Explore the fundamentals of AI and machine learning, and discover how these technologies are transforming modern chemical engineering and process industries."
+      },
+      {
+        week: "Week 2",
+        content: "Week 2: AI for Reactors and Process Modeling — Understand how AI can predict reactor performance, model complex chemical processes, and support data-driven decision-making in process engineering."
+      },
+      {
+        week: "Week 3",
+        content: "Week 3: AI for Process Control and Optimization — Learn how AI can enhance process control, optimize operating conditions, and improve efficiency, safety, and performance in chemical plants."
+      },
+      {
+        week: "Week 4",
+        content: "Week 4: AI in Refineries and Smart Manufacturing — Discover how AI is transforming refinery operations and smart manufacturing through predictive analytics, automation, and data-driven decision-making."
+      }
+    ],
+    prerequisites: "None",
+    evaluation: "To be announced",
+    weeklyTime: "5-6 hours"
+  },
+  {
+    body: "ITC (CC and ChemETL)",
+    course: "Radioisotope Batteries and Hydrogen Fuel Cells in Space Applications",
+    type: "TSS",
+    track: "ITC",
+    school: "Sciences School",
+    intro: "Explore the technologies that power space missions. From radioisotope batteries to hydrogen fuel cells, discover how nuclear chemistry and electrochemistry enable exploration beyond Earth. Learn the science, applications, and future of these critical space power technologies.",
+    weeks: [
+      {
+        week: "Week 1",
+        content: "Week 1: The Space Power Problem — Learn why generating and storing energy in space is challenging, and explore the power requirements of modern space missions."
+      },
+      {
+        week: "Week 2",
+        content: "Week 2: Radioisotope Batteries – Nuclear Heat at Work — Discover how nuclear energy is used to generate reliable power for spacecraft operating far from the Sun."
+      },
+      {
+        week: "Week 3",
+        content: "Week 3: Hydrogen Fuel Cells – Chemistry That Powers Astronauts — Understand how hydrogen fuel cells generate clean and efficient energy, providing power and water for crewed space missions."
+      },
+      {
+        week: "Week 4",
+        content: "Week 4: Head-to-Head – Choosing the Right Technology — Compare radioisotope batteries and hydrogen fuel cells, evaluating their advantages, limitations, and suitability for different space missions."
+      }
+    ],
+    prerequisites: "None",
+    evaluation: "To be announced",
+    weeklyTime: "6-7 hours per week"
+  }
 ];
 
 const outPath = path.join(__dirname, "..", "src", "data", "Courses2026.json");

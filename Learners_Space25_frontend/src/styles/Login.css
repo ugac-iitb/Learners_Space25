@@ -180,4 +180,12 @@
 .lg-textfield .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: #f2bc00 !important;
 }
+
+/* Ensure disabled input text is clearly visible in white */
+.lg-textfield .MuiInputBase-root.Mui-disabled .MuiInputBase-input,
+.lg-textfield .MuiInputBase-input.Mui-disabled,
+.lg-textfield .MuiOutlinedInput-root.Mui-disabled .MuiInputBase-input {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
   
